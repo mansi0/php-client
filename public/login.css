@@ -3,20 +3,20 @@ body{
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-image: url(/home/aishwariya/fooddelivery/demo/src/main/resources/images2.jpeg);
+  background-image: url(./projectphoto/img.jpg);
   background-color: black;
   background-size: cover;
 }
 .login-box{
   border-radius: 40px;
-  border: 3px solid #29cf2e; ;
+ /* border: 3px solid #29cf2e; */
   margin-bottom: 50px;
   width: 280px;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 40%;
+  left: 20%;
   transform: translate(-50%,-50%);
-  color: rgb(219, 231, 235);
+  color: rgb(18, 18, 19);
   border-collapse: separate;
   padding: 15px;
 }
@@ -33,26 +33,27 @@ body{
   font-size: 18px;
   padding: 8px 0;
   margin: 8px 0;
-  border-bottom: 1px solid #29cf2e;
+  border-bottom: 2px solid #29cf2e;
 }
 .textbox i{
-  width: 26px;
+  width: 28px;
   float: left;
   text-align: center;
+  font-size: 30px;
 }
 .textbox input{
   border: none;
   outline: none;
   background: none;
-  color: rgb(231, 230, 235);
-  font-size: 20px;
+  color: rgb(8, 8, 8);
+  font-size: 25px;
   width: 80%;
   float: left;
   margin: 0 10px;
 }
 .btn{
   width: 100%;
-  background: #1e94e2;
+  background:#29cf2e;
   border: 2px solid #f3ebeb;
   color: rgb(245, 240, 240);
   padding: 5px;
