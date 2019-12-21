@@ -1,0 +1,70 @@
+@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
+body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-image: url(./projectphoto/img.jpg);
+  background-color: black;
+  background-size: cover;
+}
+.login-box{
+  border-radius: 40px;
+ /* border: 3px solid #29cf2e; */
+  margin-bottom: 50px;
+  width: 280px;
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  transform: translate(-50%,-50%);
+  color: rgb(18, 18, 19);
+  border-collapse: separate;
+  padding: 15px;
+}
+.login-box h1{
+  float: left;
+  font-size: 25px;
+  border-bottom: 6px solid  #29cf2e;
+  margin-bottom: 50px;
+  padding: 13px 0;
+}
+.textbox{
+  width: 100%;
+  overflow: hidden;
+  font-size: 18px;
+  padding: 8px 0;
+  margin: 8px 0;
+  border-bottom: 2px solid #29cf2e;
+}
+.textbox i{
+  width: 28px;
+  float: left;
+  text-align: center;
+  font-size: 30px;
+}
+.textbox input{
+  border: none;
+  outline: none;
+  background: none;
+  color: rgb(8, 8, 8);
+  font-size: 25px;
+  width: 80%;
+  float: left;
+  margin: 0 10px;
+}
+.btn{
+  width: 100%;
+  background:#29cf2e;
+  border: 2px solid #f3ebeb;
+  color: rgb(245, 240, 240);
+  padding: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 12px 0;
+}
+
+button{
+  padding: 5px;
+  background:white;
+  font-size: 25px;
+}
+
