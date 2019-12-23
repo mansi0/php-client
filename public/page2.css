@@ -1,12 +1,12 @@
 body{
-    background-image: url(./projectphoto/burger.jpg);
-    background-size: cover;
-   /* margin: 0;
+   /* background-image: url(./projectphoto/burger.jpg);
+    background-size: cover;*/
+    margin: 0;
     padding: 0;
-    background: #34495e;*/
+    background: #34495e;
 }
 
-/*.slidershow{
+.slidershow{
         width: 700px;
         height: 400px;
         overflow: hidden;
@@ -79,9 +79,9 @@ input[name="r"]{
 #r4:checked~ .s1{
     margin-left: -60%;
     
-}*/
+}
 
-p
+/*p
 {
     color:chocolate;
     font-size:5pc;
@@ -98,4 +98,4 @@ p1{
    left:35pc;
     top: 50%;
 
-}
+}*/
