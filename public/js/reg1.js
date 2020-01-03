@@ -1,4 +1,4 @@
-function setValue()
+function setValue(url)
 {
         var l=localStorage;
         var name=document.getElementById("name").value;
@@ -14,12 +14,12 @@ function setValue()
 
         if(password != confirmPassword)
         {   
-            alert('Password Not Matched!!');
+            document.getElementById('msg').innerHTML="*Password and confirm password should be matched";
             document.getElementById('password').value=null;
             document.getElementById('confirmpassword').value=null;
         }
         else
         {
-            window.location.replace("../public/reg2.html");
+            window.location.replace("../public/reg2.php");
         }
 }

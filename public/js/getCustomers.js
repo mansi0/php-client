@@ -1,4 +1,4 @@
-async function reg() {
+async function reg(url) {
     try {
        
       /*  const name = document.getElementById("name").value;
@@ -27,7 +27,7 @@ async function reg() {
             state: state
         };*/
        
-       const promiseResponse = await fetch("http://localhost:5000/customer/details")
+       const promiseResponse = await fetch(url+"/customer/details")
             
         
        const response = await promiseResponse.json();
