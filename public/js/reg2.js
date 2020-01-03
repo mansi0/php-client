@@ -1,13 +1,15 @@
 async function reg() {
     try {
-       
-        const name = document.getElementById("name").value;
+        var l=localStorage;
+        const name=l.getItem('nm');
+    
         
-        const contNo = document.getElementById("contno").value;
+        const contNo = l.getItem('cn');
         
-        const emailId = document.getElementById("emailid").value;
+        const emailId = l.getItem('ei');
         
-        const password = document.getElementById("password").value;
+        const password = l.getItem('pw');
+        const confirmPassword=l.getItem('cp');
         const address = document.getElementById("address").value;
         const locality = document.getElementById("locality").value;
         const landmark = document.getElementById("landmark").value;
@@ -38,10 +40,10 @@ async function reg() {
 
         const addUserResponse = await promiseResponse.json();
         if(addUserResponse.status === 200) {
-            window.location.replace("../view/reg.php");
+            window.location.replace("../public/lohin.html");
         }
         if(addUserResponse.status === 400) {
-            window.location.replace("../view/reg.php");
+            window.location.replace("../public/login.html");
         }
         
       /* const promiseResponse = await fetch("http://localhost:5000/customer/details")
