@@ -1,4 +1,4 @@
-async function reg() {
+async function reg(url) {
     try {
         var l=localStorage;
         const name=l.getItem('nm');
@@ -16,7 +16,8 @@ async function reg() {
         const city = document.getElementById("city").value;
         const state = document.getElementById("state").value;
        
-        alert('in try22');
+        
+        
         const customer = {
             name: name,
             contNo: contNo,
@@ -30,7 +31,7 @@ async function reg() {
         };
         console.log(customer)
         
-         const promiseResponse = await fetch("http://localhost:5000/customer/add", {
+         const promiseResponse = await fetch(url+"/customer/add", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json;charset=utf-8'
@@ -38,13 +39,23 @@ async function reg() {
             body: JSON.stringify(customer),
         });
 
-        const addUserResponse = await promiseResponse.json();
+        console.log(promiseResponse);
+        if(promiseResponse.status===200)
+        {
+            window.location.replace("../public/login.php");
+        }
+
+        if(promiseResponse.status===400){
+            document.getElementById("body").innerHTML="Customer Alreday Exist!!";
+        }
+
+       /* const addUserResponse = await promiseResponse.json();
         if(addUserResponse.status === 200) {
             window.location.replace("../public/lohin.html");
         }
         if(addUserResponse.status === 400) {
             window.location.replace("../public/login.html");
-        }
+        }*/
         
       /* const promiseResponse = await fetch("http://localhost:5000/customer/details")
             
