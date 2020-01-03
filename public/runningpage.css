@@ -98,13 +98,13 @@
 .back-wheel
 {
     bottom: -150px;
-    left: 70px;
+    left: 40px;
     position: absolute;
 }
 .frontwheel
 {
     bottom:-120px;
-    left: 287px;
+    left: 258px;
     position:absolute;
 }
 @keyframes wheel
@@ -116,7 +116,7 @@
 
 .title
 {
-    width:600px;
+    width:500px;
     left:37%;
     top: 04px;
     transform:translateX(-50%);
@@ -164,12 +164,11 @@ ul li a:hover{
 
 }
 button{
-    font-size: 30px;
+    font-size: 25px;
     position: relative;
-    top: 427px;
-    left: 1200px;
-    background-color: white ;
-    color:black;
-    padding: 2px;
+    top: 0px;
+    left: 1300px;
+    background-color:chocolate ;
+    color:white;
     
 }
