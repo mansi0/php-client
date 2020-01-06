@@ -21,7 +21,7 @@ body{
   border-radius: 40px;
  /* border: 3px solid #29cf2e; */
   margin-bottom: 50px;
-  width: 280px;
+  width: 400px;
   position: absolute;
   top: 40%;
   left: 20%;
@@ -50,6 +50,9 @@ body{
   float: left;
   text-align: center;
   font-size: 30px;
+}
+::placeholder {
+  color:black;
 }
 .textbox input{
   border: none;
@@ -91,6 +94,12 @@ body{
   font-size: 20px;
   cursor: pointer;
   margin: 12px 0;
+}
+
+.btn:hover{
+  background: transparent;
+  color:black;
+  border:2px solid #29cf2e ;
 }
 
 button{
