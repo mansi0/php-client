@@ -29,6 +29,9 @@
                         <li> <a href="reg1.php"><i class="fas fa-user-plus"></i>Register</a></li>
                     </ul>
                 </div>
+                <div class="logo">
+                 <img src="">
+                </div>
                 <div class="banner-text">
                 <h2>Taste On Way!!!</h2>
                 </div>
@@ -46,7 +49,9 @@
                                     <i class="fab fa-renren"></i>   
                                  </div>
                                 <h3><span>Work With Us</span></h3>
-                                <p>You can work with us.hsdgkjhska sahgkjasfhkjsfh asjhfkjafhkjfh fjhkjfhkfhfkhf fbfkjfhkfjhkfhdfkdhfkfj</p>
+                                
+                                    <p><a href="dbreg.php">Click Here</a></p>
+                                
                         </div>
 
                         <div class="col-md-3 text-center">
@@ -171,7 +176,7 @@
                 </div>
 
                 <div class="follow">
-                    <i class="fas fa-mobile-alt"></i><span>9049771781,7083988679</span>
+                    <i class="fas fa-mobile-alt"></i><span>9049771781/7083988679</span>
                 </div>
 
                 <div class="follow">

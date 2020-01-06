@@ -70,7 +70,7 @@ body{
 
 .banner-text{
     position: absolute;
-    margin-top: 5%;
+    margin-top: 4%;
     background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../../projectphoto/donut.jpg);
     background-position: center;
     background-size:cover ;
@@ -334,7 +334,7 @@ h1::after{
 }
 
 ::placeholder{
-    font-size: 15px;
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -361,7 +361,7 @@ h1::after{
 }
 
 .contact-info span{
-    font-size: 14px;
+    font-size: 20px;
     font-weight: bold;
 }
 

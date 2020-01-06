@@ -9,7 +9,7 @@
     <head>
         <meta charset="utf-8">
         <title></title>
-        <link rel="stylesheet" href="./css/css/reg1.css">
+        <link rel="stylesheet" href="./css/css/reg2.css">
     </head>
 <body> 
 
@@ -70,7 +70,7 @@
             <button type="submit" class="btn btn-success btn-block" onclick=reg(<?php echo(json_encode($url)); ?>)>
             submit</button>
         </div>
-        <a href="reg1.html">Back</a>
+        <a href="reg1.php">Back</a>
             <div class="col-md-4 col-sm-4 col-xs-12"></div>
     </div>
 </body>

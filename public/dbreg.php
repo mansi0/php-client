@@ -8,21 +8,21 @@
     <head>
         <meta charset="utf-8">
         <title></title>
-        <link rel="stylesheet" href="./css/css/reg1.css">
+        <link rel="stylesheet" href="./css/css/dbreg.css">
     </head>
 <body> 
 
         <div class="main">
-              <!--  <ul>
-                    <li class="active"> <a href="">Home</a></li>
-                    <li> <a href="login.html">Login</a></li>
-                    <li> <a href="reg1.html">Register</a></li>
+               <ul>
+                 <!--<li class="active"> <a href="">Home</a></li>-->
+                    <li> <a href="dblogin.php">Login</a></li>
+                 <!--<li> <a href="reg1.html">Register</a></li>
                     <li><a href="#">Services</a></li>
                    <li><a href="#">Gallery</a></li>
                     <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Contact</a></li> -->
                 
-                </ul>-->
+                </ul>
         </div>
     <div class="register">
         
