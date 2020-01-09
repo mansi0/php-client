@@ -1,12 +1,12 @@
 async function reg(url) {
     try {
-        const name=document.getElementById('nm').value;
+        const name=document.getElementById('name').value;
         const address = document.getElementById("address").value;
-        const emailId = document.getElementById('ei').value;
-        const contNo = document.getElementById('cn').value;
-        const deliveryArea = document.getElementById("da").value;
-        const password = document.getElementById('pw').value;
-        const confirmPassword=document.getElementById('cp').value;
+        const emailId = document.getElementById('emailId').value;
+        const contNo = document.getElementById('contNo').value;
+        const deliveryArea = document.getElementById("deliveryArea").value;
+        const password = document.getElementById('password').value;
+        const confirmPassword=document.getElementById('confirmPassword').value;
         
        
         
@@ -16,6 +16,7 @@ async function reg(url) {
             deliveryboyAddress: address,  
             deliveryboyEmailId: emailId,
             deliveryboyContNo: contNo,
+            deliveryArea:deliveryArea,
             deliveryboyPassword: password, 
         };
         console.log(deliveryboy)
@@ -29,12 +30,14 @@ async function reg(url) {
         });
 
         console.log(promiseResponse);
-        if(promiseResponse.status===200)
+        if(promiseResponse.status === 200)
         {
+            alert('in 200');
             window.location.replace("../public/dblogin.php");
         }
 
-        if(promiseResponse.status===400){
+        if(promiseResponse.status === 400){
+            alert('in 400');
             document.getElementById("body").innerHTML="Deliveryboy Alreday Exist!!";
         }
 

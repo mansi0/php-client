@@ -76,9 +76,9 @@
                 <i class="fas fa-bars" aria-hidden="true"></i>
 
                 &nbsp; Hotel Menu Type &nbsp;
-                <input type="radio" name="hotelMenuType" value="veg"> Veg &nbsp;
-                <input type="radio" name="hotelMenuType" value="non-veg"> Non-Veg&nbsp;
-                <input type="radio" name="hotelMenuType" value="both"> Both<br>
+                <input type="radio" name="hotelMenuType" id="hotelMenu" value="veg"> Veg &nbsp;
+                <input type="radio" name="hotelMenuType" id="hotelMenu" value="non-veg"> Non-Veg&nbsp;
+                <input type="radio" name="hotelMenuType" id="hotelMenu" value="both"> Both<br>
             </div>
 
             <div class="textbox">
