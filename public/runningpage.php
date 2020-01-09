@@ -6,7 +6,7 @@
 <html>
     <head>
         <title>Running vehicle animation </title>
-        <link rel="stylesheet" href="./runningpage.css">
+        <link rel="stylesheet" href="./css/css/runningpage.css">
     </head>
     <body>
             <div class="hero">
@@ -22,7 +22,7 @@
               <img src="./projectphoto/Car_Animation_Img/wheel.png" class="frontwheel">
             </div>
             <div class="title">
-                    <img src="./projectphoto/1576163963556.png">
+                    <img src="./projectphoto/1578200184350.png">
             </div>
 
            <!-- <header>

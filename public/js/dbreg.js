@@ -20,7 +20,7 @@ async function reg(url) {
         };
         console.log(deliveryboy)
         
-         const promiseResponse = await fetch(url+"/deliveryboy/add", {
+         const promiseResponse = await fetch(url+"/deliveryboy/adddeliveryboy", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json;charset=utf-8'
