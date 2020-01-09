@@ -30,11 +30,18 @@
                     </ul>
                 </div>
                 <div class="logo">
-                 <img src="">
+                 <img src="../../projectphoto/1578200184350.png">
                 </div>
                 <div class="banner-text">
                 <h2>Taste On Way!!!</h2>
                 </div>
+            
+            <!--<slider>
+                    <slide><p>Slide 1</p></slide>
+                    <slide><p>Slide 2</p></slide>
+                    <slide><p>Slide 3</p></slide>
+                    <slide><p>Slide 4</p></slide>
+            </slider>-->
             </div>
         </section>
 
@@ -89,7 +96,7 @@
                 <div class="container2">
                     <div class="card">
                         <div class="imgBx" data-text="Feature1">
-                            <img src="./projectphoto/f2.png">
+                            <img src="./projectphoto/f1.jpeg">
                         </div>
                         <div class="content">
                         <div>
@@ -102,7 +109,7 @@
     
                     <div class="card">
                         <div class="imgBx" data-text="Feature2">
-                            <img src="./projectphoto/f2.png">
+                            <img src="./projectphoto/f1.jpeg">
                         </div>
                         <div class="content">
                         <div>
@@ -115,7 +122,7 @@
     
                     <div class="card">
                         <div class="imgBx" data-text="Feature3">
-                            <img src="./projectphoto/f2.png">
+                            <img src="./projectphoto/f1.jpeg">
                         </div>
                         <div class="content">
                         <div>
@@ -128,7 +135,7 @@
     
                     <div class="card">
                         <div class="imgBx" data-text="Feature4">
-                            <img src="./projectphoto/f2.png">
+                            <img src="./projectphoto/f1.jpeg">
                          </div>
                         <div class="content">
                         <div>
