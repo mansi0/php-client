@@ -23,7 +23,7 @@ async function setValue(url){
            {
                window.location.replace("../public/home.php");``
            }
-           if(promiseResponse,status===400)
+           if(promiseResponse.status===400)
            {
 
             document.getElementById("bodydblogin").innerHTML="**Invalid Password!!!";
