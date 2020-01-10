@@ -36,9 +36,10 @@ async function reg(url) {
             window.location.replace("../public/dblogin.php");
         }
 
-        if(promiseResponse.status === 400){
-            alert('in 400');
-            document.getElementById("body").innerHTML="Deliveryboy Alreday Exist!!";
+        if(promiseResponse.status === 400)
+        {
+            //alert('in 400');
+            document.getElementById("bodydb").innerHTML="Deliveryboy Alreday Exist!!";
         }
 
        /* const addUserResponse = await promiseResponse.json();

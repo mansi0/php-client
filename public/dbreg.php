@@ -105,6 +105,10 @@
 
         <!--   <button type="next" class="btn btn-success btn-block" onclick="window.location.href='reg2.html'">
             Next>>-->
+            <div class="flash-container">
+                <div class="flash-message" data-type="error" data-timeout="8000" id="bodydb"></div>
+            </div>
+
             <button type="submit" class="btn btn-success btn-block" onclick=reg(<?php echo(json_encode($url)); ?>)>
                 Submit</button>
                <!-- <a href="/home/aishwariya/fooddelivery/demo/src/main/resources/reg2.html"> -->

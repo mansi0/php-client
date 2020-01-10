@@ -32,7 +32,10 @@
     </div>
     <span id='msg' style="color: red" font-size=10px>
     </span>
-    <button type="submit" class="btn btn-success btn-block" onclick="setValue(<?php echo(json_encode($url)); ?>)">Login</button>
+    <div class="flash-container">
+      <div class="flash-message" data-type="error" data-timeout="8000" id="bodydblogin"></div>
+    </div>
+    <button type="submit" class="btn btn-success btn-block" onclick=setValue(<?php echo(json_encode($url)); ?>)>Login</button>
   <div class="col-md-4 col-sm-4 col-xs-12"></div>
   </div>
   <!--<button type="button"><a href="/home/aishwariya/fooddelivery/demo/src/main/resources/index1.html">Register</a></button> -->
@@ -47,9 +50,7 @@
       $(this).removeClass("focus");
   });-->
 
-  <div class="flash-container">
-    <div class="flash-message" data-type="error" data-timeout="8000" id="body"></div>
-</div>
+  
 </body>
 <script src="./js/dblogin.js"></script> 
 </html>
