@@ -1,6 +1,6 @@
-async function setValue(){
+async function setValue(url){
     try{
-        const emailId = document.getElementById("emailId").value;
+        const emailId = document.getElementById("emailid").value;
         const password = document.getElementById("password").value;
        
         const deliveryboy= {
@@ -21,17 +21,17 @@ async function setValue(){
 
            if(promiseResponse.status===200)
            {
-               window.location.replace("../public/home.html");``
+               window.location.replace("../public/home.php");``
            }
            if(promiseResponse,status===400)
            {
 
-            document.getElementById("msg").innerHTML="**Invalid Password!!!";
+            document.getElementById("bodydblogin").innerHTML="**Invalid Password!!!";
            }
            
             if(promiseResponse.status===404)
             {
-                document.getElementById("msg").innerHTML="**Deliveryboy Not Found!!";
+                document.getElementById("bodydblogin").innerHTML="**Deliveryboy Not Found!!";
             }
 
             if(promiseResponse.status===500)
