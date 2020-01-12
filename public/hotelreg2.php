@@ -61,40 +61,66 @@
             <i class="fas fa-truck" aria-hidden="true"></i>
 
                &nbsp; Express Delivery &nbsp;
-                <input type="radio" name="ExpressDelivery" value="true"> True&nbsp;
-                <input type="radio" name="ExpressDelivery" value="false"> False<br>
+                <input type="radio"  name="ExpressDelivery" value="true" id="d1"> True&nbsp;
+                <input type="radio"  name="ExpressDelivery" value="false" id="d2" checked="checked"> False<br>
             </div> 
-
             <div class="textbox">
                 <i class="fas fa-door-open" aria-hidden="true"></i>
                 &nbsp; Hotel Status &nbsp;
-                <input type="radio" name="HotelStatus" value="open"> Open&nbsp;
-                <input type="radio" name="HotelStatus" value="close"> Close<br>
+                <input type="radio" name="HotelStatus" value="open" id="status1"> Open&nbsp;
+                <input type="radio" name="HotelStatus" value="close" id="status2"> Close<br>
             </div>
 
             <div class="textbox">
                 <i class="fas fa-bars" aria-hidden="true"></i>
 
                 &nbsp; Hotel Menu Type &nbsp;
-                <input type="radio" name="hotelMenuType" id="hotelMenu" value="veg"> Veg &nbsp;
-                <input type="radio" name="hotelMenuType" id="hotelMenu" value="non-veg"> Non-Veg&nbsp;
-                <input type="radio" name="hotelMenuType" id="hotelMenu" value="both"> Both<br>
+                <input type="radio" name="hotelMenuType" id="hotelMenu1" value="veg"> Veg &nbsp;
+                <input type="radio" name="hotelMenuType" id="hotelMenu2" value="non-veg"> Non-Veg&nbsp;
+                <input type="radio" name="hotelMenuType" id="hotelMenu3" value="both"> Both<br>
             </div>
 
             <div class="textbox">
             <i class="fas fa-concierge-bell" aria-hidden="true"></i>
             &nbsp; Hotel Cuisine &nbsp;
-            <input type="checkbox" name="cuisine" value="Indian"> Indian &nbsp;
-            <input type="checkbox" name="cuisine" value="Continental"> Italian &nbsp;
-            <input type="checkbox" name="cuisine" value="Italian"> Italian &nbsp; 
-            <input type="checkbox" name="cuisine" value="Japanese">Japanese <br>
+            <input type="checkbox" class="cuisine" value="Indian" id="cuis1"> Indian &nbsp;
+            <input type="checkbox" class="cuisine" value="Continental" id="cuis2"> Continental &nbsp;
+            <input type="checkbox" class="cuisine" value="Italian" id="cuis3"> Italian &nbsp; 
+            <input type="checkbox" class="cuisine" value="Japanese" id="cuis4">Japanese <br>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 
-            <input type="checkbox" name="cuisine" value="American">American  &nbsp;
-            <input type="checkbox" name="cuisine" value="Bengali"> Bengali &nbsp;
-            <input type="checkbox" name="cuisine" value="Punjabi"> Punjabi &nbsp;
-            <input type="checkbox" name="cuisine" value="Chinese" checked>Chinese<br> <br>
+            <input type="checkbox" class="cuisine" value="American" id="cuis5">American  &nbsp;
+            <input type="checkbox" class="cuisine" value="Bengali" id="cuis6"> Bengali &nbsp;
+            <input type="checkbox" class="cuisine" value="Punjabi" id="cuis7"> Punjabi &nbsp;
+            <input type="checkbox" class="cuisine" value="Chinese" id="cuis8" checked>Chinese<br> <br>
 
+            <div class="textbox">
+            <i class="fas fa-bars" aria-hidden="true"></i>
+            &nbsp; Hotel Facility &nbsp;
+            <input type="checkbox" class="facility" value="selfPickup" id="fac"> Self Pickup &nbsp;
+            <input type="checkbox" class="facility" value="roofTop" id="fac"> Rooftop &nbsp;
+            <input type="checkbox" class="facility" value="outdoorSeating" id="fac"> Outdoor Seating<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 
+             
+            <input type="checkbox" class="facility" value="indoorSeating" id="fac">Indoor Seating &nbsp;
+           <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;--> 
+            <input type="checkbox" class="facility" value="valletParking" id="fac">Vallet Parking  &nbsp;
+            <input type="checkbox" class="facility" value="freeParking" id="fac"> Free Parking <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 
+            <input type="checkbox" class="facility" value="barFacility" id="fac"> Bar Facility &nbsp;
+            <input type="checkbox" class="facility" value="ladiesSpecial" id="fac"> Ladies Special &nbsp;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 
+             
+            <input type="checkbox" class="facility" value="liveSportScreening" id="fac"> Live Sport Screening &nbsp;
+            <input type="checkbox" class="facility" value="liveMusic" id="fac" checked> Live Music &nbsp;
+            
+            
+            
+            
             <div class="flash-container">
                 <div class="flash-message" data-type="error" data-timeout="8000" id="body"></div>
             </div>
@@ -108,6 +134,6 @@
     </div>
 </body>
 
-<script src="./js/reg2.js"></script>
+<script src="./js/hotelreg2.js"></script>
 
 </html>
