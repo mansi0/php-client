@@ -46,5 +46,10 @@
         <slide><p>Slide 4</p></slide>
         </slider>
         </div>
+
+        <div class="search">
+          <input type="text" name="box" placeholder="Search Here">
+          <a href="#"><i class="fas fa-search"></i></a>
+        </div>
 </body>
 </html>
