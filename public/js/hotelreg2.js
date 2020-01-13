@@ -1,7 +1,7 @@
 async function reg(url) {
     try {
-        var l=localStorage;
-        const name=l.getItem('nm');
+        var l = localStorage;
+        const name = l.getItem('nm');
         const contNo = l.getItem('cn');
         const emailId = l.getItem('ei');
         const address = l.getItem('ad');
@@ -10,120 +10,143 @@ async function reg(url) {
         const city = l.getItem('ct');
         const state = l.getItem('st');
         const password = l.getItem('pw');
-        const confirmPassword=l.getItem('cp');
+        const confirmPassword = l.getItem('cp');
         const openAt = document.getElementById("openAt").value;
         const closeAt = document.getElementById("closeAt").value;
         const approximateCost = document.getElementById("approximateCost").value;
         const openingDate = document.getElementById("openingDate").value;
-        var D1=document.getElementById("d1");
-        var D2=document.getElementById("d2");
-        var status1=document.getElementById("status1");
-        var status2=document.getElementById("status2");
-        var hotelMenu1=document.getElementById("hotelMenu1");
-        var hotelMenu2=document.getElementById("hotelMenu2");
-        
-        var cuisine=document.getElementsByClassName("cuisine");
-        var str='';
-        for(var i=0;i<8;i++)
-        {
-            if(cuisine[i].checked===true){
-                str+=cuisine[i].value +"";
-                
+        var D1 = document.getElementById("d1");
+        var D2 = document.getElementById("d2");
+        var status1 = document.getElementById("status1");
+        var status2 = document.getElementById("status2");
+        var hotelMenu1 = document.getElementById("hotelMenu1");
+        var hotelMenu2 = document.getElementById("hotelMenu2");
+        var expressDelivery, hotelStatus, hotelMenu;
+        if (D1.checked == true)
+            //console.log(D1.value);
+            expressDelivery = D1.value;
+
+        else if (D2.checked == true)
+            // console.log(D2.value)
+            expressDelivery = D2.value;
+        if (status1.checked == true)
+            //console.log(status1.value);
+            hotelStatus = status1.value;
+        else if (status2.checked == true)
+            //console.log(status2.value)
+            hotelStatus = status1.value;
+        if (hotelMenu1.checked == true)
+            // console.log(hotelMenu1.value);
+            hotelMenu = hotelMenu1.value;
+        else if (hotelMenu2.checked == true)
+            //console.log(hotelMenu2.value)
+            hotelMenu = hotelMenu2.value;
+        else if (hotelMenu3.checked == true)
+            // console.log(hotelMenu3.value)
+            hotelMenu = hotelMenu3.value;
+
+        var cuisine = document.getElementsByClassName("cuisine");
+        var cuisineArray = [];
+        for (var i = 0; i < 8; i++) {
+            if (cuisine[i].checked === true) {
+                cuisineArray[i] = "1";
             }
+            else cuisineArray[i] = "0";
         }
-        console.log(str);
-        
-        var facility=document.getElementsByClassName("facility");
-        var str1='';
-        for(var i=0;i<8;i++)
-        {
-            if(facility[i].checked===true){
-                str1+=facility[i].value +"";
-                
-            }
+        for (var i = 0; i < 8; i++)
+            console.log(cuisineArray[i]);
+
+        var facility = document.getElementsByClassName("facility");
+        var facilityArray = [];
+        for (var i = 0; i < 8; i++) {
+            if (facility.checked === true)
+                facilityArray[i] = "1";
+            else facilityArray[i] = "0";
         }
-        console.log(str1);
-        
-       /* const hotel = {
-            hotelPassword: password, 
+        //console.log(str1);
+
+        const hotel = {
+            hotelPassword: password,
             hotelName: name,
-            hotelAddress: address,  
-            hotelLocality: locality, 
+            hotelAddress: address,
+            hotelLocality: locality,
             hotelLandmark: landmark,
             hotelCity: city,
             hotelState: state,
             hotelEmailId: emailId,
-            hotelContNo: contNo, 
-            openAt=openAt,
-            closeAt=closeAt,
-            approximateCost=approximateCost,
-            hotelOpeningDate=openingDate,
-            expressDelivery=delivery;
-            hotelStatus=status;
-            hotelMenuType=hotelMenu;
-            hotelCuisine=cuisine;
-
+            hotelContNo: contNo,
+            openAt:openAt,
+            closeAt:closeAt,
+            approximateCost:approximateCost,
+            hotelOpeningDate:openingDate,
+            expressDelivery:expressDelivery,
+            hotelStatus:hotelStatus,
+            hotelMenuType:hotelMenu,
+            hotelCuisine:cuisineArray,
+            hotelFacility:facilityArray
         };
-        console.log(customer)
-        
-         const promiseResponse = await fetch(url+"/hotel/addhotel", {
+       // console.log(customer)
+
+        const promiseResponse = await fetch(url + "/hotel/addhotel", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json;charset=utf-8'
             },
-            body: JSON.stringify(customer),
+            body: JSON.stringify(hotel),
         });
 
         console.log(promiseResponse);
-        if(promiseResponse.status===200)
-        {
-            window.location.replace("../public/hotellogin.php");
+        if (promiseResponse.status === 200) {
+            window.location.replace("../public/hotlogin.php");
         }
 
-        if(promiseResponse.status===400){
-            document.getElementById("body").innerHTML="Hotel Alreday Exist!!";
+        if (promiseResponse.status === 400) {
+            document.getElementById("body").innerHTML = "Hotel Alreday Exist!!";
+        }
+        if (promiseResponse.status === 500) {
+            alert('exception occur');
         }
 
-       /* const addUserResponse = await promiseResponse.json();
-        if(addUserResponse.status === 200) {
-            window.location.replace("../public/lohin.html");
-        }
-        if(addUserResponse.status === 400) {
-            window.location.replace("../public/login.html");
-        }*/
-        
-      /* const promiseResponse = await fetch("http://localhost:5000/customer/details")
-            
-        
-       const response = await promiseResponse.json();
+        /* const addUserResponse = await promiseResponse.json();
+         if(addUserResponse.status === 200) {
+             window.location.replace("../public/lohin.html");
+         }
+         if(addUserResponse.status === 400) {
+             window.location.replace("../public/login.html");
+         }*/
 
-       console.log(response);
-   */
-    /*document.getElementById("delivery").innerHTML="**Customer Not Found!!";
-    console.log(promiseResponse);*/
-    if(D1.checked == true)
-        console.log(D1.value);
+        /* const promiseResponse = await fetch("http://localhost:5000/customer/details")
+              
+          
+         const response = await promiseResponse.json();
+  
+         console.log(response);
+     */
+        /*document.getElementById("delivery").innerHTML="**Customer Not Found!!";
+        console.log(promiseResponse);*/
+       /* if (D1.checked == true)
+            console.log(D1.value);
 
-    else if(D2.checked == true)
-        console.log(D2.value)
+        else if (D2.checked == true)
+            console.log(D2.value)
 
-    if(status1.checked == true)
-        console.log(status1.value);
-    
-    else if(status2.checked == true)
-        console.log(status2.value)
-    
-    if(hotelMenu1.checked == true)
-        console.log(hotelMenu1.value);
-    
-    else if(hotelMenu2.checked == true)
-        console.log(hotelMenu2.value)
+        if (status1.checked == true)
+            console.log(status1.value);
 
-    else if(hotelMenu3.checked == true)
-        console.log(hotelMenu3.value)
-    
-} catch (error) {
-   console.log(error);
-}
+        else if (status2.checked == true)
+            console.log(status2.value)
+
+        if (hotelMenu1.checked == true)
+            console.log(hotelMenu1.value);
+
+        else if (hotelMenu2.checked == true)
+            console.log(hotelMenu2.value)
+
+        else if (hotelMenu3.checked == true)
+            console.log(hotelMenu3.value)*/
+
+    } catch (error) {
+        console.log(error);
+    }
 }
 
