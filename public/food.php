@@ -8,7 +8,7 @@
     <head>
         <meta charset="utf-8">
         <title></title>
-        <link rel="stylesheet" href="./css/css/hotelreg1.css">
+        <link rel="stylesheet" href="./css/css/food.css">
     </head>
 <body> 
 
@@ -27,10 +27,10 @@
     <div class="register">
         
         <div class="login-box" >
-        <h1> Restaurant Registration   </h1>
+        <h1>  Register   </h1>
             <div class="textbox">
                 <i class="fas fa-user" aria-hidden="true"></i>
-                <input type="text"   class="text" id="name" placeholder="HOTEL NAME" required>
+                <input type="text"   class="text" id="name" placeholder="FOOD NAME" required>
                 
             </div>
                 
@@ -40,47 +40,48 @@
             </div> -->
 
             <div class="textbox">
-                <i class="fa fa-mobile" aria-hidden="true"></i>
-                <input type="text" class="text" id="contno" placeholder="HOTEL CONTACT NUMBER" required>
-            </div>
-            
-            <div class="textbox">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
-                <input type="email"   class="text" placeholder="HOTEL EMAIL ID" id="emailid" required>
-            </div>
+                <input placeholder="FOOD TYPE" required>
+                <select id="list">
+                <option value="breakfast">Breakfast</option>
+                <option value="starters">Starters</option>
+                <option value="mainCourse">Main Course</option>
+                <option value="desserts">Desserts</option>  
+                <option value="fastFood">Fast Food</option>
+                <option value="drinksWithAlcohol">Drinks With Alcohol</option>
+                <option value="cappuccino">Cappuccino</option>
+                <option value="juice">Juice</option>
+                <option value="mocktail">Mocktail</option>
+                <option value="iceCream">Ice Cream</option>
 
-            <div class="textbox">           
-                <i class="fa fa-address-card" aria-hidden="true"></i>
-                <input type="text"class="text" placeholder="ADDRESS" id="address" required>
+                </select> 
             </div>
                 
-            <div class="textbox">
-                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
-                <input type="text" class="text" id="locality" placeholder="LOCALITY" required>
-            </div>
-            
-            <div class="textbox">
-                <i class="fas fa-landmark"></i>
-                <!---<i class="fa fa-envelope" aria-hidden="true"></i>-->
-                <input type="text"   class="text" placeholder="LANDMARK" id="landmark" required>
-            </div>
-                
-            <div class="textbox">
-                <i class="fas fa-city"></i>
-                <input type="text" class="text" placeholder="CITY" id="city" required>
-            </div> 
-
-            <div class="textbox">
-                <i class="fas fa-map-marked-alt"></i>
-                <input type="text" class="text" placeholder="STATE" id="state" required>
-            </div>
-
-           <!-- <div class="textbox">
+            <!-- <div class="textbox">
                 <i class="fas fa-user"></i>
                 <input type="text" placeholder="USERNAME">
             </div> -->
+            <div class="textbox">
+                <i class="fa fa-mobile" aria-hidden="true"></i>
+                <input type="text" class="text" id="foodCategory" placeholder="FOOD CATEGORY" required>
+            </div>
 
             <div class="textbox">
+                <i class="fa fa-mobile" aria-hidden="true"></i>
+                <input type="text" class="text" id="foodSpeciality" placeholder="FOOD SPECIALITY" required>
+            </div>
+
+            <div class="textbox">
+                <i class="fa fa-mobile" aria-hidden="true"></i>
+                <input type="text" class="text" id="foodSize" placeholder="FOOD SIZE" required>
+            </div>
+
+            <div class="textbox">
+                <i class="fa fa-mobile" aria-hidden="true"></i>
+                <input type="text" class="text" id="foodPrice" placeholder="FOOD PRICE" required>
+            </div>
+
+          <!--  <div class="textbox">
                 <i class="fas fa-lock"></i>
                 <input type="password" placeholder="PASSWORD" id="password" required>
             </div>
@@ -89,7 +90,7 @@
            <div class="textbox">
                 <i class="fas fa-lock"></i>
                 <input type="password"  placeholder=" CONFIRM PASSWORD" id="confirmpassword" required>
-            </div>
+            </div>-->
 
          <!--   <div class="textbox">           
                 <i class="fa fa-address-card" aria-hidden="true"></i>
@@ -121,13 +122,15 @@
             <button type="submit" class="btn btn-success btn-block" onclick=reg()>
             submit</button>
         </div>-->
-   
+        <div class="flash-container">
+                <div class="flash-message" data-type="error" data-timeout="8000" id="bodyhtl"></div>
+        </div>
 
 
         <!--   <button type="next" class="btn btn-success btn-block" onclick="window.location.href='reg2.html'">
             Next>>-->
-            <button type="submit" class="btn btn-success btn-block" onclick=setValue(<?php echo(json_encode($url)); ?>)>
-                next>></button>
+            <button type="submit" class="btn btn-success btn-block" onclick=reg(<?php echo(json_encode($url)); ?>)>
+                Submit</button>
                <!-- <a href="/home/aishwariya/fooddelivery/demo/src/main/resources/reg2.html"> -->
         </button>
         </div>
@@ -135,5 +138,5 @@
             <div class="col-md-4 col-sm-4 col-xs-12"></div>
     </div>
 </body>
-<script src="./js/hotelreg1.js"></script>   
+<script src="./js/food.js"></script>   
 </html>
