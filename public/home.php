@@ -30,10 +30,25 @@
                     </ul>
                 </div>
                 <div class="logo">
-                 <img src="../../projectphoto/1578200184350.png">
+                 <img src="./projectphoto/1578200184350.png">
                 </div>
                 <div class="banner-text">
-                <h2>Taste On Way!!!</h2>
+                <div class="hero">
+                   
+                   <div class="highway"></div>
+                   <div class="city"></div>
+                   <div class="vehicle">
+                           <img src="./projectphoto/1576083508486.png">
+                   </div>
+                  
+                   <div class="wheel">
+                      <img src="./projectphoto/Car_Animation_Img/wheel.png" class="back-wheel">
+                     <img src="./projectphoto/Car_Animation_Img/wheel.png" class="frontwheel">
+                   </div>
+                   <div class="title">
+                           <img src="./projectphoto/1578200184350.png">
+                   </div>
+       
                 </div>
             
             <!--<slider>
@@ -109,7 +124,7 @@
     
                     <div class="card">
                         <div class="imgBx" data-text="Feature2">
-                            <img src="./projectphoto/f1.jpeg">
+                            <img src="./projectphoto/f2.jpeg">
                         </div>
                         <div class="content">
                         <div>
@@ -122,12 +137,12 @@
     
                     <div class="card">
                         <div class="imgBx" data-text="Feature3">
-                            <img src="./projectphoto/f1.jpeg">
+                            <img src="./projectphoto/f3.jpeg">
                         </div>
                         <div class="content">
                         <div>
                             <h3>Feature3</h3>
-                            <p>Items are categorized.</p>
+                            <p>Finding a restaurant is easy here.</p>
                             <a href="#">Read More</a>
                         </div>
                         </div>
@@ -135,12 +150,12 @@
     
                     <div class="card">
                         <div class="imgBx" data-text="Feature4">
-                            <img src="./projectphoto/f1.jpeg">
+                            <img src="./projectphoto/f4.jpeg">
                          </div>
                         <div class="content">
                         <div>
                             <h3>Feature4</h3>
-                            <p>features will be added later</p>
+                            <p>Items are categorized.So food finding process will become easier..</p>
                             <a href="#">Read More</a>
                         </div>
                         </div>

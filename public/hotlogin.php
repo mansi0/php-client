@@ -32,7 +32,7 @@
     <span id='msg' style="color: red" font-size=10px>
     </span>
     <div class="flash-container">
-                <div class="flash-message" data-type="error" data-timeout="8000" id="bodydblogin"></div>
+                <div class="flash-message" data-type="error" data-timeout="8000" id="bodyhotlogin"></div>
             </div>
 
     <button type="submit" class="btn btn-success btn-block" onclick=setValue(<?php echo(json_encode($url)); ?>)>Login</button>
