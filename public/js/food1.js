@@ -1,4 +1,4 @@
-async function foodreg(url) {
+async function reg(url) {
     try {
         const name = document.getElementById('name').value;
         //const foodtype = document.getElementById("foodType").value;
@@ -31,10 +31,10 @@ async function foodreg(url) {
         });
 
         console.log(promiseResponse);
-        if(promiseResponse.status === 200 || promiseResponse.status ===400)
-        {
-            
-            window.location.replace("../public/food.php");
+        if (promiseResponse.status === 200 || promiseResponse.status === 400) {
+
+           // window.location.replace("../public/dblogin.php");
+           alert('ok');
         }
 
         if (promiseResponse.status === 500) {
@@ -68,14 +68,14 @@ async function foodreg(url) {
             headers: {
                 'Content-Type': 'application/json;charset=utf-8'
             },
-            body: JSON.stringify(hotelFood),
+            body: JSON.stringify(hotelfood),
         });
 
         console.log(promiseResponseh);
-        if (promiseResponseh.status === 200) {
+        if (promiseResponseh.status === 200 || promiseResponseh.status === 400) {
 
-            window.location.replace("../public/dblogin.php");
-           
+           // window.location.replace("../public/dblogin.php");
+           alert('ok');
         }
 
         if (promiseResponseh.status === 500) {
@@ -91,4 +91,3 @@ async function foodreg(url) {
         console.log(error);
     }
 }
-
