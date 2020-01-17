@@ -130,6 +130,7 @@
             submit</button>
         </div>
         <a href="hotelreg1.php">Back</a>
+        
             <div class="col-md-4 col-sm-4 col-xs-12"></div>
     </div>
 </body>

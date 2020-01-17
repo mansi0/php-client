@@ -27,9 +27,10 @@
     <div class="register">
         
         <div class="login-box" >
-        <h1>  Register   </h1>
+        <h1> Menu </h1>
             <div class="textbox">
-                <i class="fas fa-user" aria-hidden="true"></i>
+                
+                <i class="fas fa-utensils"></i>
                 <input type="text"   class="text" id="name" placeholder="FOOD NAME" required>
                 
             </div>
@@ -40,19 +41,20 @@
             </div> -->
 
             <div class="textbox">
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-                <input placeholder="FOOD TYPE" required>
+                <i class="fas fa-align-justify"></i>
+                <!--<input placeholder="FOOD TYPE" required>-->
                 <select id="list">
-                <option value="breakfast">Breakfast</option>
-                <option value="starters">Starters</option>
-                <option value="mainCourse">Main Course</option>
-                <option value="desserts">Desserts</option>  
-                <option value="fastFood">Fast Food</option>
-                <option value="drinksWithAlcohol">Drinks With Alcohol</option>
-                <option value="cappuccino">Cappuccino</option>
-                <option value="juice">Juice</option>
-                <option value="mocktail">Mocktail</option>
-                <option value="iceCream">Ice Cream</option>
+                <option value=""disabled selected option>FOOD TYPE</option>
+                <option value=1>Breakfast</option>
+                <option value=2>Starters</option>
+                <option value=3>Main Course</option>
+                <option value=4>Desserts</option>  
+                <option value=5>Fast Food</option>
+                <option value=6>Drinks With Alcohol</option>
+                <option value=7>Cappuccino</option>
+                <option value=8>Juice</option>
+                <option value=9>Mocktail</option>
+                <option value=10>Ice Cream</option>
 
                 </select> 
             </div>
@@ -62,22 +64,25 @@
                 <input type="text" placeholder="USERNAME">
             </div> -->
             <div class="textbox">
-                <i class="fa fa-mobile" aria-hidden="true"></i>
+                <i class="fas fa-money-check"></i>
                 <input type="text" class="text" id="foodCategory" placeholder="FOOD CATEGORY" required>
             </div>
 
             <div class="textbox">
-                <i class="fa fa-mobile" aria-hidden="true"></i>
+                 <i class="fas fa-splotch"></i>
+
                 <input type="text" class="text" id="foodSpeciality" placeholder="FOOD SPECIALITY" required>
             </div>
 
             <div class="textbox">
-                <i class="fa fa-mobile" aria-hidden="true"></i>
+            <i class="fas fa-weight"></i>
+
                 <input type="text" class="text" id="foodSize" placeholder="FOOD SIZE" required>
             </div>
 
             <div class="textbox">
-                <i class="fa fa-mobile" aria-hidden="true"></i>
+            <i class="fas fa-money-bill"></i>
+
                 <input type="text" class="text" id="foodPrice" placeholder="FOOD PRICE" required>
             </div>
 
@@ -129,10 +134,18 @@
 
         <!--   <button type="next" class="btn btn-success btn-block" onclick="window.location.href='reg2.html'">
             Next>>-->
+            <div class="btn-group">
             <button type="submit" class="btn btn-success btn-block" onclick=reg(<?php echo(json_encode($url)); ?>)>
-                Submit</button>
+                Add More</button>
                <!-- <a href="/home/aishwariya/fooddelivery/demo/src/main/resources/reg2.html"> -->
-        </button>
+            </button>
+           
+            <button type="submit" class="btn btn-success btn-block" onclick=reg(<?php echo(json_encode($url)); ?>)>
+                Add and Submit</button>
+               <!-- <a href="/home/aishwariya/fooddelivery/demo/src/main/resources/reg2.html"> -->
+            </button>
+            
+        </div>
         </div>
    
             <div class="col-md-4 col-sm-4 col-xs-12"></div>

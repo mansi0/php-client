@@ -97,7 +97,7 @@ async function reg(url) {
 
         console.log(promiseResponse);
         if (promiseResponse.status === 200) {
-            window.location.replace("../public/hotlogin.php");
+            window.location.replace("../public/food.php");
         }
 
         if (promiseResponse.status === 400) {

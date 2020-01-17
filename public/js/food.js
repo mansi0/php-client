@@ -32,7 +32,7 @@ async function reg(url) {
         if(promiseResponse.status === 200 || promiseResponse.status ===400)
         {
             
-            window.location.replace("../public/dblogin.php");
+            window.location.replace("../public/food.php");
         }
 
         if(promiseResponse.status === 500)
