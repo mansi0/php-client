@@ -43,16 +43,16 @@
                 <i class="fa fa-envelope" aria-hidden="true"></i>
                 <input placeholder="FOOD TYPE" required>
                 <select id="list">
-                <option value="breakfast">Breakfast</option>
-                <option value="starters">Starters</option>
-                <option value="mainCourse">Main Course</option>
-                <option value="desserts">Desserts</option>  
-                <option value="fastFood">Fast Food</option>
-                <option value="drinksWithAlcohol">Drinks With Alcohol</option>
-                <option value="cappuccino">Cappuccino</option>
-                <option value="juice">Juice</option>
-                <option value="mocktail">Mocktail</option>
-                <option value="iceCream">Ice Cream</option>
+                <option value=1>Breakfast</option>
+                <option value=2>Starters</option>
+                <option value=3>Main Course</option>
+                <option value=4>Desserts</option>  
+                <option value=5>Fast Food</option>
+                <option value=6>Drinks With Alcohol</option>
+                <option value=7>Cappuccino</option>
+                <option value=8>Juice</option>
+                <option value=9>Mocktail</option>
+                <option value=10>Ice Cream</option>
 
                 </select> 
             </div>
@@ -129,7 +129,7 @@
 
         <!--   <button type="next" class="btn btn-success btn-block" onclick="window.location.href='reg2.html'">
             Next>>-->
-            <button type="submit" class="btn btn-success btn-block" onclick=reg(<?php echo(json_encode($url)); ?>)>
+            <button type="submit" class="btn btn-success btn-block" onclick=foodreg(<?php echo(json_encode($url)); ?>)>
                 Submit</button>
                <!-- <a href="/home/aishwariya/fooddelivery/demo/src/main/resources/reg2.html"> -->
         </button>
