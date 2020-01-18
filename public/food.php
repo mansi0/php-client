@@ -134,9 +134,8 @@
 
         <!--   <button type="next" class="btn btn-success btn-block" onclick="window.location.href='reg2.html'">
             Next>>-->
-            <div class="btn-group">
-            <button type="submit" class="btn btn-success btn-block" onclick=reg(<?php echo(json_encode($url)); ?>)>
-                Add More</button>
+            <button type="submit" class="btn btn-success btn-block" onclick=foodreg(<?php echo(json_encode($url)); ?>)>
+            Add More</button>
                <!-- <a href="/home/aishwariya/fooddelivery/demo/src/main/resources/reg2.html"> -->
             </button>
            
@@ -151,5 +150,7 @@
             <div class="col-md-4 col-sm-4 col-xs-12"></div>
     </div>
 </body>
-<script src="./js/food.js"></script>   
+<script src="./js/food.js"></script> 
+<script src="./js/food1.js"></script>  
+
 </html>
