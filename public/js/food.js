@@ -1,5 +1,7 @@
 async function foodreg(url) {
     try {
+
+        console.log('in foodreg');
         const name = document.getElementById('name').value;
         //const foodtype = document.getElementById("foodType").value;
         var selectedValue = document.getElementById("list").value;
@@ -31,10 +33,17 @@ async function foodreg(url) {
         });
 
         console.log(promiseResponse);
+<<<<<<< HEAD
+        if (promiseResponse.status === 200 || promiseResponse.status === 400) {
+
+           // window.location.replace("../public/dblogin.php");
+           console.log('ok');
+=======
         if(promiseResponse.status === 200 || promiseResponse.status ===400)
         {
             
             window.location.replace("../public/food.php");
+>>>>>>> 761ac6470d02d6396bdd3afcda7b71259a9d622f
         }
 
         if (promiseResponse.status === 500) {
@@ -59,8 +68,8 @@ async function foodreg(url) {
             hotelId : hid,
             foodId : fid,
             foodSpeciality : foodspeciality,
+            price : foodprice,
             size : foodsize,
-            price : foodprice
         }
 
         const promiseResponseh = await fetch(url + "/hotelfood/addhotelfood", {
@@ -74,7 +83,7 @@ async function foodreg(url) {
         console.log(promiseResponseh);
         if (promiseResponseh.status === 200) {
 
-            window.location.replace("../public/dblogin.php");
+            window.location.replace("../public/food.php");
            
         }
 
@@ -91,4 +100,5 @@ async function foodreg(url) {
         console.log(error);
     }
 }
+
 

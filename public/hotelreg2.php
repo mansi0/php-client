@@ -68,7 +68,7 @@
                 <i class="fas fa-door-open" aria-hidden="true"></i>
                 &nbsp; Hotel Status &nbsp;
                 <input type="radio" name="HotelStatus" value="open" id="status1"> Open&nbsp;
-                <input type="radio" name="HotelStatus" value="close" id="status2"> Close<br>
+                <input type="radio" name="HotelStatus" value="close" id="status2" checked> Close<br>
             </div>
 
             <div class="textbox">
