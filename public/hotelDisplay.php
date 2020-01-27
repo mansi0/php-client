@@ -6,17 +6,45 @@ $ini_array = parse_ini_file("../config/config.ini", true);
 
 <html>
 <title>Hotel Display</title>
+<head>
+  <link rel="stylesheet" href="./css/css/hotelDisplay.css">
+</head>
 <body>
-    <?php
-    $apiResult=callAPI('GET','http://localhost:5000/hotel/gethoteldetail','');
-    $result=json_decode($apiResult);
-    ?>
+ 
 
-    <?php foreach($result as $obj){?>
-        <table border=1>
-        <tr><td><font size=20><?php echo $obj->hotelName;?></font></td></tr>
+   <div class="row sideBar">
 
-   <?php } ?>
-   </table>
+   <?php 
+   $apiResult = callAPI('GET','http://localhost:5000/hotel/gethoteldetail','');
+     
+    $result = json_decode($apiResult);
+   
+   ?>
+     <?php foreach($result as $obj) {?>
+     <div class="row sideBar-body" >
+      <!-- <a href = '1'></a> -->
+       <div class="col-sm-3 col-xs-3 sideBar-avatar">
+         <div class="avatar-icon">
+           <img src="./projectphoto/h2.jpeg">
+         </div>
+       </div>
+       <div class="col-sm-9 col-xs-9 sideBar-main">
+         <div class="row" id="<?php $obj->hotelId; ?>">
+           <div class="col-sm-8 col-xs-8 sideBar-name">
+             <span class="name-meta"> <?php echo $obj->hotelName; ?>
+           </span>
+           </div>
+           <div class="col-sm-4 col-xs-4 pull-right sideBar-time">
+             <span class="time-meta pull-right">
+           </span>
+           </div>
+         </div>
+       </div>
+     </div>
+
+     <?php } ?>
+
+   </div>
+  
    </body>
    </html>

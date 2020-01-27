@@ -56,14 +56,19 @@ async function reg(url) {
         var hresponse = await hotelList.json();
         var hid = hresponse[0].hotelId.toString();
 
+        var fprice=parseFloat(foodprice);
+        console.log(fprice);
+
         const hotelFood = {
             hotelId : hid,
             foodId : fid,
             foodSpeciality : foodspeciality,
-            price : foodprice,
+            price : fprice,
             size : foodsize
             
         }
+
+        console.log(hotelFood);
 
         const promiseResponseh = await fetch(url + "/hotelfood/addhotelfood", {
             method: 'POST',
