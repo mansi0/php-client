@@ -1,5 +1,6 @@
 async function reg(url) {
     try {
+        console.log('in reg');
         const name = document.getElementById('name').value;
         //const foodtype = document.getElementById("foodType").value;
         var selectedValue = document.getElementById("list").value;
@@ -34,7 +35,7 @@ async function reg(url) {
         if (promiseResponse.status === 200 || promiseResponse.status === 400) {
 
            // window.location.replace("../public/dblogin.php");
-           alert('ok');
+           console.log('ok');
         }
 
         if (promiseResponse.status === 500) {
@@ -59,8 +60,9 @@ async function reg(url) {
             hotelId : hid,
             foodId : fid,
             foodSpeciality : foodspeciality,
-            size : foodsize,
-            price : foodprice
+            price : foodprice,
+            size : foodsize
+            
         }
 
         const promiseResponseh = await fetch(url + "/hotelfood/addhotelfood", {
@@ -68,14 +70,14 @@ async function reg(url) {
             headers: {
                 'Content-Type': 'application/json;charset=utf-8'
             },
-            body: JSON.stringify(hotelfood),
+            body: JSON.stringify(hotelFood),
         });
 
         console.log(promiseResponseh);
-        if (promiseResponseh.status === 200 || promiseResponseh.status === 400) {
+        if (promiseResponseh.status === 200) {
 
-           // window.location.replace("../public/dblogin.php");
-           alert('ok');
+            window.location.replace("../public/hotlogin.php");
+           
         }
 
         if (promiseResponseh.status === 500) {
@@ -91,3 +93,5 @@ async function reg(url) {
         console.log(error);
     }
 }
+
+
