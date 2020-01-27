@@ -134,14 +134,8 @@
 
         <!--   <button type="next" class="btn btn-success btn-block" onclick="window.location.href='reg2.html'">
             Next>>-->
-<<<<<<< HEAD
             <button type="submit" class="btn btn-success btn-block" onclick=foodreg(<?php echo(json_encode($url)); ?>)>
             Add More</button>
-=======
-            <div class="btn-group">
-            <button type="submit" class="btn btn-success btn-block" onclick=reg(<?php echo(json_encode($url)); ?>)>
-                Add More</button>
->>>>>>> 761ac6470d02d6396bdd3afcda7b71259a9d622f
                <!-- <a href="/home/aishwariya/fooddelivery/demo/src/main/resources/reg2.html"> -->
             </button>
            

@@ -8,7 +8,7 @@ async function foodreg(url) {
         console.log(selectedValue);
         const foodcategory = document.getElementById('foodCategory').value;
         const foodspeciality = document.getElementById('foodSpeciality').value;
-        const foodsize = document.getElementById("foodSize").value;
+        const foodsize = document.getElementById('foodSize').value;
         const foodprice = document.getElementById('foodPrice').value;
 
 
@@ -33,17 +33,10 @@ async function foodreg(url) {
         });
 
         console.log(promiseResponse);
-<<<<<<< HEAD
-        if (promiseResponse.status === 200 || promiseResponse.status === 400) {
-
-           // window.location.replace("../public/dblogin.php");
-           console.log('ok');
-=======
         if(promiseResponse.status === 200 || promiseResponse.status ===400)
         {
             
             window.location.replace("../public/food.php");
->>>>>>> 761ac6470d02d6396bdd3afcda7b71259a9d622f
         }
 
         if (promiseResponse.status === 500) {
@@ -63,14 +56,20 @@ async function foodreg(url) {
         const hotelList = await fetch(url + "/hotel/getdetail/"+ hname);
         var hresponse = await hotelList.json();
         var hid = hresponse[0].hotelId.toString();
+        var fprice=parseFloat(foodprice);
+        console.log(fprice);
 
+
+        alert('before obj');
         const hotelFood = {
             hotelId : hid,
             foodId : fid,
             foodSpeciality : foodspeciality,
-            price : foodprice,
+            price : fprice,
             size : foodsize,
         }
+
+        console.log(hotelFood);
 
         const promiseResponseh = await fetch(url + "/hotelfood/addhotelfood", {
             method: 'POST',
@@ -83,6 +82,7 @@ async function foodreg(url) {
         console.log(promiseResponseh);
         if (promiseResponseh.status === 200) {
 
+            alert('ok');
             window.location.replace("../public/food.php");
            
         }
