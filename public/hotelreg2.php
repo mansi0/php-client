@@ -35,8 +35,15 @@
                 <input type="text"   class="text" id="Name" placeholder="FULL NAME">
                 
             </div> -->
-                
-            <div class="textbox">           
+
+            <div class="textbox">
+            <form method="post" enctype="multipart/form-data">
+            <input type="file" name="files[]" multiple />
+            <input type="submit" value="Upload File" name="submit" onclick=imageReg(<?php echo(json_encode($url)); ?>)>
+            </form>
+            </div>
+          
+            <div class="textbox">   
                 <i class="fas fa-clock" aria-hidden="true"></i>
                 <input type="text" class="text" placeholder="Open At hrs:min:sec" id="openAt" required>
             </div>
@@ -118,11 +125,7 @@
             <input type="checkbox" class="facility" value="liveSportScreening" id="fac"> Live Sport Screening &nbsp;
             <input type="checkbox" class="facility" value="liveMusic" id="fac" checked> Live Music &nbsp;
             
-            <form method="post" enctype="multipart/form-data">
-            <input type="file" name="files[]" multiple />
-            <input type="submit" value="Upload File" name="submit" onclick=imageReg(<?php echo(json_encode($url)); ?>)/>
-            </form>
-
+            
     
             
             
