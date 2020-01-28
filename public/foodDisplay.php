@@ -4,12 +4,13 @@
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="./css/css/foodDisplay.css">
+</head>
 <!------ Include the above in your HEAD tag ---------->
 
 <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,900" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
-	  <link rel="stylesheet" href="./css/css/foodDisplay.css">
-</head>
+	  
 <body>
 	<section class="menu_list mt-60 mb-60">
 	 <div class="container">

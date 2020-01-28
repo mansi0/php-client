@@ -1,16 +1,16 @@
 async function reg(url) {
     try {
-        var l = localStorage;
-        const name = l.getItem('nm');
-        const contNo = l.getItem('cn');
-        const emailId = l.getItem('ei');
-        const address = l.getItem('ad');
-        const locality = l.getItem('lc');
-        const landmark = l.getItem('lm');
-        const city = l.getItem('ct');
-        const state = l.getItem('st');
-        const password = l.getItem('pw');
-        const confirmPassword = l.getItem('cp');
+        var h = localStorage;
+        const name = h.getItem('nm');
+        const contNo = h.getItem('cn');
+        const emailId = h.getItem('ei');
+        const address = h.getItem('ad');
+        const locality = h.getItem('lc');
+        const landmark = h.getItem('lm');
+        const city = h.getItem('ct');
+        const state = h.getItem('st');
+        const password = h.getItem('pw');
+        const confirmPassword = h.getItem('cp');
         const openAt = document.getElementById("openAt").value;
         const closeAt = document.getElementById("closeAt").value;
         const approximateCost = document.getElementById("approximateCost").value;
@@ -65,6 +65,9 @@ async function reg(url) {
         }
         //console.log(str1);
 
+        var hotelImage=h.getItem('hotelImage');
+
+
         const hotel = {
             hotelPassword: password,
             hotelName: name,
@@ -83,7 +86,8 @@ async function reg(url) {
             hotelStatus:hotelStatus,
             hotelMenuType:hotelMenu,
             hotelCuisine:cuisineArray,
-            hotelFacility:facilityArray
+            hotelFacility:facilityArray,
+            hotelImage:hotelImage
         };
        // console.log(customer)
 
@@ -106,6 +110,8 @@ async function reg(url) {
         if (promiseResponse.status === 500) {
             alert('exception occur');
         }
+
+        
 
         /* const addUserResponse = await promiseResponse.json();
          if(addUserResponse.status === 200) {
