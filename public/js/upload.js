@@ -1,4 +1,4 @@
-async function reg(url) {
+async function imageReg(url) {
 
     try {
         const form = document.querySelector('form')
@@ -17,10 +17,22 @@ async function reg(url) {
             }
             console.log(files[0]);
             console.log(files[0].name);
-             fimeName = files[0].name;
+             fileName = files[0].name;
+             funfile(fileName);
 
         });
-        
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+async function funfile(fileName)
+{
+    console.log(fileName);
+
+    var h=localStorage;
+    h.setItem('hotelImage',fileName);
+}
        /* const image = {
             imagePath: fileName
 
@@ -45,8 +57,5 @@ async function reg(url) {
 
     */
 
-    } catch (error) {
-        console.log(error);
-    }
+    
 
-}

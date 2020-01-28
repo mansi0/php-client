@@ -1,57 +1,101 @@
+p{
+    font-size: 30px;
+    text-align: center;
+    color: #ff4d73;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.main {
+    position: relative;
+    left:25%;
+    top:5%;
+}
 .sideBar {
     padding: 0 !important;
     margin: 0 !important;
     background-color: #fff;
-    overflow-y: auto;
+   /* overflow-y: auto;*/
     border: 1px solid #f7f7f7;
-    height: calc(100% - 120px);
+    height: 100%;
   }
   
   .sideBar-body {
     position: relative;
-    padding: 10px !important;
-    border-bottom: 1px solid #f7f7f7;
+    padding: 12px !important;
+    border-bottom: 1px solid #ff4d73;
     height: 72px;
     margin: 0 !important;
     cursor: pointer;
   }
   
   .sideBar-body:hover {
-    background-color: #f2f2f2;
+    background-color:white;
   }
   
   .sideBar-avatar {
-    text-align: center;
+   /* text-align: center;*/
     padding: 0 !important;
   }
   
   .avatar-icon img {
-    border-radius: 50%;
-    height: 49px;
-    width: 49px;
+    position: relative;
+    top: 10%;
+    left:43%;
+    height: 54px;
+    width: 54px;
   }
   
   .sideBar-main {
     padding: 0 !important;
   }
   
-  .sideBar-main .row {
+ /* .sideBar-main .row {
     padding: 0 !important;
     margin: 0 !important;
-  }
+  }*/
   
   .sideBar-name {
-    padding: 10px !important;
+    padding: 0px !important;
+    
   }
   
   .name-meta {
-    font-size: 100%;
+    font-size: 25px;
     padding: 1% !important;
     text-align: left;
-    text-overflow: ellipsis;
+   /* text-overflow: ellipsis;*/
     white-space: nowrap;
     color: #000;
+    position: absolute;
+    top:8%;
+      
   }
+
+  
+
+  .locality-meta {
+    font-size: 25px;
+    padding: 1% !important;
+    text-align: left;
+   /* text-overflow: ellipsis;*/
+    white-space: nowrap;
+    color: #000;
+    position: relative;
+    top:12%;
+}
+
+.state-meta {
+    font-size: 25px;
+    padding: 1% !important;
+    text-align: right;
+   /* text-overflow: ellipsis;*/
+    white-space: nowrap;
+    color: #000;
+    position: absolute;
+    top:15%;
+    left:40%;
+}
+  
   
   .sideBar-time {
     padding: 10px !important;

@@ -35,8 +35,8 @@ async function foodreg(url) {
         console.log(promiseResponse);
         if(promiseResponse.status === 200 || promiseResponse.status ===400)
         {
-            
-            window.location.replace("../public/food.php");
+            console.log('ok');
+           // window.location.replace("../public/food.php");
         }
 
         if (promiseResponse.status === 500) {

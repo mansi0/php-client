@@ -10,7 +10,8 @@ $ini_array = parse_ini_file("../config/config.ini", true);
   <link rel="stylesheet" href="./css/css/hotelDisplay.css">
 </head>
 <body>
- 
+  
+  <p>Restaurants</p>
 
    <div class="row sideBar">
 
@@ -21,6 +22,7 @@ $ini_array = parse_ini_file("../config/config.ini", true);
    
    ?>
      <?php foreach($result as $obj) {?>
+     <div class="main">
      <div class="row sideBar-body" >
       <!-- <a href = '1'></a> -->
        <div class="col-sm-3 col-xs-3 sideBar-avatar">
@@ -33,13 +35,25 @@ $ini_array = parse_ini_file("../config/config.ini", true);
            <div class="col-sm-8 col-xs-8 sideBar-name">
              <span class="name-meta"> <?php echo $obj->hotelName; ?>
            </span>
+           </div> 
+
+           <div class="col-sm-7 col-xs-7 sideBar-name">
+             <span class="locality-meta"> <?php echo $obj->hotelLocality; ?>
+           </span>
            </div>
+           
+           <div class="col-sm-6 col-xs-6 sideBar-name">
+             <span class="state-meta"> <?php echo $obj->hotelState; ?>
+           </span>
+           </div>
+           
            <div class="col-sm-4 col-xs-4 pull-right sideBar-time">
              <span class="time-meta pull-right">
            </span>
            </div>
          </div>
        </div>
+     </div>
      </div>
 
      <?php } ?>

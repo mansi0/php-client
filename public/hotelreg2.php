@@ -54,7 +54,7 @@
                 
             <div class="textbox">
             <i class="far fa-calendar-alt" aria-hidden="true"></i>
-                <input type="text" placeholder="Opening Date hh/mm/yyyy" id="openingDate" required>
+                <input type="text" placeholder="Opening Date yyyy-mm-dd" id="openingDate" required>
             </div> 
 
             <div class="textbox">
@@ -118,7 +118,12 @@
             <input type="checkbox" class="facility" value="liveSportScreening" id="fac"> Live Sport Screening &nbsp;
             <input type="checkbox" class="facility" value="liveMusic" id="fac" checked> Live Music &nbsp;
             
-            
+            <form method="post" enctype="multipart/form-data">
+            <input type="file" name="files[]" multiple />
+            <input type="submit" value="Upload File" name="submit" onclick=imageReg(<?php echo(json_encode($url)); ?>)/>
+            </form>
+
+    
             
             
             <div class="flash-container">
@@ -136,5 +141,7 @@
 </body>
 
 <script src="./js/hotelreg2.js"></script>
+
+<script src="./js/upload.js"></script>
 
 </html>
