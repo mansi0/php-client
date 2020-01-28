@@ -60,7 +60,7 @@ async function foodreg(url) {
         console.log(fprice);
 
 
-        alert('before obj');
+        
         const hotelFood = {
             hotelId : hid,
             foodId : fid,
