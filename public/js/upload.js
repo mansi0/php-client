@@ -30,8 +30,9 @@ async function funfile(fileName)
 {
     console.log(fileName);
 
-    var h=localStorage;
-    h.setItem('hotelImage',fileName);
+    var ih=localStorage;
+    ih.setItem('hotelImage',fileName);
+    window.location.replace("../public/hotelreg2.php");
 }
        /* const image = {
             imagePath: fileName

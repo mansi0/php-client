@@ -58,14 +58,16 @@ async function reg(url) {
 
         var facility = document.getElementsByClassName("facility");
         var facilityArray = [];
-        for (var i = 0; i < 8; i++) {
-            if (facility.checked === true)
+        for (var i = 0; i < 10; i++) {  
+            if (facility[i].checked === true) {
                 facilityArray[i] = "1";
+            }
             else facilityArray[i] = "0";
         }
         //console.log(str1);
-
-        var hotelImage=h.getItem('hotelImage');
+        var ih=localStorage;
+        var hotelImage=ih.getItem('hotelImage');
+        console.log(hotelImage);
 
 
         const hotel = {
