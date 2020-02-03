@@ -82,7 +82,8 @@
                              </div>
                             <h3><span>Join Our Business</span></h3>
                             <p>You can work with us.hsdgkjhska sahgkjasfhkjsfh asjhfkjafhkjfh fjhkjfhkfhfkhf fbfkjfhkfjhkfhdfkdhfkfj</p>
-                         </div>
+                            <a href="hotelreg1.php">Click Here</a>
+                        </div>
 
                          <div class="col-md-3 text-center">
                             <div class="icon">
@@ -90,7 +91,7 @@
 
                             </div>
                             <h3><span>Contact With Us</span></h3>
-                            <p>You can work with us.hsdgkjhska sahgkjasfhkjsfh asjhfkjafhkjfh fjhkjfhkfhfkhf fbfkjfhkfjhkfhdfkdhfkfj</p>
+                            <p>For contacting with us please go at the below of the page.</p>
                         </div>
 
                         <div class="col-md-3 text-center">
@@ -109,6 +110,7 @@
         <section class="features">
             <div class="content-box">
                 <div class="container2">
+                    
                     <div class="card">
                         <div class="imgBx" data-text="Feature1">
                             <img src="./projectphoto/f1.jpeg">

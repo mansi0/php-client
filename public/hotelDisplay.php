@@ -22,18 +22,22 @@ $ini_array = parse_ini_file("../config/config.ini", true);
    
    ?>
      <?php foreach($result as $obj) {?>
+
      <div class="main">
      <div class="row sideBar-body" >
+     <a href="dbreg.php">
       <!-- <a href = '1'></a> -->
        <div class="col-sm-3 col-xs-3 sideBar-avatar">
          <div class="avatar-icon">
-           <img src="./projectphoto/h2.jpeg">
+           <img src="./hotelimages/<?php echo $obj->hotelImage?>">
+
          </div>
        </div>
        <div class="col-sm-9 col-xs-9 sideBar-main">
-         <div class="row" id="<?php $obj->hotelId; ?>">
+         <div class="row" id="<?php echo $obj->hotelId; ?>">
            <div class="col-sm-8 col-xs-8 sideBar-name">
-             <span class="name-meta"> <?php echo $obj->hotelName; ?>
+
+           <span class="name-meta"> <?php echo $obj->hotelName; ?>
            </span>
            </div> 
 
@@ -55,7 +59,6 @@ $ini_array = parse_ini_file("../config/config.ini", true);
        </div>
      </div>
      </div>
-
      <?php } ?>
 
    </div>

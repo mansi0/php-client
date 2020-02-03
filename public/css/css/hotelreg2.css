@@ -3,6 +3,11 @@ body{
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background-image: linear-gradient(rgba(27, 27, 27, 0.6),rgba(41, 41, 41, 0.6)),url("../../projectphoto/h2.jpeg") ;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
   /*background-image: url("../../projectphoto/whitefood.jpeg") ;
   height: 90vh;
   background-size: 2000px;
@@ -12,7 +17,6 @@ body{
 
 .register{
   position: absolute;
-  margin-top: 3%;
   background-image: linear-gradient(rgba(27, 27, 27, 0.6),rgba(41, 41, 41, 0.6)),url("../../projectphoto/h2.jpeg") ;
   background-size: cover;
   background-position: center;
@@ -24,8 +28,8 @@ body{
   float:center;
   width: 700px;
   position: absolute;
-  top: 45%;
-  left: 40%;
+  top: 50%;
+  left: 45%;
   transform: translate(-50%,-50%);
   color: rgb(250, 249, 249);
 
@@ -92,7 +96,7 @@ body{
   align-content: center;
   background-color: #4caf50;
 }
-.main ul{
+/*.main ul{
   float: right;
   list-style-type: none;
   margin-top: 25px;
@@ -113,7 +117,7 @@ body{
   background-color:#4caf50;
   color:rgb(231, 231, 240);
 }
-
+*/
 a{
   top: 2px;
   float: left;

@@ -1,5 +1,9 @@
 @import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
 
+.first .content-box{
+    width:100%;
+    height:100%;
+}
 .main ul{
     
     float: right;
@@ -100,7 +104,7 @@ slide:nth-child(4){
     background-position: center;
 }
 
-/*slide p{
+slide p{
     font-family: Comfortaa;
     font-size: 70px;
     text-align: center;
@@ -108,7 +112,7 @@ slide:nth-child(4){
     width: 100%;
     margin-top:340px;
     color: #fff;
-}*/
+}
 
 @keyframes slide{
     0% {left: 100%; width: 100%;}
@@ -121,7 +125,7 @@ slide:nth-child(4){
 
 .search{
     position: absolute;
-    top: 80%;
+    top: 75%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
@@ -148,8 +152,616 @@ input{
 .search i{
     position: absolute;
     right:5%;
-    top:30%;
+    top:25%;
     font-size: 24px;
     color: #4caf50;
 }
 
+button{
+    position: absolute;
+    background-color: #4caf50;
+    color:white;
+    font-size:30px;
+    border-radius: 50px;
+    top:5%;
+    padding: 8px;
+    left:100%;
+}
+
+.circ{
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    border: 2px solid #1f1f1f;
+    background:red;
+    background-size: cover;
+    background-position: center;
+    top:84%;
+    left:19%;
+    position:absolute;
+
+}
+
+.circ:after {
+    content: '';
+    padding-bottom: 100%;
+    display: block;
+}
+h2{
+    position:absolute;
+    top:77%;
+    left:20%;
+    font-size: 25px;
+}
+.circ i{
+    color:white;
+    position: absolute;
+    left:37%;
+    top:33%;
+    font-size: 35px;
+}
+
+.circle{
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    border: 2px solid #1f1f1f;
+    background-image: url(../../projectphoto/punefoodexplorer_4___B1i8gZnAyTf___.jpg);
+    background-size: cover;
+    background-position: center;
+    top:84%;
+    left:26%;
+    position:absolute;
+
+}
+
+.circle:after {
+    content: '';
+    padding-bottom: 100%;
+    display: block;
+}
+
+p{
+    position: absolute;
+    top:94%;
+    left:27%;
+    font-size: 20px;
+    color:#ff4d73;
+    font-weight: bold;
+}
+
+.circle1{
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    border: 2px solid #1f1f1f;
+    background-image: url(../../projectphoto/punefoodexplorer___B2OEWpwAqBg___.jpg);
+    background-size: cover;
+    background-position: center;
+    top:84%;
+    left:33%;
+    position:absolute;
+
+}
+
+.circle1:after {
+    content: '';
+    padding-bottom: 100%;
+    display: block;
+}
+
+p1{
+    position: absolute;
+    top:96%;
+    left:33%;
+    font-size: 20px;
+    color:#ff4d73;
+    font-weight: bold;
+}
+
+.circle2{
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    border: 2px solid #1f1f1f;
+    background-image: url(../../projectphoto/punefoodexplorer_1___B1i8gZnAyTf___.jpg);
+    background-size: cover;
+    background-position: center;
+    top:84%;
+    left:40%;
+    position:absolute;
+
+}
+
+.circle2:after {
+    content: '';
+    padding-bottom: 100%;
+    display: block;
+}
+
+p2{
+    position: absolute;
+    top:96%;
+    left:41%;
+    font-size: 20px;
+    color:#ff4d73;
+    font-weight: bold;
+}
+.circle3{
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    border: 2px solid #1f1f1f;
+    background-image: url(../../projectphoto/punefoodexplorer_4___B1i8gZnAyTf___.jpg);
+    background-size: cover;
+    background-position: center;
+    top:84%;
+    left:47%;
+    position:absolute;
+
+}
+
+.circle3:after {
+    content: '';
+    padding-bottom: 100%;
+    display: block;
+}
+
+p3{
+    position: absolute;
+    top:96%;
+    left:48%;
+    font-size: 20px;
+    color:#ff4d73;
+    font-weight: bold;
+}
+
+
+.circle4{
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    border: 2px solid #1f1f1f;
+    background-image: url(../../projectphoto/thepunefoodie_1___B5XHNGhH6qq___.jpg);
+    background-size: cover;
+    background-position: center;
+    top:84%;
+    left:54%;
+    position:absolute;
+
+}
+
+.circle4:after {
+    content: '';
+    padding-bottom: 100%;
+    display: block;
+}
+
+p4{
+    position: absolute;
+    top:96%;
+    left:55%;
+    font-size: 20px;
+    color:#ff4d73;
+    font-weight: bold;
+}
+
+
+.circle5{
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    border: 2px solid #1f1f1f;
+    background-image: url(../../projectphoto/thepunefoodie_1___B6CyPmIHOk1___.jpg);
+    background-size: cover;
+    background-position: center;
+    top:84%;
+    left:61%;
+    position:absolute;
+
+}
+
+.circle5:after {
+    content: '';
+    padding-bottom: 100%;
+    display: block;
+}
+
+p5{
+    position: absolute;
+    top:96%;
+    left:62%;
+    font-size: 20px;
+    color:#ff4d73;
+    font-weight: bold;
+}
+
+.circle6{
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    border: 2px solid #1f1f1f;
+    background-image: url(../../projectphoto/thepunefoodie_1___B6IIzY9nOVC___.jpg);
+    background-size: cover;
+    background-position: center;
+    top:84%;
+    left:68%;
+    position:absolute;
+
+}
+
+.circle6:after {
+    content: '';
+    padding-bottom: 100%;
+    display: block;
+}
+
+p6{
+    position: absolute;
+    top:96%;
+    left:69%;
+    font-size: 20px;
+    color:#ff4d73;
+    font-weight: bold;
+}
+
+.circle7{
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    border: 2px solid #1f1f1f;
+    background-image: url(../../projectphoto/thepunefoodie_2___B6CyPmIHOk1___.jpg);
+    background-size: cover;
+    background-position: center;
+    top:84%;
+    left:75%;
+    position:absolute;
+
+}
+
+.circle7:after {
+    content: '';
+    padding-bottom: 100%;
+    display: block;
+}
+
+p7{
+    position: absolute;
+    top:96%;
+    left:76%;
+    font-size: 20px;
+    color:#ff4d73;
+    font-weight: bold;
+}
+
+.second{
+    height: 100%;
+    width: 100%;
+}
+
+b{
+    top:110%;
+    position: absolute;
+    left:7%;
+    font-size: 35px;
+    width: 400px;
+    color: #ff4d73;
+    font-weight: bold;
+}
+
+.rect1{
+width:300px;
+height:300px;
+border-radius: 10%;
+border: 2px solid #1f1f1f;
+background-image: url(../../projectphoto/d1.jpg);
+background-size: cover;
+background-position: center;
+top:120%;
+left:5%;
+position:absolute;
+margin-bottom: 10%;
+}
+
+
+
+.rect2{
+    width:300px;
+    height:300px;
+    border-radius: 10%;
+    border: 2px solid #1f1f1f;
+    background-image: url(../../projectphoto/d2.jpeg);
+    background-size: cover;
+    background-position: center;
+    top:120%;
+    left:23%;
+    position:absolute;
+    margin-bottom: 10%;
+}
+
+
+    
+.rect3{
+    width:300px;
+    height:300px;
+    border-radius: 10%;
+    border: 2px solid #1f1f1f;
+    background-image: url(../../projectphoto/d3.jpeg);
+    background-size: cover;
+    background-position: center;
+    top:120%;
+    left:41%;
+    position:absolute;
+    margin-bottom: 10%;
+}
+
+
+
+.rect4{
+    width:300px;
+    height:300px;
+    border-radius: 10%;
+    border: 2px solid #1f1f1f;
+    background-image: url(../../projectphoto/d4.jpeg);
+    background-size: cover;
+    background-position: center;
+    top:120%;
+    left:59%;
+    position:absolute;
+    margin-bottom: 10%;
+}
+
+
+
+.rect5{
+    width:300px;
+    height:300px;
+    border-radius: 10%;
+    border: 2px solid #1f1f1f;
+    background-image: url(../../projectphoto/d5.jpeg);
+    background-size: cover;
+    background-position: center;
+    top:120%;
+    left:77%;
+    position:absolute;
+    margin-bottom: 10%;
+}
+
+
+
+.rect6{
+    width:300px;
+    height:300px;
+    border-radius: 10%;
+    border: 2px solid #1f1f1f;
+    background-image: url(../../projectphoto/d6.jpeg);
+    background-size: cover;
+    background-position: center;
+    top:155%;
+    left:5%;
+    position:absolute;
+    margin-bottom: 10%;
+}
+
+
+
+.rect7{
+    width:300px;
+    height:300px;
+    border-radius: 10%;
+    border: 2px solid #1f1f1f;
+    background-image: url(../../projectphoto/d7.jpeg);
+    background-size: cover;
+    background-position: center;
+    top:155%;
+    left:23%;
+    position:absolute;
+    margin-bottom: 10%;
+}
+
+
+
+
+
+.rect8{
+    width:300px;
+    height:300px;
+    border-radius: 10%;
+    border: 2px solid #1f1f1f;
+    background-image: url(../../projectphoto/d8.jpeg);
+    background-size: cover;
+    background-position: center;
+    top:155%;
+    left:41%;
+    position:absolute;
+    margin-bottom: 10%;
+}
+
+
+.rect9{
+    width:300px;
+    height:300px;
+    border-radius: 10%;
+    border: 2px solid #1f1f1f;
+    background-image: url(../../projectphoto/d9.jpeg);
+    background-size: cover;
+    background-position: center;
+    top:155%;
+    left:59%;
+    position:absolute;
+    margin-bottom: 10%;
+}
+
+
+
+.rect10{
+    width:300px;
+    height:300px;
+    border-radius: 10%;
+    border: 2px solid #1f1f1f;
+    background-image: url(../../projectphoto/d10.jpeg);
+    background-size: cover;
+    background-position: center;
+    top:155%;
+    left:77%;
+    position:absolute;
+    margin-bottom: 10%;
+}
+
+
+h{
+    font-size: 27px;
+    position: absolute;
+    left:17%;
+    color: #111111;
+    font-weight: bold;
+    top:7%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+h1{
+    font-size: 27px;
+    position: absolute;
+    left:27%;
+    color: rgb(10, 10, 87);
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h10{
+    font-size: 27px;
+    position: absolute;
+    left:37%;
+    color:#ff4d73;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h3{
+    font-size: 35px;
+    position: absolute;
+    left:37%;
+    color: rgb(6, 5, 66);
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h4{
+    font-size: 27px;
+    position: absolute;
+    left:47%;
+    color: chartreuse;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h5{
+    font-size: 27px;
+    position: absolute;
+    left:57%;
+    color: #ff4d73;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h6{
+    font-size: 27px;
+    position: absolute;
+    left:27%;
+    color:#fff;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h7{
+    font-size: 27px;
+    position: absolute;
+    left:27%;
+    color: #e60725;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h8{
+    font-size: 27px;
+    position: absolute;
+    left:27%;
+    top:16%;
+    color: rgb(10, 12, 94);
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h9{
+    font-size: 30px;
+    position: absolute;
+    left:27%;
+    top:15%;
+    color: rgb(250, 255, 251);
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h11{
+    font-size: 35px;
+    color:#ff4d73;
+    position: absolute;
+    top:195%;
+    left:20%;
+    margin-bottom: 10%;
+}
+
+h12{
+    font-size: 150px;
+    color: gray;
+    position: absolute;
+    top:205%;
+    left:18%;
+    margin-bottom: 15%;
+}
+
+h14{
+    font-size: 150px;
+    color: gray;
+    position: absolute;
+    top:205%;
+    left:40%;
+    margin-bottom: 15%;
+}
+
+h15{
+    font-size: 150px;
+    color: gray;
+    position: absolute;
+    top:205%;
+    left:68%;
+    margin-bottom: 15%;
+}
+
+a1{
+    position: absolute;
+    top:225%;
+    left:18%;
+    color: #ff4d73;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+a2{
+    position: absolute;
+    top:225%;
+    left:40%;
+    color: #ff4d73;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+a3{
+    position: absolute;
+    top:225%;
+    left:68%;
+    color: #ff4d73;
+    font-size: 30px;
+    font-weight: bold;
+}
