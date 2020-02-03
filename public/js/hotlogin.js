@@ -3,7 +3,7 @@ async function setValue(url){
         const emailId = document.getElementById("emailid").value;
         const password = document.getElementById("password").value;
        
-        const deliveryboy= {
+        const hotel= {
             hotelEmailId: emailId,
             hotelPassword:password
             };

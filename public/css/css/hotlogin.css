@@ -21,10 +21,10 @@ body{
   border-radius: 40px;
  /* border: 3px solid #29cf2e; */
   margin-bottom: 50px;
-  width: 400px;
+  width: 450px;
   position: absolute;
   top: 40%;
-  left: 20%;
+  left: 43%;
   transform: translate(-50%,-50%);
   color: rgb(230, 230, 241);
   border-collapse: separate;

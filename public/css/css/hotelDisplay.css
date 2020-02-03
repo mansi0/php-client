@@ -23,13 +23,14 @@ p{
     position: relative;
     padding: 12px !important;
     border-bottom: 1px solid #ff4d73;
+    width:1000px;
     height: 72px;
     margin: 0 !important;
     cursor: pointer;
   }
   
   .sideBar-body:hover {
-    background-color:white;
+    background-color:#ff4d73;
   }
   
   .sideBar-avatar {
@@ -40,7 +41,7 @@ p{
   .avatar-icon img {
     position: relative;
     top: 10%;
-    left:43%;
+    left:65%;
     height: 54px;
     width: 54px;
   }
@@ -67,10 +68,9 @@ p{
     white-space: nowrap;
     color: #000;
     position: absolute;
-    top:8%;
-      
+    top:0%;
+    left:10%;
   }
-
   
 
   .locality-meta {
@@ -80,8 +80,9 @@ p{
    /* text-overflow: ellipsis;*/
     white-space: nowrap;
     color: #000;
-    position: relative;
-    top:12%;
+    position: absolute;
+    top:40%;
+    left:10%;
 }
 
 .state-meta {
@@ -92,8 +93,8 @@ p{
     white-space: nowrap;
     color: #000;
     position: absolute;
-    top:15%;
-    left:40%;
+    top:35%;
+    left:50%;
 }
   
   
@@ -109,4 +110,8 @@ p{
     vertical-align: baseline;
   }
   
+  a{
+    text-decoration: none;
+  }
+
   

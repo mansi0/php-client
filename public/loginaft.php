@@ -14,7 +14,8 @@
         <link rel="stylesheet" href="./css/css/loginaft.css">
     </head>
 <body> 
-
+<section class="first">
+  <div class="content-box">
         <div class="main">
                 <ul>
                     <li class="active"> <a href="">Home</a></li>
@@ -29,13 +30,14 @@
             </div>
 
         <div class="navigation">
-                    <a href="">Home</a><br>
+                    <a href="">Show all restaurants</a><br>
                      <a href="login.html">Login</a><br>
                     <!--<li> <a href="reg1.html">Register</a></li>-->
-                    <a href="#">Services</a><br>
+                    <a href="#">Near by</a><br>
                   <!-- <li><a href="#">Gallery</a></li>-->
-                    <a href="#">About</a><br>
-                    <a href="#">Contact</a><br>
+                    <a href="#">Veg</a><br>
+                    <a href="#">Non-Veg</a><br>
+                    <a href="#">Express delivery</a><br>
         </div>
 
         <div class="slideshow">
@@ -50,6 +52,113 @@
         <div class="search">
           <input type="text" name="box" placeholder="Search Here">
           <a href="#"><i class="fas fa-search"></i></a>
+          <button type="button">Search Food</button> 
         </div>
+
+        <h2>Browse by Cuisine</h2>
+        <div class="circ">
+        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+        </div>
+        <a href="reg1.php">
+        <div class="circle">
+        </div>
+        <p>Indian</p>
+        </a>
+        <a href="reg1.php">
+        <div class="circle1"></div>
+        <p1>Continental</p1>
+        </a>
+        <a href="reg1.php">
+        <div class="circle2"></div>
+        <p2>Italian</p2>
+        </a>
+        <a href="reg1.php">
+        <div class="circle3"></div>
+        <p3>Japanese</p3>
+        </a>
+        <a href="reg1.php">
+        <div class="circle4"></div>
+        <p4>American</p4>
+        </a>
+        <a href="reg1.php">
+        <div class="circle5"></div>
+        <p5>Bengali</p5>
+        </a>
+        <a href="reg1.php">
+        <div class="circle6"></div>
+        <p6>Punjabi</p6>
+        </a>
+        <a href="reg1.php">
+        <div class="circle7"></div>
+        <p7>Chinese</p7>
+        </a>
+        </div>
+</section>
+
+<section class="second">
+<div class="content-box">
+      <b>Our Facilties</b>
+      <a href="reg1.php">
+        <div class="rect1">
+          <h>Self Pickup</h>
+        </div>
+      </a>
+      <a href="reg1.php">
+        <div class="rect2">
+          <h1>Rooftop</h1>
+        </div>
+      </a>
+      <a href="reg1.php">
+        <div class="rect3">
+          <h10>Outdoor Seating</h10>
+        </div>
+      </a>
+      <a href="reg1.php">
+        <div class="rect4">
+          <h3>Indoor Seating</h3>
+        </div>
+      </a>
+      <a href="reg1.php">
+        <div class="rect5">
+          <h4>Vallet Parking</h4>
+        </div>
+      </a>
+      <a href="reg1.php">
+        <div class="rect6">
+          <h5>Free Parking</h5>
+        </div>
+      </a>
+      <a href="reg1.php">
+        <div class="rect7">
+          <h6>Bar Facility</h6>
+        </div>
+      </a>
+      <a href="reg1.php">
+        <div class="rect8">
+          <h7>Ladies Special</h7>
+        </div>
+      </a>
+      <a href="reg1.php">
+        <div class="rect9">
+          <h8>Live Sports Screening</h8>
+        </div>
+      </a>
+      <a href="reg1.php">
+        <div class="rect10">
+          <h9>Live Music</h9>
+        </div>
+      </a>
+      <h11>Enjoy Every Moment With Us</h11>
+      <h12><i class="fas fa-mobile-alt"></i></h12>
+      <a1>Order</a1>
+      <h13><i class="fas fa-pizza-slice"></</h13>
+      <h14><i class="fas fa-bicycle"></i></h14>
+      <a2>Wait for Delivery</a2>
+      <h15><i class="fas fa-utensils"></i></h15>
+      <a3>Enjoy your Food</a3>
+
+</div>
+</section>
+
 </body>
 </html>
