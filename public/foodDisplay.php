@@ -1,43 +1,40 @@
-<html>
+<?php
+  $ini_array = parse_ini_file("../config/config.ini", true);
+  $url = $ini_array['url'];
+?>
 
-<head>
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<link rel="stylesheet" href="./css/css/foodDisplay.css">
-</head>
-<!------ Include the above in your HEAD tag ---------->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+       
+        <title></title>
+        <link rel="stylesheet" href="./css/css/foodDisplay.css">
+    </head>
+<body> 
 
-<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,900" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
-	  
-<body>
-	<section class="menu_list mt-60 mb-60">
-	 <div class="container">
-		<div class="row">
-		   <div class="col-xl-12">
-			  <div class="section-title text-center mb-60">
-				 <p>Famous for good food</p>
-				 <h4>our menu</h4>
-			  </div>
-		   </div>
-		</div>
-		<div class="row">
-		   <ul class="nav nav-tabs menu_tab" id="myTab" role="tablist">
-			  <li class="nav-item">
-				 <a class="nav-link" id="breakfast-tab" data-toggle="tab" href="#breakfast" role="tab" aria-selected="false">Breakfast</a>
-			  </li>
-			  <li class="nav-item">
-				 <a class="nav-link" id="lunch-tab" data-toggle="tab" href="#lunch" role="tab" aria-selected="false">Lunch</a>
-			  </li>
-			  <li class="nav-item">
-				 <a class="nav-link active show" id="dinner-tab" data-toggle="tab" href="#dinner" role="tab" aria-selected="true">Dinner</a>
-			  </li>
-		   </ul>
-		</div>
-		<div class="row">
+<div class="navigation">
+            <nav>
+            <ul>
+                <li><a href="#Indian">Indian</a></li><br>
+                <li><a href="#Continental">Continental</a></li><br>
+                <li><a href="#Italian">Italian</a></li><br>
+                <li><a href="#Japanese">Japanese</a></li><br>
+                <li><a href="#American">American</a></li><br>
+                <li><a href="#Bengali">Bengali</a></li><br>
+                <li><a href="#Punjabi">Punjabi</a></li><br>
+                <li><a href="#Chinese">Chinese</a></li><br>
+            </ul>
+            </nav>
+</div>
+
+
+
+<div class="row">
 		   <div class="tab-content col-xl-12" id="myTabContent">
-			  <div class="tab-pane fade" id="breakfast" role="tabpanel" aria-labelledby="breakfast-tab">
+			  <div class="tab-pane fade" id="Indian" role="tabpanel">
 				 <div class="row">
 					<div class="col-md-6">
 					   <div class="single_menu_list">
@@ -46,157 +43,17 @@
 							 <h4>Chicken Fried Salad  <span>$45</span></h4>
 							 <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
 						  </div>
-					   </div>
-					   <div class="single_menu_list">
-						  <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-2.jpg" alt="">
-						  <div class="menu_content">
-							 <h4>Chicken Fried Salad  <span>$45</span></h4>
-							 <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
-						  </div>
-					   </div>
-					   <div class="single_menu_list">
-						  <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-3.jpg" alt="">
-						  <div class="menu_content">
-							 <h4>Chicken Fried Salad  <span>$45</span></h4>
-							 <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
-						  </div>
-					   </div>
-					</div>
-					<div class="col-md-6">
-					   <div class="single_menu_list">
-						  <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-4.jpg" alt="">
-						  <div class="menu_content">
-							 <h4>Chicken Fried Salad  <span>$45</span></h4>
-							 <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
-						  </div>
-					   </div>
-					   <div class="single_menu_list">
+                       </div>
+                        <br><br>
+                       <div class="single_menu_list">
 						  <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-5.jpg" alt="">
 						  <div class="menu_content">
 							 <h4>Chicken Fried Salad  <span>$45</span></h4>
 							 <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
 						  </div>
-					   </div>
-					   <div class="single_menu_list">
-						  <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-6.jpg" alt="">
-						  <div class="menu_content">
-							 <h4>Chicken Fried Salad  <span>$45</span></h4>
-							 <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
-						  </div>
-					   </div>
-					</div>
-				 </div>
-			  </div>
-			  <div class="tab-pane fade" id="lunch" role="tabpanel" aria-labelledby="lunch-tab">
-				 <div class="row">
-					<div class="col-md-6">
-					   <div class="single_menu_list">
-						  <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-2.jpg" alt="">
-						  <div class="menu_content">
-							 <h4>Chicken Fried Salad  <span>$45</span></h4>
-							 <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
-						  </div>
-					   </div>
-					   <div class="single_menu_list">
-						  <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-4.jpg" alt="">
-						  <div class="menu_content">
-							 <h4>Chicken Fried Salad  <span>$45</span></h4>
-							 <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
-						  </div>
-					   </div>
-					   <div class="single_menu_list">
-						  <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-2.jpg" alt="">
-						  <div class="menu_content">
-							 <h4>Chicken Fried Salad  <span>$45</span></h4>
-							 <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
-						  </div>
-					   </div>
-					</div>
-					<div class="col-md-6">
-					   <div class="single_menu_list">
-						  <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-5.jpg" alt="">
-						  <div class="menu_content">
-							 <h4>Chicken Fried Salad  <span>$45</span></h4>
-							 <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
-						  </div>
-					   </div>
-					   <div class="single_menu_list">
-						  <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-3.jpg" alt="">
-						  <div class="menu_content">
-							 <h4>Chicken Fried Salad  <span>$45</span></h4>
-							 <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
-						  </div>
-					   </div>
-					   <div class="single_menu_list">
-						  <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-4.jpg" alt="">
-						  <div class="menu_content">
-							 <h4>Chicken Fried Salad  <span>$45</span></h4>
-							 <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
-						  </div>
-					   </div>
-					</div>
-				 </div>
-			  </div>
-			  <div class="tab-pane fade active show" id="dinner" role="tabpanel" aria-labelledby="dinner-tab">
-				 <div class="row">
-					<div class="col-md-6">
-					   <div class="single_menu_list">
-						  <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-1.jpg" alt="">
-						  <div class="menu_content">
-							 <h4>Chicken Fried Salad  <span>$45</span></h4>
-							 <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
-						  </div>
-					   </div>
-					   <div class="single_menu_list">
-						  <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-4.jpg" alt="">
-						  <div class="menu_content">
-							 <h4>Chicken Fried Salad  <span>$45</span></h4>
-							 <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
-						  </div>
-					   </div>
-					   <div class="single_menu_list">
-						  <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-1.jpg" alt="">
-						  <div class="menu_content">
-							 <h4>Chicken Fried Salad  <span>$45</span></h4>
-							 <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
-						  </div>
-					   </div>
-					</div>
-					<div class="col-md-6">
-					   <div class="single_menu_list">
-						  <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-3.jpg" alt="">
-						  <div class="menu_content">
-							 <h4>Chicken Fried Salad  <span>$45</span></h4>
-							 <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
-						  </div>
-					   </div>
-					   <div class="single_menu_list">
-						  <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-2.jpg" alt="">
-						  <div class="menu_content">
-							 <h4>Chicken Fried Salad  <span>$45</span></h4>
-							 <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
-						  </div>
-					   </div>
-					   <div class="single_menu_list">
-						  <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-3.jpg" alt="">
-						  <div class="menu_content">
-							 <h4>Chicken Fried Salad  <span>$45</span></h4>
-							 <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
-						  </div>
-					   </div>
-					</div>
-				 </div>
-			  </div>
-		   </div>
-		</div>
-		<div class="row">
-		   <div class="col-xl-12 text-center">
-			  <div class="box_btn">
-				 <a href="#">view more</a>
-			  </div>
-		   </div>
-		</div>
-	 </div>
-  </section>
-</body>
-</html>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+        </div>
+</div>
