@@ -1,33 +1,3 @@
-@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
-
-body{
-    width:100%;
-}
-
-.navigation{
-    position: absolute;
-    top: 10%;
-    font-size: 25px;
-    line-height: 40px;
-    background-color: #ff4d73;
-    height: 700px;
-    width:250px;
-    float:left;
-    padding:7px;
-}
-
-.navigation a{
-  color:#fff;
-  text-decoration: none;
-    
-}
-
-h2{
-    color:black;
-    font-size: 30px;
-}
-
-/*extra*/
 body {
 	font-family: 'Montserrat', sans-serif;
 	color: #333;
@@ -36,15 +6,12 @@ body {
 .mb-60 {
 	margin-bottom: 60px;
 }
-.menu_content p {
-    top:15pc;
-    left:20pc;
-    position: relative;
+.section-title p {
 	font-size: 24px;
 	font-family: Oleo Script;
 	margin-bottom: 0px;
 }
-.menu_content h4 {
+.section-title h4 {
 	font-size: 40px;
 	text-transform: capitalize;
 	color: #FF5E18;
@@ -52,7 +19,7 @@ body {
 	display: inline-block;
 	padding-bottom: 25px;
 }
-.menu_content h4::before {
+.section-title h4::before {
 	width: 80px;
 	height: 1.5px;
 	bottom: 0;
@@ -89,15 +56,14 @@ body {
 }
 
 .single_menu_list img {
-	width: 150px;
+	max-width: 30%;
 	position: absolute;
-	left: 20pc;
-	top: 10pc;
+	left: 0px;
+	top: 0;
 	border: 1px solid #ddd;
 	padding: 3px;
 	border-radius: 50%;
-    transition: .4s
-    
+	transition: .4s
 }
 
 .single_menu_list:hover img {
@@ -105,18 +71,15 @@ body {
 	transition: .4s
 }
 
-.menu_content h4 {
-    font-size: 20px;
-    position: absolute;
-    left:35pc;
+.single_menu_list h4 {
+	font-size: 20px;
+	border-bottom: 1px dashed #333;
 	padding-bottom: 15px;
-
-    top:10pc;
+	margin-bottom: 10px;
 }
 
-.menu_content h4 span {
-    position: absolute;
-    left:15pc;
+.single_menu_list h4 span {
+	float: right;
 	font-weight: bold;
 	color: #FF5E18;
 	font-style: italic;

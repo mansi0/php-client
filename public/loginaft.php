@@ -59,40 +59,33 @@
         <div class="circ">
         <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
         </div>
-        <a href="reg1.php">
-        <div class="circle">
-        </div>
+        <div class="circle" value="1" onclick=getValue(1)></div>
         <p>Indian</p>
-        </a>
-        <a href="reg1.php">
-        <div class="circle1"></div>
+        
+        <div class="circle1" value="2" onclick=getValue(2)></div>
         <p1>Continental</p1>
-        </a>
-        <a href="reg1.php">
-        <div class="circle2"></div>
+        
+        
+        <div class="circle2" value="3"  onclick=getValue(3)></div>
         <p2>Italian</p2>
-        </a>
-        <a href="reg1.php">
-        <div class="circle3"></div>
+        
+        
+        <div class="circle3" value="4" onclick=getValue(4)></div>
         <p3>Japanese</p3>
-        </a>
-        <a href="reg1.php">
-        <div class="circle4"></div>
+        
+        
+        <div class="circle4" value="5" onclick=getValue(5)></div>
         <p4>American</p4>
-        </a>
-        <a href="reg1.php">
-        <div class="circle5"></div>
+      
+        <div class="circle5" value="6" onclick=getValue(6)></div>
         <p5>Bengali</p5>
-        </a>
-        <a href="reg1.php">
-        <div class="circle6"></div>
+    
+        <div class="circle6" value="7" onclick=getValue(7)></div>
         <p6>Punjabi</p6>
-        </a>
-        <a href="reg1.php">
-        <div class="circle7"></div>
+      
+        <div class="circle7" value="8" onclick=getValue(8)></div>
         <p7>Chinese</p7>
-        </a>
-        </div>
+      </div>
 </section>
 
 <section class="second">
@@ -161,4 +154,5 @@
 </section>
 
 </body>
+<script src="./js/hotelDisplayCuisine.js"></script>
 </html>
