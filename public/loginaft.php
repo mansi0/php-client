@@ -30,8 +30,8 @@
             </div>
 
         <div class="navigation">
-                    <a href="">Show all restaurants</a><br>
-                     <a href="login.html">Login</a><br>
+                    <a href="hotelDisplay.php">Show all restaurants</a><br>
+                     <a href="">Login</a><br>
                     <!--<li> <a href="reg1.html">Register</a></li>-->
                     <a href="#">Near by</a><br>
                   <!-- <li><a href="#">Gallery</a></li>-->

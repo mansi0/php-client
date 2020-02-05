@@ -29,6 +29,7 @@ $ini_array = parse_ini_file("../config/config.ini", true);
    ?>
     <?php foreach($result as $obj) {
 
+
     
     ?>
      <div class="main">

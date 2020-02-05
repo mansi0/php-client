@@ -83,7 +83,7 @@
 
                 &nbsp; Hotel Menu Type &nbsp;
                 <input type="radio" name="hotelMenuType" id="hotelMenu1" value="veg"> Veg &nbsp;
-                <input type="radio" name="hotelMenuType" id="hotelMenu2" value="non-veg"> Non-Veg&nbsp;
+                <input type="radio" name="hotelMenuType" id="hotelMenu2" value="nonveg"> Non-Veg&nbsp;
                 <input type="radio" name="hotelMenuType" id="hotelMenu3" value="both"> Both<br>
             </div>
 

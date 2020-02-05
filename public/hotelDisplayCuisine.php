@@ -17,7 +17,7 @@ $ini_array = parse_ini_file("../config/config.ini", true);
 
    <?php 
    $value=$_COOKIE["val"];
-   $apiResult = callAPI('GET','http://localhost:5000/hotel/gethoteldetailbyhotelCuisine','.val');
+   $apiResult = callAPI('GET','http://localhost:5000/hotel/gethoteldetailbyhotelcuisine/'.$value,'');
      
     $result = json_decode($apiResult);
    
