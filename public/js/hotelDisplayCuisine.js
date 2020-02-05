@@ -1,10 +1,6 @@
 async function getValue(val) {
     try {
 
-        alert("in getValue");
-
-
-
 
         createCookie("val", val, "10");
 
