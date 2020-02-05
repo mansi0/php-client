@@ -29,9 +29,14 @@ $ini_array = parse_ini_file("../config/config.ini", true);
    ?>
     <?php foreach($result as $obj) {
 
+          $apiResult1 = callAPI('GET','http://localhost:5000/food/getdetailsbyid/'.$obj->foodId,'');
+     
+          $result1 = json_decode($apiResult1);  
+          
+          foreach($result1 as $obj2) {
 
-    
-    ?>
+
+      ?>
      <div class="main">
      <div class="row sideBar-body" >
      <a href="dbreg.php">
@@ -45,17 +50,21 @@ $ini_array = parse_ini_file("../config/config.ini", true);
        <div class="col-sm-9 col-xs-9 sideBar-main">
          <div class="row" id="<?php echo $obj->hotelId; ?>"  onclick=food(<?php echo $obj->hotelId; ?>)>
            <div class="col-sm-8 col-xs-8 sideBar-name">
-
-           <span class="name-meta"> <?php echo $obj->foodSpeciality; ?>
+           <span class="name-meta"> <?php echo $obj2->foodName; ?>
+           </span>
+           </div> 
+            
+           <div class="col-sm-7 col-xs-7 sideBar-name">
+           <span class="spec-meta"> <?php echo $obj->foodSpeciality; ?>
            </span>
            </div> 
 
-           <div class="col-sm-7 col-xs-7 sideBar-name">
+           <div class="col-sm-6 col-xs-6 sideBar-name">
              <span class="locality-meta"> <?php echo $obj->price; ?>
            </span>
            </div>
            
-           <div class="col-sm-6 col-xs-6 sideBar-name">
+           <div class="col-sm-5 col-xs-5 sideBar-name">
              <span class="state-meta"> <?php echo $obj->size; ?>
            </span>
            </div>
@@ -68,7 +77,7 @@ $ini_array = parse_ini_file("../config/config.ini", true);
        </div>
      </div>
      </div>
-     <?php } ?>
+     <?php  }} ?>
 
    </div>
   
