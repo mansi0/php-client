@@ -18,14 +18,17 @@
 <div class="navigation">
             <nav>
             <ul>
-                <li><a href="#Indian">Indian</a></li><br>
-                <li><a href="#Continental">Continental</a></li><br>
-                <li><a href="#Italian">Italian</a></li><br>
-                <li><a href="#Japanese">Japanese</a></li><br>
-                <li><a href="#American">American</a></li><br>
-                <li><a href="#Bengali">Bengali</a></li><br>
-                <li><a href="#Punjabi">Punjabi</a></li><br>
-                <li><a href="#Chinese">Chinese</a></li><br>
+                <li><a href="#Breakfast">Breakfast</a></li><br>
+                <li><a href="#Starters">Staters</a></li><br>
+                <li><a href="#MainCourse">Main Course</a></li><br>
+                <li><a href="#Desserts">Desserts</a></li><br>
+                <li><a href="#FastFood">Fast Food</a></li><br>
+                <li><a href="#DrinksWithAlcohol">Drinks With Alcohol</a></li><br>
+                <li><a href="#Cappuccino">Cappuccino</a></li><br>
+                <li><a href="#Juice">Juice</a></li><br>
+                <li><a href="#Mocktail">Mocktail</a></li><br>
+                <li><a href="#IceCream">Ice Cream</a></li><br>
+
             </ul>
             </nav>
 </div>
