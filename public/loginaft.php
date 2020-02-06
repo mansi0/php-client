@@ -19,12 +19,12 @@
         <div class="main">
                 <ul>
                     <li class="active"> <a href="">Home</a></li>
-                    <li> <a href="login.html">Login</a></li>
                     <!--<li> <a href="reg1.html">Register</a></li>-->
                     <li><a href="#">Services</a></li>
                   <!-- <li><a href="#">Gallery</a></li>-->
                     <li><a href="#">About</a></li>
                     <li><a href="#">Contact</a></li>
+                    
                 
                 </ul>
             </div>

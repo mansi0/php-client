@@ -16,8 +16,7 @@ $ini_array = parse_ini_file("../config/config.ini", true);
    <div class="row sideBar">
 
    <?php 
-   $value=$_COOKIE["val"];
-   $apiResult = callAPI('GET','http://localhost:5000/hotel/gethoteldetailbyhotelcuisine/'.$value,'');
+   $apiResult = callAPI('GET','http://localhost:5000/hotel/gethoteldetailbymenutype/veg','');
      
     $result = json_decode($apiResult);
    
@@ -26,7 +25,7 @@ $ini_array = parse_ini_file("../config/config.ini", true);
 
      <div class="main">
      <div class="row sideBar-body" >
-     <a href="dbreg.php">
+     <!--<a href="foodDisplay1.php">-->
       <!-- <a href = '1'></a> -->
        <div class="col-sm-3 col-xs-3 sideBar-avatar">
          <div class="avatar-icon">
@@ -35,7 +34,7 @@ $ini_array = parse_ini_file("../config/config.ini", true);
          </div>
        </div>
        <div class="col-sm-9 col-xs-9 sideBar-main">
-         <div class="row" id="<?php echo $obj->hotelId; ?>" onclick=food(<?php echo $obj->hotelId; ?>)>
+         <div class="row" id="<?php echo $obj->hotelId; ?>"  onclick=food(<?php echo $obj->hotelId; ?>)>
            <div class="col-sm-8 col-xs-8 sideBar-name">
 
            <span class="name-meta"> <?php echo $obj->hotelName; ?>

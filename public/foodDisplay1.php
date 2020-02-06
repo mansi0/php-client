@@ -7,11 +7,30 @@ $ini_array = parse_ini_file("../config/config.ini", true);
 <html>
 <title>Food Display</title>
 <head>
-  <link rel="stylesheet" href="./css/css/hotelDisplay.css">
+  <link rel="stylesheet" href="./css/css/foodDisplay1.css">
 </head>
 <body>
   
   <p>Food</p>
+
+
+  <div class="navigation">
+            <nav>
+            <ul>
+                <li><a href="#Breakfast">Breakfast</a></li><br>
+                <li><a href="#Starters">Staters</a></li><br>
+                <li><a href="#MainCourse">Main Course</a></li><br>
+                <li><a href="#Desserts">Desserts</a></li><br>
+                <li><a href="#FastFood">Fast Food</a></li><br>
+                <li><a href="#DrinksWithAlcohol">Drinks With Alcohol</a></li><br>
+                <li><a href="#Cappuccino">Cappuccino</a></li><br>
+                <li><a href="#Juice">Juice</a></li><br>
+                <li><a href="#Mocktail">Mocktail</a></li><br>
+                <li><a href="#IceCream">Ice Cream</a></li><br>
+
+            </ul>
+            </nav>
+</div>
 
    <div class="row sideBar">
 
@@ -24,12 +43,15 @@ $ini_array = parse_ini_file("../config/config.ini", true);
    $apiResult = callAPI('GET','http://localhost:5000/hotelfood/getdetailsbyhotelid/'.$hotelId,'');
      
     $result = json_decode($apiResult);
+    
 
    
    ?>
     <?php foreach($result as $obj) {
 
-          $apiResult1 = callAPI('GET','http://localhost:5000/food/getdetailsbyid/'.$obj->foodId,'');
+         // $foodId=$_COOKIE["foodId"];
+          
+          $apiResult1 = callAPI('GET','http://localhost:5000/food/getdetailbyid/'.$obj->foodId,'');
      
           $result1 = json_decode($apiResult1);  
           
@@ -60,7 +82,7 @@ $ini_array = parse_ini_file("../config/config.ini", true);
            </div> 
 
            <div class="col-sm-6 col-xs-6 sideBar-name">
-             <span class="locality-meta"> <?php echo $obj->price; ?>
+             <span class="price-meta"> <?php echo $obj->price; ?>
            </span>
            </div>
            
