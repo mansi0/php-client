@@ -17,31 +17,21 @@ async function setValue(url){
                },
                body: JSON.stringify(customer),
            });
-   
 
+           
            if(promiseResponse.status===200)
            {
-               window.location.replace("../public/loginaft.php");``
-           }
-           if(promiseResponse.status===400)
-           {
-                alert('invalid');
-            document.getElementById("msg").innerHTML="**Invalid Password!!!";
-           }
-           
-            if(promiseResponse.status===404)
-            {
-                document.getElementById("msg").innerHTML="**Customer Not Found!!";
-            }
 
-            if(promiseResponse.status===500)
-            {
-                alert('Exception');
-            }
-          console.log(promiseResponse);
+            const customerList = await fetch(url+"/customer/getbyemailid", {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json;charset=utf-8'
+                },
+                body: JSON.stringify(emailId),
+            });
 
-          const customerList = await fetch(url + "/customer/getcustomerbyemailid/"+ emailId);
-          var response = await customerList.json();
+
+            var response = await customerList.json();
           var cid = response[0].customerId.toString();
           console.log(cid);
 
@@ -68,6 +58,34 @@ async function setValue(url){
                 escape(value) + expires + "; path=/";
         }
 
+
+                
+               
+               
+               
+               
+               
+               
+                window.location.replace("../public/loginaft.php");
+           }
+           if(promiseResponse.status===400)
+           {
+                alert('invalid');
+            document.getElementById("msg").innerHTML="**Invalid Password!!!";
+           }
+           
+            if(promiseResponse.status===404)
+            {
+                document.getElementById("msg").innerHTML="**Customer Not Found!!";
+            }
+
+            if(promiseResponse.status===500)
+            {
+                alert('Exception');
+            }
+          console.log(promiseResponse);
+
+          
         }catch(error){
             console.log(error);
 
