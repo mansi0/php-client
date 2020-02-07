@@ -17,11 +17,21 @@ async function setValue(url){
                },
                body: JSON.stringify(customer),
            });
-   
 
+           
            if(promiseResponse.status===200)
            {
-               window.location.replace("../public/loginaft.php");``
+
+            const customerList = await fetch(url+"/customer/getbyemailid", {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json;charset=utf-8'
+                },
+                body: JSON.stringify(emailId),
+            });
+
+                console.log(promiseRes);
+               window.location.replace("../public/loginaft.php");
            }
            if(promiseResponse.status===400)
            {
@@ -40,14 +50,14 @@ async function setValue(url){
             }
           console.log(promiseResponse);
 
-          const customerList = await fetch(url + "/customer/getcustomerbyemailid/"+ emailId);
+         /* const customerList = await fetch(url + "/customer/getcustomerbyemailid/"+ emailId);
           var response = await customerList.json();
           var cid = response[0].customerId.toString();
           console.log(cid);
 
           var customerId=encodeURIComponent(cid);
 
-          createCookie("customerId", customerId, "10");
+          createCookie("customerId", customerId, "10");*/
     
 
         // Function to create the cookie 
