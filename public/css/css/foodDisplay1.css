@@ -139,4 +139,26 @@ p{
     text-decoration: none;
   }
 
-  
+  .textbox{
+    position: absolute;
+    top:12%;
+    left:65%;
+    width: 40%;
+    overflow: hidden;
+    padding: 12px 20px;
+    margin: 8px 0;
+}
+.textbox input{
+    border: 2px solid red;
+    background: none;
+    color: rgb(3, 3, 3);
+    font-size: 30px;
+    width: 22%;
+    float: left;
+    margin: 0 10px;
+  }
+
+::placeholder{
+    font-size: 20px;
+    color: black;
+}

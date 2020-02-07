@@ -59,7 +59,13 @@ $ini_array = parse_ini_file("../config/config.ini", true);
                      $value=$_COOKIE["value"];
                     if($value == $obj2->foodCategory)
 
-      ?>
+        ?>
+
+        <div class="textbox">
+        <input type="number"   class="text" id="qnty" placeholder="QUANTITY" required>
+        </div>
+
+    
      <div class="main">
      <div class="row sideBar-body" >
      <a href="dbreg.php">
