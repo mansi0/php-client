@@ -1,14 +1,15 @@
 async function food(hotelId) {
     try {
 
-        alert("in foodDisplay");
+        
 
+        var hid=encodeURIComponent(hotelId);
         //var hotelId=document.getElementById('hotelid').value;
-        alert(hotelId);
         // Creating a cookie after the document is ready 
         
-            createCookie("hotelId", hotelId, "10");
+            createCookie("hotelId", hid, "10");
     
+
 
         // Function to create the cookie 
         function createCookie(name, value, days) {

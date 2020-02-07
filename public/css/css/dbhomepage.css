@@ -1,0 +1,52 @@
+@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
+
+.main ul{
+    
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+    margin-right: 50px;
+    
+  }
+  .main ul li{
+    display: inline-block;
+  }
+  .main ul li a{
+    text-decoration: none;
+    color: rgb(7, 7, 7);
+    padding: 8px 35px;
+    font-size: 25px;
+    border: 0px;
+    transition: 2ms ease;
+  }
+ /* .main ul li a:hover{
+    background-color:#4caf50;
+    color:rgb(231, 231, 240);
+  }*/
+
+  .main i{
+    background: #4caf50;
+    padding:10px;
+    border-radius: 50%
+      
+  }
+ select {
+
+    width: 150px;
+    height: 40px;
+    margin: 10px;
+
+}
+
+select:focus {
+
+    min-width: 150px;
+
+    width: auto;
+
+}    
+
+select.paddingOffset
+{
+	padding-left:150px;
+}

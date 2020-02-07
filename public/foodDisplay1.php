@@ -13,6 +13,7 @@ $ini_array = parse_ini_file("../config/config.ini", true);
   
   <p>Food</p>
 
+  
 
   <div class="navigation">
             <nav>
@@ -32,7 +33,8 @@ $ini_array = parse_ini_file("../config/config.ini", true);
             </nav>
 </div>
 
-   <div class="row sideBar">
+
+
 
    <?php 
 
@@ -61,15 +63,13 @@ $ini_array = parse_ini_file("../config/config.ini", true);
 
         ?>
 
-        <div class="textbox">
-        <input type="number"   class="text" id="qnty" placeholder="QUANTITY" required>
-        </div>
+        
 
     
      <div class="main">
      <div class="row sideBar-body" >
-     <a href="dbreg.php">
-      <!-- <a href = '1'></a> -->
+     <a href="dbreg.php" onclick=food(<?php echo $obj->hotelId; ?>)>
+      <!--<a href = '1'></a> -->
        <div class="col-sm-3 col-xs-3 sideBar-avatar">
          <div class="avatar-icon">
            <img src="./hotelimages/1.jpg">
@@ -77,7 +77,7 @@ $ini_array = parse_ini_file("../config/config.ini", true);
          </div>
        </div>
        <div class="col-sm-9 col-xs-9 sideBar-main">
-         <div class="row" id="<?php echo $obj->hotelId; ?>"  onclick=food(<?php echo $obj->hotelId; ?>)>
+         <div class="row" id="<?php echo $obj->hotelId; ?>">
            <div class="col-sm-8 col-xs-8 sideBar-name">
            <span class="name-meta"> <?php echo $obj2->foodName; ?>
            </span>
@@ -103,13 +103,24 @@ $ini_array = parse_ini_file("../config/config.ini", true);
            </span>
            </div>
          </div>
-       </div>
+       </div></a>
      </div>
      </div>
+     <div class="textbox">
+        <input type="number" class="text" id="qnty" placeholder="QUANTITY">
+    </div>
+    <div class="btn">  
+      <button type="submit" onclick=setValue(<?php echo(json_encode($url)); ?>)>Add to Cart</button>
+    </div>
      <?php  }} ?>
 
+    
+
+
    </div>
-  
+
+   <a href="hotelDisplay.php">Back</a>
+     
    </body>
    <script src="./js/hotelDisplayCuisine.js"></script>
    </html>

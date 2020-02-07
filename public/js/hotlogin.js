@@ -21,7 +21,44 @@ async function setValue(url){
 
            if(promiseResponse.status===200)
            {
-               window.location.replace("../public/food.php");``
+
+
+                var promisres = await fetch(url + "/hotel/getdetailsbyemailid", {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json;charset=utf-8'
+                },
+                body: JSON.stringify(hotel),
+                });
+
+                var response = await promisres.json();
+                var hid = response[0].hotelId.toString();
+                console.log(hid);
+
+                 var hotelId=encodeURIComponent(hid);
+
+                createCookie("hotelId", hotelId, "10");
+      
+  
+                // Function to create the cookie 
+                function createCookie(name, value, days) {
+                    var expires;
+                    console.log(value);
+  
+                    if (days) {
+                        var date = new Date();
+                        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                        expires = "; expires=" + date.toGMTString();
+                     }
+                    else {
+                        expires = "";
+                     }
+  
+                    document.cookie = escape(name) + "=" +
+                    escape(value) + expires + "; path=/";
+          }
+
+               window.location.replace("../public/hotelhomepage.php");``
            }
            if(promiseResponse.status===400)
            {
@@ -40,35 +77,7 @@ async function setValue(url){
             }
           console.log(promiseResponse);
 
-          const hotelList = await fetch(url + "/hotelfood/getdetailsbyemailid/"+ emailId);
-          var response = await hotelList.json();
-          var hid = response[0].hotelId.toString();
-          console.log(hid);
-
-          var hotelId=encodeURIComponent(hid);
-
-          createCookie("hotelId", hotelId, "10");
-    
-
-        // Function to create the cookie 
-        function createCookie(name, value, days) {
-            var expires;
-            console.log(value);
-
-            if (days) {
-                var date = new Date();
-                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-                expires = "; expires=" + date.toGMTString();
-            }
-            else {
-                expires = "";
-            }
-
-            document.cookie = escape(name) + "=" +
-                escape(value) + expires + "; path=/";
-        }
-
-
+         
 
 
         }catch(error){

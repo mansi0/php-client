@@ -26,7 +26,7 @@ p{
 .main {
     position: relative;
     left:25%;
-    top:5%;
+    top:9%;
 }
 .sideBar {
     padding: 0 !important;
@@ -41,7 +41,7 @@ p{
     position: relative;
     padding: 12px !important;
     border-bottom: 1px solid #ff4d73;
-    width:1000px;
+    width:800px;
     height: 72px;
     margin: 0 !important;
     cursor: pointer;
@@ -59,7 +59,7 @@ p{
   .avatar-icon img {
     position: relative;
     top: 10%;
-    left:2%;
+    left:0%;
     height: 54px;
     width: 54px;
   }
@@ -140,25 +140,45 @@ p{
   }
 
   .textbox{
-    position: absolute;
-    top:12%;
-    left:65%;
+    position: relative;
+    top:-4%;
+    left:70%;
     width: 40%;
     overflow: hidden;
-    padding: 12px 20px;
+    padding: 5px 20px;
     margin: 8px 0;
 }
 .textbox input{
     border: 2px solid red;
     background: none;
     color: rgb(3, 3, 3);
-    font-size: 30px;
+    font-size: 25px;
     width: 22%;
     float: left;
-    margin: 0 10px;
+    margin: 10px 20px;
   }
 
 ::placeholder{
     font-size: 20px;
     color: black;
+}
+
+button{
+  position: relative;
+  top:0%;
+  left:72%;
+  background:#ff4d73;
+  height: 40px;
+  width:10%;
+  color:white;
+  font-size: 22px;
+}
+
+.btn{
+  position:relative;
+  top:-5%;
+  overflow: hidden;
+  padding: 5px 20px;
+  margin: 8px 0;
+  
 }
