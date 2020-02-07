@@ -18,6 +18,7 @@ async function setValue(url){
                body: JSON.stringify(customer),
            });
 
+        
            
            if(promiseResponse.status===200)
            {
@@ -27,11 +28,12 @@ async function setValue(url){
                 headers: {
                     'Content-Type': 'application/json;charset=utf-8'
                 },
-                body: JSON.stringify(emailId),
+                body: JSON.stringify(customer),
             });
 
-
+            console.log(customerList);
             var response = await customerList.json();
+            console.log(response);
           var cid = response[0].customerId.toString();
           console.log(cid);
 
