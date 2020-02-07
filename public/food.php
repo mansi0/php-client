@@ -45,16 +45,16 @@
                 <!--<input placeholder="FOOD TYPE" required>-->
                 <select id="list">
                 <option value=""disabled selected option>FOOD TYPE</option>
-                <option value=1>Breakfast</option>
-                <option value=2>Starters</option>
-                <option value=3>Main Course</option>
-                <option value=4>Desserts</option>  
-                <option value=5>Fast Food</option>
-                <option value=6>Drinks With Alcohol</option>
-                <option value=7>Cappuccino</option>
-                <option value=8>Juice</option>
-                <option value=9>Mocktail</option>
-                <option value=10>Ice Cream</option>
+                <option value="1">Breakfast</option>
+                <option value="2">Starters</option>
+                <option value="3">Main Course</option>
+                <option value="4">Desserts</option>  
+                <option value="5">Fast Food</option>
+                <option value="6">Drinks With Alcohol</option>
+                <option value="7">Cappuccino</option>
+                <option value="8">Juice</option>
+                <option value="9">Mocktail</option>
+                <option value="10">Ice Cream</option>
 
                 </select> 
             </div>
