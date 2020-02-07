@@ -3,6 +3,29 @@
   $url = $ini_array['url'];
 ?>
 
+
+
+
+<?php 
+
+   $hotelId= $_COOKIE["hotelId"];
+
+  // $hotelId=getHotelId();
+   
+   $apiResult = callAPI('GET','http://localhost:5000/hotel/getdetailsbyhotelid/'.$hotelId,'');
+     
+    $result = json_decode($apiResult);
+    
+?>
+
+<?php foreach($result as $obj) {
+
+  $email2= $obj->hotelEmailId;
+
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
@@ -11,44 +34,30 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
        
         <title></title>
-        <link rel="stylesheet" href="./css/css/loginaft.css">
+        <link rel="stylesheet" href="./css/css/hotelhomepage.css">
     </head>
 <body> 
 
-
-<?php 
-
-   $hotelId= $_COOKIE["hotelId"];
-
-   echo $hotelId;
-
-  // $hotelId=getHotelId();
-   
-   $apiResult = callAPI('GET','http://localhost:5000/hotelfood/getdetailsbyhotelid/'.$hotelId,'');
-     
-    $result = json_decode($apiResult);
-    
-?>
-
-<?php foreach($result as $obj) {
-
-  echo $obj->name;
-
-
-
-?>
-
 <div class="main">
-<div class="row sideBar-body" >
-        <div class="col-sm-9 col-xs-9 sideBar-main">
-         <div class="row" id="<?php echo $obj->hotelId; ?>"  onclick=hotellog(<?php echo $obj->hotelId; ?>)>
+                <ul>
+                    <li class="active"> <a href="">Home</a></li>
+                    <!--<li> <a href="reg1.html">Register</a></li>-->
+                    <li><a href="#">Services</a></li>
+                  <!-- <li><a href="#">Gallery</a></li>-->
+                    <li><a href="#">About</a></li>
+                    <li><a href="#"><?php echo $email2 ?></a></li>
 
-</div>
-</div>
 
-<?php }?>
-</div>
-
+                    <li><a href="#"><i class="fas fa-user"></i>
+                    <select id="list" style="max-width:70%;">
+                    <option value="click">Click Here</option>
+                    <option value="1">Customer Details</option>
+                    <option value="2">Log Out</option></li>
+                    </select>
+                   
+                
+                </ul>
+ </div>
 
 </body>
 <script src="./js/hotelhomepage.js"></script>
