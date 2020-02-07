@@ -1,4 +1,4 @@
-<?php include("hotelDisplayCurl.php"); 
+<?php include("phpCurl.php"); 
 
 $ini_array = parse_ini_file("../config/config.ini", true);
   $url = $ini_array['url'];
@@ -17,16 +17,16 @@ $ini_array = parse_ini_file("../config/config.ini", true);
   <div class="navigation">
             <nav>
             <ul>
-                <li><a href="#Breakfast">Breakfast</a></li><br>
-                <li><a href="#Starters">Staters</a></li><br>
-                <li><a href="#MainCourse">Main Course</a></li><br>
-                <li><a href="#Desserts">Desserts</a></li><br>
-                <li><a href="#FastFood">Fast Food</a></li><br>
-                <li><a href="#DrinksWithAlcohol">Drinks With Alcohol</a></li><br>
-                <li><a href="#Cappuccino">Cappuccino</a></li><br>
-                <li><a href="#Juice">Juice</a></li><br>
-                <li><a href="#Mocktail">Mocktail</a></li><br>
-                <li><a href="#IceCream">Ice Cream</a></li><br>
+                <li><a href="#Breakfast" value="1" onclick=getValue(1)>Breakfast </a></li><br>
+                <li><a href="#Starters" value="2" onclick=getValue(2)>Staters</a></li><br>
+                <li><a href="#MainCourse" value="3" onclick=getValue(3)>Main Course</a></li><br>
+                <li><a href="#Desserts" value="4" onclick=getValue(4)>Desserts</a></li><br>
+                <li><a href="#FastFood" value="5" onclick=getValue(5)>Fast Food</a></li><br>
+                <li><a href="#DrinksWithAlcohol" value="6" onclick=getValue(6)>Drinks With Alcohol</a></li><br>
+                <li><a href="#Cappuccino" value="7" onclick=getValue(7)>Cappuccino</a></li><br>
+                <li><a href="#Juice" value="8" onclick=getValue(8)>Juice</a></li><br>
+                <li><a href="#Mocktail" value="9" onclick=getValue(9)>Mocktail</a></li><br>
+                <li><a href="#IceCream" value="10" onclick=getValue(10)>Ice Cream</a></li><br>
 
             </ul>
             </nav>
@@ -56,7 +56,8 @@ $ini_array = parse_ini_file("../config/config.ini", true);
           $result1 = json_decode($apiResult1);  
           
           foreach($result1 as $obj2) {
-
+                     $value=$_COOKIE["value"];
+                    if($value == $obj2->foodCategory)
 
       ?>
      <div class="main">
@@ -104,5 +105,5 @@ $ini_array = parse_ini_file("../config/config.ini", true);
    </div>
   
    </body>
-   <script src="./js/foodDisplay1.js"></script>
+   <script src="./js/hotelDisplayCuisine.js"></script>
    </html>

@@ -39,6 +39,38 @@ async function setValue(url){
                 alert('Exception');
             }
           console.log(promiseResponse);
+
+          const hotelList = await fetch(url + "/hotelfood/getdetailsbyemailid/"+ emailId);
+          var response = await hotelList.json();
+          var hid = response[0].hotelId.toString();
+          console.log(hid);
+
+          var hotelId=encodeURIComponent(hid);
+
+          createCookie("hotelId", hotelId, "10");
+    
+
+        // Function to create the cookie 
+        function createCookie(name, value, days) {
+            var expires;
+            console.log(value);
+
+            if (days) {
+                var date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                expires = "; expires=" + date.toGMTString();
+            }
+            else {
+                expires = "";
+            }
+
+            document.cookie = escape(name) + "=" +
+                escape(value) + expires + "; path=/";
+        }
+
+
+
+
         }catch(error){
             console.log(error);
 

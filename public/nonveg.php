@@ -1,4 +1,4 @@
-<?php include("hotelDisplayCurl.php"); 
+<?php include("phpCurl.php"); 
 
 $ini_array = parse_ini_file("../config/config.ini", true);
   $url = $ini_array['url'];

@@ -21,7 +21,7 @@ async function setValue(url){
 
            if(promiseResponse.status===200)
            {
-               window.location.replace("../public/home.php");``
+               window.location.replace("../public/loginaft.php");``
            }
            if(promiseResponse.status===400)
            {
@@ -43,6 +43,9 @@ async function setValue(url){
           const customerList = await fetch(url + "/customer/getcustomerbyemailid/"+ emailId);
           var response = await customerList.json();
           var cid = response[0].customerId.toString();
+          console.log(cid);
+
+          var customerId=encodeURIComponent(cid);
 
           createCookie("customerId", customerId, "10");
     
@@ -50,6 +53,7 @@ async function setValue(url){
         // Function to create the cookie 
         function createCookie(name, value, days) {
             var expires;
+            console.log(value);
 
             if (days) {
                 var date = new Date();

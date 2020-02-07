@@ -1,4 +1,4 @@
-<?php
+<?php include("phpCurl.php");
   $ini_array = parse_ini_file("../config/config.ini", true);
   $url = $ini_array['url'];
 ?>
@@ -24,7 +24,13 @@
                   <!-- <li><a href="#">Gallery</a></li>-->
                     <li><a href="#">About</a></li>
                     <li><a href="#">Contact</a></li>
-                    
+                    <li><a href="#"><i class="fas fa-user"></i>
+                    <select id="list" style="max-width:70%;">
+                    <option value="click">Click Here</option>
+                    <option value="1">Customer Details</option>
+                    <option value="2">Log Out</option></li>
+                    </select>
+                   
                 
                 </ul>
             </div>
@@ -35,8 +41,8 @@
                     <!--<li> <a href="reg1.html">Register</a></li>-->
                     <a href="#">Near by</a><br>
                   <!-- <li><a href="#">Gallery</a></li>-->
-                    <a href="#">Veg</a><br>
-                    <a href="#">Non-Veg</a><br>
+                    <a href="veg.php">Veg</a><br>
+                    <a href="nonveg.php">Non-Veg</a><br>
                     <a href="#">Express delivery</a><br>
         </div>
 
@@ -144,7 +150,7 @@
       <h11>Enjoy Every Moment With Us</h11>
       <h12><i class="fas fa-mobile-alt"></i></h12>
       <a1>Order</a1>
-      <h13><i class="fas fa-pizza-slice"></</h13>
+      <h13><i class="fas fa-pizza-slice"></h13>
       <h14><i class="fas fa-bicycle"></i></h14>
       <a2>Wait for Delivery</a2>
       <h15><i class="fas fa-utensils"></i></h15>
@@ -153,6 +159,40 @@
 </div>
 </section>
 
+<?php 
+
+   $customerId= $_COOKIE["customerId"];
+
+   echo $customerId;
+
+  // $hotelId=getHotelId();
+   
+   $apiResult = callAPI('GET','http://localhost:5000/customer/getcustomerbycustomerid/'.$customerId,'');
+     
+    $result = json_decode($apiResult);
+    
+?>
+
+<?php foreach($result as $obj) {
+
+  echo $obj->name;
+
+
+?>
+
+<div class="main">
+<div class="row sideBar-body" >
+        <div class="col-sm-9 col-xs-9 sideBar-main">
+         <div class="row" id="<?php echo $obj->customerId; ?>"  onclick=custlog(<?php echo $obj->customerId; ?>)>
+
+</div>
+</div>
+
+<?php }?>
+</div>
+
+
+
 </body>
-<script src="./js/hotelDisplayCuisine.js"></script>
+<script src="./js/customerhomepage.js"></script>
 </html>

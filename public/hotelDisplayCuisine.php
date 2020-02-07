@@ -1,4 +1,4 @@
-<?php include("hotelDisplayCurl.php"); 
+<?php include("phpCurl.php"); 
 
 $ini_array = parse_ini_file("../config/config.ini", true);
   $url = $ini_array['url'];
@@ -34,6 +34,7 @@ $ini_array = parse_ini_file("../config/config.ini", true);
 
          </div>
        </div>
+       
        <div class="col-sm-9 col-xs-9 sideBar-main">
          <div class="row" id="<?php echo $obj->hotelId; ?>" onclick=food(<?php echo $obj->hotelId; ?>)>
            <div class="col-sm-8 col-xs-8 sideBar-name">
