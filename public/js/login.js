@@ -30,34 +30,14 @@ async function setValue(url){
                 body: JSON.stringify(emailId),
             });
 
-                console.log(promiseRes);
-               window.location.replace("../public/loginaft.php");
-           }
-           if(promiseResponse.status===400)
-           {
-                alert('invalid');
-            document.getElementById("msg").innerHTML="**Invalid Password!!!";
-           }
-           
-            if(promiseResponse.status===404)
-            {
-                document.getElementById("msg").innerHTML="**Customer Not Found!!";
-            }
 
-            if(promiseResponse.status===500)
-            {
-                alert('Exception');
-            }
-          console.log(promiseResponse);
-
-         /* const customerList = await fetch(url + "/customer/getcustomerbyemailid/"+ emailId);
-          var response = await customerList.json();
+            var response = await customerList.json();
           var cid = response[0].customerId.toString();
           console.log(cid);
 
           var customerId=encodeURIComponent(cid);
 
-          createCookie("customerId", customerId, "10");*/
+          createCookie("customerId", customerId, "10");
     
 
         // Function to create the cookie 
@@ -78,6 +58,34 @@ async function setValue(url){
                 escape(value) + expires + "; path=/";
         }
 
+
+                
+               
+               
+               
+               
+               
+               
+                window.location.replace("../public/loginaft.php");
+           }
+           if(promiseResponse.status===400)
+           {
+                alert('invalid');
+            document.getElementById("msg").innerHTML="**Invalid Password!!!";
+           }
+           
+            if(promiseResponse.status===404)
+            {
+                document.getElementById("msg").innerHTML="**Customer Not Found!!";
+            }
+
+            if(promiseResponse.status===500)
+            {
+                alert('Exception');
+            }
+          console.log(promiseResponse);
+
+          
         }catch(error){
             console.log(error);
 
