@@ -3,6 +3,30 @@
   $url = $ini_array['url'];
 ?>
 
+
+<?php 
+
+$customerId= $_COOKIE["customerId"];
+
+
+// $hotelId=getHotelId();
+
+$apiResult = callAPI('GET','http://localhost:5000/customer/getcustomerbycustomerid/'.$customerId,'');
+  
+ $result = json_decode($apiResult);
+ 
+ 
+?>
+
+<?php foreach($result as $obj) {
+
+$email=$obj->emailId;
+
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
@@ -14,6 +38,8 @@
         <link rel="stylesheet" href="./css/css/loginaft.css">
     </head>
 <body> 
+
+
 <section class="first">
   <div class="content-box">
         <div class="main">
@@ -23,12 +49,14 @@
                     <li><a href="#">Services</a></li>
                   <!-- <li><a href="#">Gallery</a></li>-->
                     <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#"><?php echo $email ?></a></li>
+
+
                     <li><a href="#"><i class="fas fa-user"></i>
-                    <select id="list" style="max-width:70%;">
-                    <option value="click">Click Here</option>
-                    <option value="1">Customer Details</option>
-                    <option value="2">Log Out</option></li>
+                    <select id="list" style="max-width:70%;" onchange="location = this.value;">
+                    <option value="">Click Here</option>
+                    <option value="login.php" >Customer Details</option>
+                   <option value="login.php">Log Out</a></option></li>
                     </select>
                    
                 
@@ -157,38 +185,22 @@
       <a3>Enjoy your Food</a3>
 
 </div>
+
+
+
 </section>
 
-<?php 
-
-   $customerId= $_COOKIE["customerId"];
-
-   echo $customerId;
-
-  // $hotelId=getHotelId();
-   
-   $apiResult = callAPI('GET','http://localhost:5000/customer/getcustomerbycustomerid/'.$customerId,'');
-     
-    $result = json_decode($apiResult);
-    
-?>
-
-<?php foreach($result as $obj) {
-
-  echo $obj->name;
 
 
-?>
 
-<div class="main">
+<!--<div class="main">
 <div class="row sideBar-body" >
         <div class="col-sm-9 col-xs-9 sideBar-main">
-         <div class="row" id="<?php echo $obj->customerId; ?>"  onclick=custlog(<?php echo $obj->customerId; ?>)>
+         <div class="row" id="">
 
 </div>
-</div>
+</div>-->
 
-<?php }?>
 </div>
 
 

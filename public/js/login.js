@@ -1,98 +1,88 @@
-async function setValue(url){
-    try{
+async function setValue(url) {
+    try {
         const emailId = document.getElementById("emailid").value;
         const password = document.getElementById("password").value;
-       
+
         const customer = {
             emailId: emailId,
-            password:password
-            };
+            password: password
+        };
 
-            console.log(customer)
-        
-            const promiseResponse = await fetch(url+"/customer/logincustomer", {
-               method: 'POST',
-               headers: {
-                   'Content-Type': 'application/json;charset=utf-8'
-               },
-               body: JSON.stringify(customer),
-           });
+        console.log(customer)
 
-        
-           
-           if(promiseResponse.status===200)
-           {
+        const promiseResponse = await fetch(url + "/customer/logincustomer", {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json;charset=utf-8'
+            },
+            body: JSON.stringify(customer),
+        });
 
-            const customerList = await fetch(url+"/customer/getbyemailid", {
+
+        if (promiseResponse.status === 200) {
+
+            var promisres = await fetch(url + "/customer/getbyemailid", {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json;charset=utf-8'
                 },
                 body: JSON.stringify(customer),
             });
-
-            console.log(customerList);
-            var response = await customerList.json();
-            console.log(response);
-          var cid = response[0].customerId.toString();
-          console.log(cid);
-
-          var customerId=encodeURIComponent(cid);
-
-          createCookie("customerId", customerId, "10");
     
 
-        // Function to create the cookie 
-        function createCookie(name, value, days) {
-            var expires;
-            console.log(value);
+            var response = await promisres.json();
+            var cid = response[0].customerId.toString();
+            console.log(cid);
+            
 
-            if (days) {
-                var date = new Date();
-                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-                expires = "; expires=" + date.toGMTString();
-            }
-            else {
-                expires = "";
+            var customerId1 = encodeURIComponent(cid);
+
+            createCookie("customerId", customerId1, "10");
+
+
+            // Function to create the cookie 
+            function createCookie(name, value, days) {
+                var expires;
+                console.log(value);
+
+                if (days) {
+                    var date = new Date();
+                    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                    expires = "; expires=" + date.toGMTString();
+                }
+                else {
+                    expires = "";
+                }
+
+                document.cookie = escape(name) + "=" +
+                    escape(value) + expires + "; path=/";
             }
 
-            document.cookie = escape(name) + "=" +
-                escape(value) + expires + "; path=/";
+
+
+
+            window.location.replace("../public/customerhomepage.php");
+        }
+        if (promiseResponse.status === 400) {
+            alert('invalid');
+            document.getElementById("msg").innerHTML = "**Invalid Password!!!";
         }
 
-
-                
-               
-               
-               
-               
-               
-               
-                window.location.replace("../public/loginaft.php");
-           }
-           if(promiseResponse.status===400)
-           {
-                alert('invalid');
-            document.getElementById("msg").innerHTML="**Invalid Password!!!";
-           }
-           
-            if(promiseResponse.status===404)
-            {
-                document.getElementById("msg").innerHTML="**Customer Not Found!!";
-            }
-
-            if(promiseResponse.status===500)
-            {
-                alert('Exception');
-            }
-          console.log(promiseResponse);
-
-          
-        }catch(error){
-            console.log(error);
-
-     
+        if (promiseResponse.status === 404) {
+            document.getElementById("msg").innerHTML = "**Customer Not Found!!";
         }
+
+        if (promiseResponse.status === 500) {
+            alert('Exception');
+        }
+        console.log(promiseResponse);
+
+
+    } catch (error) {
+        console.log(error);
+
+
     }
-   
+}
+
 
