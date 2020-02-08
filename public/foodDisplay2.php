@@ -15,23 +15,23 @@ $ini_array = parse_ini_file("../config/config.ini", true);
 
   
 
-  <div class="navigation">
+<!--<div class="navigation">
             <nav>
             <ul>
-                <li><a href="foodDisplay2.php" value="1" onclick=getValue(1)>Breakfast </a></li><br>
-                <li><a href="foodDisplay2.php" value="2" onclick=getValue(2)>Staters</a></li><br>
-                <li><a href="foodDisplay2.php" value="3" onclick=getValue(3)>Main Course</a></li><br>
-                <li><a href="foodDisplay2.php" value="4" onclick=getValue(4)>Desserts</a></li><br>
-                <li><a href="foodDisplay2.php" value="5" onclick=getValue(5)>Fast Food</a></li><br>
-                <li><a href="foodDisplay2.php" value="6" onclick=getValue(6)>Drinks With Alcohol</a></li><br>
-                <li><a href="foodDisplay2.php" value="7" onclick=getValue(7)>Cappuccino</a></li><br>
-                <li><a href="foodDisplay2.php" value="8" onclick=getValue(8)>Juice</a></li><br>
-                <li><a href="foodDisplay2.php" value="9" onclick=getValue(9)>Mocktail</a></li><br>
-                <li><a href="foodDisplay2.php" value="10" onclick=getValue(10)>Ice Cream</a></li><br>
+                <li><a href="foodDisplay1.php" value="1" onclick=getValue(1)>Breakfast </a></li><br>
+                <li><a href="foodDisplay1.php" value="2" onclick=getValue(2)>Staters</a></li><br>
+                <li><a href="foodDisplay1.php" value="3" onclick=getValue(3)>Main Course</a></li><br>
+                <li><a href="foodDisplay1.php" value="4" onclick=getValue(4)>Desserts</a></li><br>
+                <li><a href="foodDisplay1.php" value="5" onclick=getValue(5)>Fast Food</a></li><br>
+                <li><a href="foodDisplay1.php" value="6" onclick=getValue(6)>Drinks With Alcohol</a></li><br>
+                <li><a href="foodDisplay1.php" value="7" onclick=getValue(7)>Cappuccino</a></li><br>
+                <li><a href="foodDisplay1.php" value="8" onclick=getValue(8)>Juice</a></li><br>
+                <li><a href="foodDisplay1.php" value="9" onclick=getValue(9)>Mocktail</a></li><br>
+                <li><a href="foodDisplay1.php" value="10" onclick=getValue(10)>Ice Cream</a></li><br>
 
             </ul>
             </nav>
-</div>
+</div>-->
 
 
 
@@ -58,8 +58,8 @@ $ini_array = parse_ini_file("../config/config.ini", true);
           $result1 = json_decode($apiResult1);  
           
           foreach($result1 as $obj2) {
-                    /* $value=$_COOKIE["val"];
-                    if($value == json_encode($obj2->foodType)) {*/
+                     $value=$_COOKIE["val"];
+                    if($value == json_encode($obj2->foodType)) {
 
         ?>
 
@@ -89,7 +89,7 @@ $ini_array = parse_ini_file("../config/config.ini", true);
            </div> 
 
            <div class="col-sm-6 col-xs-6 sideBar-name">
-             <span class="price-meta"> <?php echo $obj->price; ?>
+             <span class="price-meta"> <?php echo (json_encode($obj->price)); ?>
            </span>
            </div>
            
@@ -112,14 +112,14 @@ $ini_array = parse_ini_file("../config/config.ini", true);
     <div class="btn">  
       <button type="submit" onclick=setValue(<?php echo(json_encode($url)); ?>)>Add to Cart</button>
     </div>
-     <?php  }} ?>
+     <?php } }} ?>
 
     
 
 
    </div>
   <div class="link">
-   <a href="hotelDisplay.php">Back</a>
+   <a href="foodDisplay1.php">Back</a>
   </div> 
    </body>
    <script src="./js/hotelDisplayCuisine.js"></script>

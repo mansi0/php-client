@@ -1,7 +1,9 @@
 async function getValue(val) {
     try {
 
+        
 
+        
         createCookie("val", val, "10");
 
 
@@ -22,7 +24,7 @@ async function getValue(val) {
                 escape(value) + expires + "; path=/";
         }
 
-        window.location.replace("../public/hotelDisplayCuisine.php");
+        window.location.replace("../public/foodDisplay2.php");
     } catch (error) {
         console.log(error);
     }
