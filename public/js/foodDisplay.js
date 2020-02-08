@@ -2,7 +2,6 @@ async function food(hotelId) {
     try {
 
         
-
         var hid=encodeURIComponent(hotelId);
         //var hotelId=document.getElementById('hotelid').value;
         // Creating a cookie after the document is ready 
