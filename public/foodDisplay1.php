@@ -68,7 +68,7 @@ $ini_array = parse_ini_file("../config/config.ini", true);
     
      <div class="main">
      <div class="row sideBar-body" >
-     <a onclick=food(<?php echo $obj->hotelId; ?>)>
+     <a onclick=food(<?php echo $obj->hotelId; ?>,<?php echo $obj->hotelId; ?>)>
       <!--<a href = '1'></a> -->
        <div class="col-sm-3 col-xs-3 sideBar-avatar">
          <div class="avatar-icon">
@@ -89,7 +89,8 @@ $ini_array = parse_ini_file("../config/config.ini", true);
            </div> 
 
            <div class="col-sm-6 col-xs-6 sideBar-name">
-             <span class="price-meta"> <?php echo $obj->price; ?>
+            <?php $p=(string)$obj->price; ?>
+             <span class="price-meta"> <?php echo(json_encode($obj->price)); ?>
            </span>
            </div>
            
@@ -107,10 +108,14 @@ $ini_array = parse_ini_file("../config/config.ini", true);
      </div>
      </div>
      <div class="textbox">
-        <input type="number" class="text" id="qnty" placeholder="QUANTITY">
+        <input type="number" class="text" id="<?php echo $obj->hotelFoodId ?>" placeholder="QUANTITY">
     </div>
+    <div class="flash-container">
+                <div class="flash-message" data-type="error" data-timeout="8000" id="bodyfooddisplay"></div>
+            </div>
+
     <div class="btn">  
-      <button type="submit" onclick=setValue(<?php echo(json_encode($url)); ?>)>Add to Cart</button>
+      <button type="submit" onclick=setValue(<?php echo json_encode($url); ?>,<?php echo json_encode($obj->hotelFoodId); ?>)>Add to Cart</button>
     </div>
      <?php  }} ?>
 
@@ -119,8 +124,12 @@ $ini_array = parse_ini_file("../config/config.ini", true);
 
    </div>
   <div class="link">
-   <a href="hotelDisplay.php">Back</a>
+   <a onclick=deleteOrder(<?php echo json_encode($url); ?>) href="./hotelDisplay.php">Back</a>
   </div> 
+  <div class="link2">
+   <a href="cartpage.php">View Cart</a>
+  </div>
    </body>
    <script src="./js/hotelDisplayCuisine.js"></script>
+  
    </html>
