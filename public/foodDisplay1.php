@@ -68,11 +68,7 @@ $ini_array = parse_ini_file("../config/config.ini", true);
     
      <div class="main">
      <div class="row sideBar-body" >
-<<<<<<< HEAD
      <a onclick=food(<?php echo $obj->hotelId;?> ,<?php echo (json_encode($url));?>)>
-=======
-     <a onclick=food(<?php echo $obj->hotelId; ?>,<?php echo $obj->hotelId; ?>)>
->>>>>>> bfa8440ac89e5b99b2cb17a73b4036a54ed6712f
       <!--<a href = '1'></a> -->
        <div class="col-sm-3 col-xs-3 sideBar-avatar">
          <div class="avatar-icon">
@@ -109,6 +105,7 @@ $ini_array = parse_ini_file("../config/config.ini", true);
            </div>
          </div>
        </div></a>
+       
      </div>
      </div>
      <div class="textbox">

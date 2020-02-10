@@ -63,12 +63,14 @@ $ini_array = parse_ini_file("../config/config.ini", true);
      </div>
      </div>
      <div class="btn">  
-      <button type="submit" onclick="food(<?php echo (json_encode($obj->hotelId)); ?>,<?php echo (json_encode($url)); ?>)">View Details</button>
+      <button type="submit" onClick="./public/hoteldetails.php">View Details</button>
       </div>
      <?php } ?>
 
    </div>
-  
+   <div class="link">
+  <a href="customerhomepage.php">Back</a>
+  </div>
    </body>
    <script src="./js/foodDisplay.js"></script>
    </html>
