@@ -69,7 +69,7 @@ async function deleteOrder(url) {
         }
         
          else if (promiseResponse.status === 200) {
-            alert('in 200');
+           // alert('in 200');
             window.location.replace("../public/hotelDisplay.php");
         }
 

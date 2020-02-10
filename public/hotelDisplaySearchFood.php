@@ -15,9 +15,22 @@ $ini_array = parse_ini_file("../config/config.ini", true);
 
    <div class="row sideBar">
 
+
    <?php 
-   $value=$_COOKIE["value"];
-   $apiResult = callAPI('GET','http://localhost:5000/hotel/gethoteldetailbyhotelfacility/'.$value,'');
+
+$foodId= $_COOKIE["fId"];
+
+
+
+$apiResult1 = callAPI('GET','http://localhost:5000/hotelfood/getdetailsbyfoodid/'.$foodId,'');
+  
+ $result1 = json_decode($apiResult1);
+//  var_dump($result1);
+ 
+  foreach($result1 as $obj1) {
+
+    
+   $apiResult = callAPI('GET','http://localhost:5000/hotel/getdetailsbyhotelid/'.$obj1->hotelId,'');
      
     $result = json_decode($apiResult);
    
@@ -26,15 +39,15 @@ $ini_array = parse_ini_file("../config/config.ini", true);
 
      <div class="main">
      <div class="row sideBar-body" >
-     <a onclick=food(<?php echo (json_encode($obj->hotelId)); ?>,<?php echo (json_encode($url)); ?>)>
+     <!--<a href="foodDisplay1.php">-->
       <!-- <a href = '1'></a> -->
+      <a onclick=food(<?php echo (json_encode($obj->hotelId)); ?>,<?php echo (json_encode($url)); ?>)>
        <div class="col-sm-3 col-xs-3 sideBar-avatar">
          <div class="avatar-icon">
            <img src="./hotelimages/<?php echo $obj->hotelImage?>">
 
          </div>
        </div>
-       
        <div class="col-sm-9 col-xs-9 sideBar-main">
          <div class="row" id="<?php echo $obj->hotelId; ?>">
            <div class="col-sm-8 col-xs-8 sideBar-name">
@@ -59,21 +72,19 @@ $ini_array = parse_ini_file("../config/config.ini", true);
            </div>
          </div>
        </div>
-     </a>
+       
+      </a>
      </div>
      </div>
      <div class="btn">  
       <button type="submit" onClick="./public/hoteldetails.php">View Details</button>
       </div>
-     
-     <?php } ?>
+     <?php }} ?>
 
    </div>
    <div class="link">
   <a href="customerhomepage.php">Back</a>
   </div>
-   
-  
    </body>
    <script src="./js/foodDisplay.js"></script>
    </html>

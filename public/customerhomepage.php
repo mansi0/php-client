@@ -69,11 +69,11 @@ $email=$obj->emailId;
                     <a href="hotelDisplay.php">Show all restaurants</a><br>
                      <a href="">Login</a><br>
                     <!--<li> <a href="reg1.html">Register</a></li>-->
-                    <a href="#">Near by</a><br>
+                    <a href="hotelDisplayNearBy.php">Near by</a><br>
                   <!-- <li><a href="#">Gallery</a></li>-->
-                    <a href="veg.php">Veg</a><br>
-                    <a href="nonveg.php">Non-Veg</a><br>
-                    <a href="#">Express delivery</a><br>
+                    <a href="hotelDisplayVeg.php">Veg</a><br>
+                    <a href="hotelDisplayNonveg.php">Non-Veg</a><br>
+                    <a href="hotelDisplayExpressDelivery.php">Express delivery</a><br>
         </div>
 
         <div class="slideshow">
@@ -86,9 +86,9 @@ $email=$obj->emailId;
         </div>
 
         <div class="search">
-          <input type="text" name="box" placeholder="Search Here">
+          <input type="text" name="box" placeholder="Search Here" id="search">
           <a href="#"><i class="fas fa-search"></i></a>
-          <button type="button">Search Food</button> 
+          <button type="button" onclick=searchFood(<?php echo json_encode($url); ?>)>Search Food</button> 
         </div>
 
         <h2>Browse by Cuisine</h2>
