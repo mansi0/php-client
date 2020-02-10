@@ -59,11 +59,20 @@ $ini_array = parse_ini_file("../config/config.ini", true);
            </div>
          </div>
        </div>
+     </a>
      </div>
      </div>
+     <div class="btn">  
+      <button type="submit" onClick="./public/hoteldetails.php">View Details</button>
+      </div>
+     
      <?php } ?>
 
    </div>
+   <div class="link">
+  <a href="customerhomepage.php">Back</a>
+  </div>
+   
   
    </body>
    <script src="./js/foodDisplay.js"></script>

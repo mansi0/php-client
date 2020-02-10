@@ -16,7 +16,7 @@ $ini_array = parse_ini_file("../config/config.ini", true);
    <div class="row sideBar">
 
    <?php 
-   $apiResult = callAPI('GET','http://localhost:5000/hotel/gethoteldetailbyhotelmenutype/nonveg','');
+   $apiResult = callAPI('GET','http://localhost:5000/hotel/gethoteldetailbyhotelmenutype/'."veg",'');
      
     $result = json_decode($apiResult);
    
@@ -27,6 +27,7 @@ $ini_array = parse_ini_file("../config/config.ini", true);
      <div class="row sideBar-body" >
      <!--<a href="foodDisplay1.php">-->
       <!-- <a href = '1'></a> -->
+      <a onclick=food(<?php echo (json_encode($obj->hotelId)); ?>,<?php echo (json_encode($url)); ?>)>
        <div class="col-sm-3 col-xs-3 sideBar-avatar">
          <div class="avatar-icon">
            <img src="./hotelimages/<?php echo $obj->hotelImage?>">
@@ -34,7 +35,7 @@ $ini_array = parse_ini_file("../config/config.ini", true);
          </div>
        </div>
        <div class="col-sm-9 col-xs-9 sideBar-main">
-         <div class="row" id="<?php echo $obj->hotelId; ?>"  onclick=food(<?php echo $obj->hotelId; ?>)>
+         <div class="row" id="<?php echo $obj->hotelId; ?>">
            <div class="col-sm-8 col-xs-8 sideBar-name">
 
            <span class="name-meta"> <?php echo $obj->hotelName; ?>
@@ -57,11 +58,20 @@ $ini_array = parse_ini_file("../config/config.ini", true);
            </div>
          </div>
        </div>
+     </a>
      </div>
      </div>
+     <div class="btn">  
+      <button type="submit" onClick="./public/hoteldetails.php">View Details</button>
+      </div>
+     
      <?php } ?>
 
    </div>
+   <div class="link">
+  <a href="customerhomepage.php">Back</a>
+  </div>
+   
   
    </body>
    <script src="./js/foodDisplay.js"></script>
