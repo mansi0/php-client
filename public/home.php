@@ -29,6 +29,7 @@
                         <li> <a href="reg1.php"><i class="fas fa-user-plus"></i>Register</a></li>
                     </ul>
                 </div>
+                <div class="running">
                 <div class="logo">
                  <img src="./projectphoto/1578200184350.png">
                 </div>
@@ -49,6 +50,8 @@
                            <img src="./projectphoto/1578200184350.png">
                    </div>
        
+                </div>
+                </div>
                 </div>
             
             <!--<slider>

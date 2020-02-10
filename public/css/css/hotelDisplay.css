@@ -8,7 +8,7 @@ p{
 .main {
     position: relative;
     left:25%;
-    top:5%;
+    top:7%;
 }
 .sideBar {
     padding: 0 !important;
@@ -114,4 +114,16 @@ p{
     text-decoration: none;
   }
 
+  .btn button{
+    position: absolute;
+    background-color:#ff4d73; /* Green */
+    border: none;
+    
+    left:85%;
+    color: white;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
   

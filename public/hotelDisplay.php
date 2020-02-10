@@ -27,7 +27,7 @@ $ini_array = parse_ini_file("../config/config.ini", true);
      <div class="row sideBar-body" >
      <!--<a href="foodDisplay1.php">-->
       <!-- <a href = '1'></a> -->
-      <a onclick=food(<?php echo (json_encode($obj->hotelId)); ?>)>
+      <a onclick=food(<?php echo (json_encode($obj->hotelId)); ?>,<?php echo (json_encode($url)); ?>)>
        <div class="col-sm-3 col-xs-3 sideBar-avatar">
          <div class="avatar-icon">
            <img src="./hotelimages/<?php echo $obj->hotelImage?>">
@@ -57,9 +57,14 @@ $ini_array = parse_ini_file("../config/config.ini", true);
            </span>
            </div>
          </div>
-       </div></a>
+       </div>
+       
+      </a>
      </div>
      </div>
+     <div class="btn">  
+      <button type="submit" onclick="food(<?php echo (json_encode($obj->hotelId)); ?>,<?php echo (json_encode($url)); ?>)">View Details</button>
+      </div>
      <?php } ?>
 
    </div>

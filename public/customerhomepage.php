@@ -50,6 +50,7 @@ $email=$obj->emailId;
                   <li><a href="#">Gallery</a></li>
                     <li><a href="#">About</a></li>-->
                     <li><a href="hotelDisplay.php">Order Now</a></li>
+                    <li><a href="#">View Cart</a></li>
                     <li><a href="#"><?php echo $email ?></a></li>
 
 
@@ -126,56 +127,50 @@ $email=$obj->emailId;
 <section class="second">
 <div class="content-box">
       <b>Our Facilties</b>
-      <a href="reg1.php">
-        <div class="rect1">
+      
+        <div class="rect1" value="1" onclick=getValue1(1)>
           <h>Self Pickup</h>
         </div>
-      </a>
-      <a href="reg1.php">
-        <div class="rect2">
+      
+      
+        <div class="rect2"  value="2" onclick=getValue1(2)>
           <h1>Rooftop</h1>
         </div>
-      </a>
-      <a href="reg1.php">
-        <div class="rect3">
+      
+      
+        <div class="rect3" value="3" onclick=getValue1(3)>
           <h10>Outdoor Seating</h10>
         </div>
-      </a>
-      <a href="reg1.php">
-        <div class="rect4">
+      
+        <div class="rect4" value="4" onclick=getValue1(4)>
           <h3>Indoor Seating</h3>
         </div>
-      </a>
-      <a href="reg1.php">
-        <div class="rect5">
+      
+        <div class="rect5" value="5" onclick=getValue1(5)>
           <h4>Vallet Parking</h4>
         </div>
-      </a>
-      <a href="reg1.php">
-        <div class="rect6">
+     
+       <div class="rect6" value="6" onclick=getValue1(6)>
           <h5>Free Parking</h5>
         </div>
-      </a>
-      <a href="reg1.php">
-        <div class="rect7">
+      
+        <div class="rect7" value="7" onclick=getValue1(7)>
           <h6>Bar Facility</h6>
         </div>
-      </a>
-      <a href="reg1.php">
-        <div class="rect8">
+      
+        <div class="rect8" value="8" onclick=getValue1(8)>
           <h7>Ladies Special</h7>
         </div>
-      </a>
-      <a href="reg1.php">
-        <div class="rect9">
+      
+        <div class="rect9" value="9" onclick=getValue1(9)>
           <h8>Live Sports Screening</h8>
         </div>
-      </a>
-      <a href="reg1.php">
-        <div class="rect10">
+      
+      
+        <div class="rect10" value="10" onclick=getValue1(10)>
           <h9>Live Music</h9>
         </div>
-      </a>
+      
       <h11>Enjoy Every Moment With Us</h11>
       <h12><i class="fas fa-mobile-alt"></i></h12>
       <a1>Order</a1>

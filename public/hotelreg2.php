@@ -69,13 +69,13 @@
 
                &nbsp; Express Delivery &nbsp;
                 <input type="radio"  name="ExpressDelivery" value="true" id="d1"> True&nbsp;
-                <input type="radio"  name="ExpressDelivery" value="false" id="d2" checked="checked"> False<br>
+                <input type="radio"  name="ExpressDelivery" value="false" id="d2"> False<br>
             </div> 
             <div class="textbox">
                 <i class="fas fa-door-open" aria-hidden="true"></i>
                 &nbsp; Hotel Status &nbsp;
                 <input type="radio" name="HotelStatus" value="open" id="status1"> Open&nbsp;
-                <input type="radio" name="HotelStatus" value="close" id="status2" checked> Close<br>
+                <input type="radio" name="HotelStatus" value="close" id="status2"> Close<br>
             </div>
 
             <div class="textbox">
@@ -99,7 +99,7 @@
             <input type="checkbox" class="cuisine" value="American" id="cuis5">American  &nbsp;
             <input type="checkbox" class="cuisine" value="Bengali" id="cuis6"> Bengali &nbsp;
             <input type="checkbox" class="cuisine" value="Punjabi" id="cuis7"> Punjabi &nbsp;
-            <input type="checkbox" class="cuisine" value="Chinese" id="cuis8" checked>Chinese<br> <br>
+            <input type="checkbox" class="cuisine" value="Chinese" id="cuis8">Chinese<br> <br>
 
             <div class="textbox">
             <i class="fas fa-bars" aria-hidden="true"></i>
@@ -123,7 +123,7 @@
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 
              
             <input type="checkbox" class="facility" value="liveSportScreening" id="fac"> Live Sport Screening &nbsp;
-            <input type="checkbox" class="facility" value="liveMusic" id="fac" checked> Live Music &nbsp;
+            <input type="checkbox" class="facility" value="liveMusic" id="fac"> Live Music &nbsp;
             
             
     
