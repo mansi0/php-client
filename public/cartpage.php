@@ -106,14 +106,17 @@ $apiResult = callAPI('GET','http://localhost:5000/foodorder/getdetailsbyorderid/
              <!-- <div class="flash-message" data-type="error" data-timeout="8000" id="bodyfooddisplay"></div> -->
          <!-- </div> -->
 
- <!-- <div class="btn">   -->
-   <!-- <button type="submit" onclick=setValue(<?php echo json_encode($url); ?>,<?php echo json_encode($obj2->foodId); ?>)>Add to Cart</button> -->
- <!-- </div> -->
-  <?php } }
+ <div class="btn">  
+ <a onclick=deleteFood(<?php echo json_encode($url); ?>,<?php echo json_encode($obj->hotelFoodId); ?>) href="./cartpage.php">Remove</a>
+ </div>
+  <?php } }} ?>
 
- } ?>
-
-  <?php echo "total= $total";?>
+  <?php echo "total= $total Rs.";
+        $deliverycharge=(20*$total)/100;
+        echo "delivery charge=$deliverycharge Rs.";
+        $totalamount=$total+$deliverycharge;
+        echo "total amount=$totalamount Rs.";
+  ?>
 
 
   <div class="link-2">

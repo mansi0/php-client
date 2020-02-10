@@ -50,6 +50,34 @@ async function deleteFoodOrder(url) {
  
  }
 
+async function deleteFood(url,hotelFoodId) {
+
+    try {
+        const promiseResponse = await fetch(url + "/foodorder/deletefoodorderbyhotelfoodid/" + hotelFoodId);
+         /*var response = await foodList.json();
+         var fid = response[0].foodId.toString();
+         */
+        //salert('sure?');
+         console.log(promiseResponse);
+         
+          if (promiseResponse.status === 500) {
+           //  alert('Exception occur');
+             window.location.replace("../public/cartpage.php");
+         }
+         
+          else if (promiseResponse.status === 200) {
+           //  alert('in 200');
+             window.location.replace("../public/cartpage.php");
+         }
+ 
+         window.location.replace("../public/cartpage.php");
+ 
+     } catch (error) {
+         console.log(error);
+     }
+
+}
+
 
 async function deliverNow(url,total){
     try {
