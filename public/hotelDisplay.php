@@ -57,9 +57,14 @@ $ini_array = parse_ini_file("../config/config.ini", true);
            </span>
            </div>
          </div>
-       </div></a>
+       </div>
+       
+      </a>
      </div>
      </div>
+     <div class="btn">  
+      <button type="submit" onclick="food(<?php echo (json_encode($obj->hotelId)); ?>,<?php echo (json_encode($url)); ?>)">View Details</button>
+      </div>
      <?php } ?>
 
    </div>

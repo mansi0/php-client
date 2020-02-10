@@ -99,6 +99,13 @@ slide:nth-child(1)
     margin: 20px 0 0 110px;
     cursor: pointer;
 }
+
+.running{
+        
+        position: absolute;
+        top: 12%;
+}
+
 .hero
 {
     height:100vh;

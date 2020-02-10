@@ -40,26 +40,27 @@
 
 <div class="main">
                 <ul>
-                    <li class="active"> <a href="">Home</a></li>
-                    <!--<li> <a href="reg1.html">Register</a></li>-->
+                    <!--<li class="active"> <a href="">Home</a></li>
+                    <li> <a href="reg1.html">Register</a></li>
                     <li><a href="#">Services</a></li>
-                  <!-- <li><a href="#">Gallery</a></li>-->
-                    <li><a href="#">About</a></li>
+                   <li><a href="#">Gallery</a></li>
+                    <li><a href="#">About</a></li>-->
+                    <li><a href="hotelDisplay.php">Order Now</a></li>
+                    <li><a href="#">View Cart</a></li>
                     <li><a href="#"><?php echo $email1?></a></li>
 
 
                     <li><a href="#"><i class="fas fa-user"></i>
-                    <select id="list" style="max-width:70%;">
-                    <option value="click">Click Here</option>
-                    <option value="1">Customer Details</option>
-                    <option value="2">Log Out</option></li>
+                    <select id="list" style="max-width:70%;" onchange="location = this.value;">
+                    <option value="">Click Here</option>
+                    <option value="dbdetails.php" >Delivery boy Details</option>
+                   <option value="dblogin.php">Log Out</a></option></li>
                     </select>
-                   
                 
                 </ul>
 </div>
 
 
 </body>
-<script src="./js/hotlogin.js"></script>
+<script src="./js/dblogin.js"></script>
 </html>
