@@ -16,7 +16,7 @@ async function foodreg(url) {
 
 
         const food = {
-            foodName: name,
+            foodName: name.toLowerCase(),
             foodType: selectedValue,
             category: foodcategory,
         };
