@@ -84,7 +84,7 @@
                                 <i class="fas fa-user-tie"></i>
                              </div>
                             <h3><span>Join Our Business</span></h3>
-                            <p>You can work with us.hsdgkjhska sahgkjasfhkjsfh asjhfkjafhkjfh fjhkjfhkfhfkhf fbfkjfhkfjhkfhdfkdhfkfj</p>
+                            <p>As increasing numbers of consumers want to dine out or take prepared food home, the number of food-service operations has skyrocketed from 155,000 about 40 years ago to nearly 960,000 today. But there's still room in the market for your food-service business.</p>
                             <a href="hotelreg1.php">Click Here</a>
                         </div>
 
@@ -101,7 +101,7 @@
                             <div class="icon">
                                 <i class="fab fa-renren"></i>   
                              </div>
-                            <h3><span>Work With Us</span></h3>
+                            <h3><span>Order food</span></h3>
                             <p>You can work with us.hsdgkjhska sahgkjasfhkjsfh asjhfkjafhkjfh fjhkjfhkfhfkhf fbfkjfhkfjhkfhdfkdhfkfj</p>
                        </div>
 

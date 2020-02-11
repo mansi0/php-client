@@ -1,36 +1,29 @@
-.navigation{
-    position: absolute;
-    top: 6%;
-    font-size: 25px;
-    line-height: 40px;
-    background-color: #ff4d73;
-    height: 850px;
-    width:250px;
-    float:left;
-    padding:7px;
-}
-
-.navigation a{
-  color:#fff;
-  text-decoration: none;
-    
-}
-
 p{
-    font-size: 35px;
+    font-size: 30px;
     text-align: center;
     color: #ff4d73;
-    font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
 }
 
 .main {
     position: relative;
-    left:25%;
-    top:9%;
+    left:28%;
+    top:15%;
 }
+
+.orderid{
+    position: relative;
+    top:10%;
+    font-size: 25px;
+    padding: 15px 15px;
+    text-align: center;
+    color: #ff4d73;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
 .sideBar {
-    padding: 0 !important;
+    padding: 10px 5px;
     margin: 0 !important;
     background-color: #fff;
    /* overflow-y: auto;*/
@@ -40,7 +33,7 @@ p{
   
   .sideBar-body {
     position: relative;
-    padding: 12px !important;
+    padding: 15px !important;
     border-bottom: 1px solid #ff4d73;
     width:800px;
     height: 72px;
@@ -69,11 +62,6 @@ p{
     padding: 0 !important;
   }
   
- /* .sideBar-main .row {
-    padding: 0 !important;
-    margin: 0 !important;
-  }*/
-  
   .sideBar-name {
     padding: 0px !important;
     
@@ -88,7 +76,7 @@ p{
     color: #000;
     position: absolute;
     top:0%;
-    left:10%;
+    left:9%;
   }
   
 
@@ -140,65 +128,114 @@ p{
     text-decoration: none;
   }
 
-  .textbox{
+  button{
     position: relative;
-    top:-4%;
-    left:70%;
-    width: 40%;
+    top:0%;
+    left:77%;
+    background:#ff4d73;
+    height: 40px;
+    width:9%;
+    color:white;
+    font-size: 22px;
+  }
+  
+  .btn{
+    position:relative;
+    top:-70px;
     overflow: hidden;
-    padding: 5px 20px;
+    padding: 0px 15px;
     margin: 8px 0;
-}
-.textbox input{
-    border: 2px solid red;
-    background: none;
-    color: rgb(3, 3, 3);
+    
+  }
+  
+  .total{
+    position: absolute;
+    left:3%;
+    top:25%;
     font-size: 25px;
-    width: 22%;
-    float: left;
-    margin: 10px 20px;
+    color: #ff4d73;
+    font-weight: bold;
+  }
+  
+  .dcharges{
+    position: absolute;
+    left:3%;
+    top:45%;
+    font-size: 25px;
+    color: #ff4d73;
+    font-weight: bold;
   }
 
-::placeholder{
-    font-size: 20px;
-    color: black;
+  .totalamt{
+    position: absolute;
+    left:3%;
+    top:65%;
+    font-size: 25px;
+    color: #ff4d73;
+    font-weight: bold;
+  }
+
+  .box{
+    position: absolute;
+    border: 1px solid #ff4d73;
+    padding: 10px 20px;
+    height:350px;
+    width:350px;
+    top:20%;
+  }
+
+  .link-2{
+      position:absolute;
+      left:1%;
+      top:61%;
+      font-size: 25px;
+      padding: 5px 25px;
+     background-color: #ff4d73 ;
+      margin: 8px 0;
+  }
+
+  .link-2 a{
+    color: white;
+  }
+
+  .link-3{
+    position:absolute;
+    left:12%;
+    top:61%;
+    font-size: 25px;
+    padding: 5px 25px;
+   background-color: #ff4d73 ;
+    margin: 8px 0;
 }
 
-button{
-  position: relative;
-  top:0%;
-  left:72.5%;
-  background:#ff4d73;
-  height: 40px;
-  width:9%;
-  color:white;
-  font-size: 22px;
-}
-
-.btn{
-  position:relative;
-  top:-5%;
-  overflow: hidden;
-  padding: 5px 20px;
-  margin: 8px 0;
-  
-}
-
-.link a{
-  position: absolute;
-  top:0%;
-  font-size: 30px;
-  font-weight: bold;
-  color:#ff4d73;
-}
-
-.link2 a{
-  position: absolute;
-  top:1%;
-  left: 89%;
-  font-size: 30px;
-  font-weight: bold;
-  background-color: #ff4d73;
+.link-3 a{
   color: white;
-  padding: 10px 20px;
+}
+
+.link-1{
+  position:absolute;
+  left:2%;
+  top:4%;
+  font-size: 25px;
+  padding: 5px 25px;
+ background-color: #ff4d73 ;
+  margin: 8px 0;
+}
+
+.link-1 a{
+color: white;
+}
+
+.link-4{
+  position:absolute;
+  left:89%;
+  top:4%;
+  font-size: 25px;
+  padding: 5px 25px;
+ background-color: #ff4d73 ;
+  margin: 8px 0;
+}
+
+.link-4 a{
+color: white;
 }

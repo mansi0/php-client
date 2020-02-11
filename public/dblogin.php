@@ -12,6 +12,15 @@
     </head>
 
 <body>
+
+<div class="menu">
+                    <!--<img src="">-->
+                    <ul>
+                        <li> <a href="home.php"><i class="fas fa-sign-in-alt"></i>Home</a></li>
+                        <li> <a href="dbreg.php"><i class="fas fa-user-plus"></i>Register</a></li>
+                    </ul>
+</div>
+<div class="form">
   <div class="login-box">
 
     <h1>Login Form</h1>
@@ -38,6 +47,7 @@
     <button type="submit" class="btn btn-success btn-block" onclick=setValue(<?php echo(json_encode($url)); ?>)>Login</button>
   <div class="col-md-4 col-sm-4 col-xs-12"></div>
   </div>
+</div>
   <!--<button type="button"><a href="/home/aishwariya/fooddelivery/demo/src/main/resources/index1.html">Register</a></button> -->
 
   <!--<script type="text/javascript">

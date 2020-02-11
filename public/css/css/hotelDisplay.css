@@ -2,12 +2,13 @@ p{
     font-size: 30px;
     text-align: center;
     color: #ff4d73;
+    font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
 }
 
 .main {
     position: relative;
-    left:25%;
+    left:17%;
     top:7%;
 }
 .sideBar {
@@ -119,7 +120,7 @@ p{
     background-color:#ff4d73; /* Green */
     border: none;
     
-    left:85%;
+    left:76%;
     color: white;
     padding: 15px 32px;
     text-decoration: none;
@@ -131,8 +132,9 @@ p{
     position: absolute;
     top:2%;
     left:2%;
-    color:black;
+    color: #ff4d73;
     font-weight: bold;
     font-size: 30px;
     text-decoration: none;
   }
+  

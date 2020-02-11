@@ -11,6 +11,16 @@
     </head>
 
 <body>
+
+<div class="menu">
+                    <!--<img src="">-->
+                    <ul>
+                        <li> <a href="home.php"><i class="fas fa-sign-in-alt"></i>Home</a></li>
+                        <li> <a href="hotelreg1.php"><i class="fas fa-user-plus"></i>Register</a></li>
+                    </ul>
+</div>
+
+<div class="form">
   <div class="login-box">
 
     <h1>Login Form</h1>
@@ -51,6 +61,7 @@
   });-->
 
   </div>
+</div>
 </body>
 <script src="./js/hotlogin.js"></script> 
 </html>

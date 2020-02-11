@@ -11,6 +11,17 @@
     </head>
 
 <body>
+
+
+  <div class="menu">
+                    <!--<img src="">-->
+                    <ul>
+                        <li> <a href="home.php"><i class="fas fa-sign-in-alt"></i>Home</a></li>
+                        <li> <a href="reg1.php"><i class="fas fa-user-plus"></i>Register</a></li>
+                    </ul>
+   </div>
+  
+<div class="form">
   <div class="login-box">
 
     <h1>Login Form</h1>
@@ -49,8 +60,8 @@
       if($(this).val()=="")
       $(this).removeClass("focus");
   });-->
-
-  </div>
+</div>
+</div>
 </body>
 <script src="./js/login.js"></script> 
 </html>

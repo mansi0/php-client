@@ -11,14 +11,17 @@ $ini_array = parse_ini_file("../config/config.ini", true);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cart</title>
-    <link rel="stylesheet" href="./css/css/foodDisplay1.css">
+    <link rel="stylesheet" href="./css/css/cartpage.css">
 </head>
 <body>
-   orderid: <?php 
+
+<p>Your Food</p>
+  <div class="orderid">
+   Orderid: <?php 
    $total=0.0;
    $orderId=$_COOKIE["orderId"];
     echo $orderId;
-    
+     
 
 
 
@@ -52,7 +55,10 @@ $apiResult = callAPI('GET','http://localhost:5000/foodorder/getdetailsbyorderid/
                  
      ?>
 
-     
+      </div>  
+      <br>
+      <br>
+      
 
  
   <div class="main">
@@ -107,23 +113,31 @@ $apiResult = callAPI('GET','http://localhost:5000/foodorder/getdetailsbyorderid/
          <!-- </div> -->
 
  <div class="btn">  
- <a onclick=deleteFood(<?php echo json_encode($url); ?>,<?php echo json_encode($obj->hotelFoodId); ?>) href="./cartpage.php">Remove</a>
+ <button type="submit" onclick=deleteFood(<?php echo json_encode($url); ?>,<?php echo json_encode($obj->hotelFoodId); ?>) href="./cartpage.php">Remove</button>
  </div>
   <?php } }} ?>
-
-  <?php echo "total= $total Rs.";
-        $deliverycharge=(20*$total)/100;
-        echo "delivery charge=$deliverycharge Rs.";
-        $totalamount=$total+$deliverycharge;
-        echo "total amount=$totalamount Rs.";
-  ?>
-
+<div class="box">
+  <div class="total">
+   <?php echo "Total= $total Rs.";
+       
+    ?>
+  </div>
+  <div class="dcharges">
+   <?php   $deliverycharge=(20*$total)/100;
+   echo "Delivery Charge=$deliverycharge Rs.";?>
+  </div>
+  <div class="totalamt">
+    <?php    $totalamount=$total+$deliverycharge;
+        echo "Total Amount=$totalamount Rs.";
+        ?>
+</div>
+</div>
 
   <div class="link-2">
 <a href onclick=deliverNow(<?php echo json_encode($url); ?>,<?php echo json_encode($total); ?>) >Deliver Now</a>
 </div>
 
-<div class="link-2">
+<div class="link-3">
 <a href onclick=selfPickUp(<?php echo json_encode($url); ?>,<?php echo json_encode($total); ?>) >SelfPickup</a>
 </div>
 
@@ -133,7 +147,7 @@ $apiResult = callAPI('GET','http://localhost:5000/foodorder/getdetailsbyorderid/
    <a href="./foodDisplay1.php">Back</a>
   </div>
 
-  <div class="link-2">
+  <div class="link-4">
    <a onclick=deleteFoodOrder(<?php echo json_encode($url); ?>) href="./foodDisplay1.php">Delete Cart</a>
   </div>
 
