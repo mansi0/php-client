@@ -1,0 +1,83 @@
+@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
+
+body{
+    background-image: url("../../");
+    background-position: center;
+    font-family: sans-serif;
+    color:#01ab97
+}
+.progress{
+    margin: 300px auto;
+}
+
+.progress img{
+    width:80px;
+    margin-bottom:20px;
+}
+ul{
+    text-align: center;
+}
+ul li{
+    display: inline-block;
+    width:200px;
+    position: relative;
+}
+ul li .fas{
+    background-color: #ccc;
+    width:16px;
+    height:16px;
+    color:#fff;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+ul li .fas::after{
+    content: '';
+    background: #ccc;
+    height:5px;
+    width:205px;
+    display: block;
+    position: absolute;
+    left:0;
+    top:110px;
+    z-index:-1;
+}
+
+ul li:nth-child(3) .fas{
+        background-color: #148e14;
+
+
+}
+ul li:nth-child(3) .fas::after{
+    background: #148e14;
+}
+
+ul li:nth-child(1) .fas,
+ul li:nth-child(2) .fas{
+    background: #60aa97;
+}
+
+ul li:nth-child(1) .fas::after{
+    background: #60aa97;
+    top: 96px;
+}
+ul li:nth-child(2) .fas::after{
+    background: #60aa97;
+    top: 114px;
+}
+
+ul li:first-child .fas::after{
+    width:105px;
+    left:100px;
+}
+
+ul li:last-child .fas::after{
+    width:105px;
+    top: 117px;
+}
+
+ul li:nth-child(4) .fas::after{
+        top: 114px;
+}
+
+
