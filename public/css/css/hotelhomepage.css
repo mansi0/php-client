@@ -49,3 +49,145 @@ select.paddingOffset
 {
 	padding-left:150px;
 }
+
+
+p{
+  font-size: 30px;
+  text-align: center;
+  color: #ff4d73;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.main {
+  position: relative;
+  left:17%;
+  top:7%;
+}
+.sideBar {
+  padding: 0 !important;
+  margin: 0 !important;
+  background-color: #fff;
+ /* overflow-y: auto;*/
+  border: 1px solid #f7f7f7;
+  height: 100%;
+}
+
+.sideBar-body {
+  position: relative;
+  padding: 12px !important;
+  border-bottom: 1px solid #ff4d73;
+  width:1000px;
+  height: 72px;
+  margin: 0 !important;
+  cursor: pointer;
+}
+
+.sideBar-body:hover {
+  background-color:#ff4d73;
+}
+
+.sideBar-avatar {
+ /* text-align: center;*/
+  padding: 0 !important;
+}
+
+.avatar-icon img {
+  position: relative;
+  top: 10%;
+  left:65%;
+  height: 54px;
+  width: 54px;
+}
+
+.sideBar-main {
+  padding: 0 !important;
+}
+
+/* .sideBar-main .row {
+  padding: 0 !important;
+  margin: 0 !important;
+}*/
+
+.sideBar-name {
+  padding: 0px !important;
+  
+}
+
+.name-meta {
+  font-size: 25px;
+  padding: 1% !important;
+  text-align: left;
+ /* text-overflow: ellipsis;*/
+  white-space: nowrap;
+  color: #000;
+  position: absolute;
+  top:0%;
+  left:10%;
+}
+
+
+.locality-meta {
+  font-size: 25px;
+  padding: 1% !important;
+  text-align: left;
+ /* text-overflow: ellipsis;*/
+  white-space: nowrap;
+  color: #000;
+  position: absolute;
+  top:40%;
+  left:10%;
+}
+
+.state-meta {
+  font-size: 25px;
+  padding: 1% !important;
+  text-align: right;
+ /* text-overflow: ellipsis;*/
+  white-space: nowrap;
+  color: #000;
+  position: absolute;
+  top:35%;
+  left:50%;
+}
+
+
+.sideBar-time {
+  padding: 10px !important;
+}
+
+.time-meta {
+  text-align: right;
+  font-size: 12px;
+  padding: 1% !important;
+  color: rgba(0, 0, 0, .4);
+  vertical-align: baseline;
+}
+
+a{
+  text-decoration: none;
+}
+
+.btn button{
+  position: absolute;
+  background-color:#ff4d73; /* Green */
+  border: none;
+  
+  left:76%;
+  color: white;
+  padding: 15px 32px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.link a{
+  position: absolute;
+  top:2%;
+  left:2%;
+  color: #ff4d73;
+  font-weight: bold;
+  font-size: 30px;
+  text-decoration: none;
+}
+

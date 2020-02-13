@@ -45,7 +45,7 @@
                     <li><a href="#">Services</a></li>
                   <li><a href="#">Gallery</a></li>-->
                     <li><a href="hotelDisplay.php">Order Now</a></li>
-                    <li><a href="#">View Cart</a></li>
+                    <li><a href onclick=getOrder(<?php echo json_encode(url); ?>) >Get Orders</a></li>
                     <li><a href="#"><?php echo $email2 ?></a></li>
 
 
@@ -59,6 +59,115 @@
                 
                 </ul>
  </div>
+
+
+ <div class="row sideBar">
+
+<?php 
+$apiResult = callAPI('GET','http://localhost:5000/order/getorderbyhotelid/'.$hotelId,'');
+  
+ $result = json_decode($apiResult);
+
+   foreach($result as $obj) {
+    
+      echo $obj->orderId;
+
+      if($obj->status==1) {
+        echo "homedelivery";?>
+        <a href onclick=accepthomedelivery(<?php echo json_encode($url);?>,2)>Accept Order</a>
+      <?php }
+      else {
+        echo "selfpickup";?>
+        <a href onclick=acceptselfpickup(<?php echo json_encode($url); ?>,2)>Accept Order</a>
+        <?php }
+
+        $apiResult = callAPI('GET','http://localhost:5000/customer/getcustomerbycustomerid/'.$obj->customerId,'');
+  
+         $result = json_decode($apiResult);
+
+          foreach($result as $cust) {
+
+            echo $cust->name;
+            echo $cust->emailId;
+            echo $cust->contNo;
+
+          }
+      
+
+    $apiResult1 = callAPI('GET','http://localhost:5000/foodorder/getdetailsbyorderid/'.$obj->orderId,'');
+  
+    $result1 = json_decode($apiResult1);
+
+
+
+        foreach($result1 as $obj1) {
+
+          $apiResult2 = callAPI('GET','http://localhost:5000/hotelfood/getdetailsbyhotelfoodid/'.$obj1->hotelFoodId,'');
+  
+          $result2 = json_decode($apiResult2);
+
+          
+
+          foreach($result2 as $obj2) {
+
+            $apiResult3 = callAPI('GET','http://localhost:5000/food/getdetailbyid/'.$obj2->foodId,'');
+  
+            $result3 = json_decode($apiResult3);
+
+            foreach($result3 as $obj3) {
+
+
+
+
+
+
+    ?>
+
+  <div class="main">
+  <div class="row sideBar-body" >
+  <!--<a href="foodDisplay1.php">-->
+   <!-- <a href = '1'></a> -->
+   
+    <div class="col-sm-3 col-xs-3 sideBar-avatar">
+      <div class="avatar-icon">
+        <!-- <img src="./hotelimages/<?php echo $obj->hotelImage?>"> -->
+
+      </div>
+    </div>
+    <div class="col-sm-9 col-xs-9 sideBar-main">
+      <div class="row" id="<?php echo $obj3->foodName; ?>">
+        <div class="col-sm-8 col-xs-8 sideBar-name">
+
+        <span class="name-meta"> <?php echo $obj2->price; ?>
+        </span>
+        </div> 
+
+        <div class="col-sm-7 col-xs-7 sideBar-name">
+          <span class="locality-meta"> <?php echo $obj1->quantity; ?>
+        </span>
+        </div>
+        
+        <div class="col-sm-6 col-xs-6 sideBar-name">
+          <span class="state-meta"> <?php echo $obj->time; ?>
+        </span>
+        </div>
+        
+        <div class="col-sm-4 col-xs-4 pull-right sideBar-time">
+          <span class="time-meta pull-right">
+        </span>
+        </div>
+      </div>
+    </div>
+    
+   </a>
+  </div>
+  </div>
+  <div class="btn">  
+   <button type="submit" onClick="./public/hoteldetails.php">View Details</button>
+   </div>
+  <?php }}}} ?>
+
+</div>
 
 </body>
 <script src="./js/hotlogin.js"></script>
