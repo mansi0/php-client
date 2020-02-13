@@ -59,12 +59,15 @@ p{
   font-family: 'Courier New', Courier, monospace;
 }
 
-.main {
+.top{
   position: relative;
   left:17%;
-  top:7%;
+  top:100px;
 }
 .sideBar {
+  position: relative;
+  left:17%;
+  top:200px;
   padding: 0 !important;
   margin: 0 !important;
   background-color: #fff;
@@ -76,7 +79,7 @@ p{
 .sideBar-body {
   position: relative;
   padding: 12px !important;
-  border-bottom: 1px solid #ff4d73;
+  border-bottom: 2px solid #ff4d73;
   width:1000px;
   height: 72px;
   margin: 0 !important;
@@ -123,7 +126,7 @@ p{
   color: #000;
   position: absolute;
   top:0%;
-  left:10%;
+  left:80%;
 }
 
 
@@ -136,6 +139,18 @@ p{
   color: #000;
   position: absolute;
   top:40%;
+  left:80%;
+}
+
+.nm-meta {
+  font-size: 25px;
+  padding: 1% !important;
+  text-align: right;
+ /* text-overflow: ellipsis;*/
+  white-space: nowrap;
+  color: #000;
+  position: absolute;
+  top:-8px;
   left:10%;
 }
 
@@ -148,7 +163,7 @@ p{
   color: #000;
   position: absolute;
   top:35%;
-  left:50%;
+  left:8%;
 }
 
 
@@ -191,3 +206,94 @@ a{
   text-decoration: none;
 }
 
+.id-meta{
+  font-size: 25px;
+  padding: 1% !important;
+  text-align: left;
+ /* text-overflow: ellipsis;*/
+  white-space: nowrap;
+  color: #000;
+  position: absolute;
+  top:12%;
+  left:21%;
+}
+
+.cname-meta{
+  font-size: 25px;
+  padding: 1% !important;
+  text-align: left;
+ /* text-overflow: ellipsis;*/
+  white-space: nowrap;
+  color: #000;
+  position: absolute;
+  top:15%;
+  left:21%;
+}
+
+.email-meta{
+  font-size: 25px;
+  padding: 1% !important;
+  text-align: left;
+ /* text-overflow: ellipsis;*/
+  white-space: nowrap;
+  color: #000;
+  position: absolute;
+  top:18%;
+  left:21%;
+}
+
+.cn-meta{
+  font-size: 25px;
+  padding: 1% !important;
+  text-align: left;
+ /* text-overflow: ellipsis;*/
+  white-space: nowrap;
+  color: #000;
+  position: absolute;
+  top:21%;
+  left:21%;
+}
+
+hr{
+  position: relative;
+  top:150px;
+  left:-80px;
+  border-color: #ff4d73;
+}
+
+.hm{
+  font-size: 25px;
+  color: #000;
+  position: absolute;
+  top:15%;
+  left:60%;
+}
+.sf{
+  font-size: 25px;
+  color: #000;
+  position: absolute;
+  top:15%;
+  left:60%;
+}
+
+.selfpickup{
+  font-size: 25px;
+  position: absolute;
+  top:20%;
+  left:60%;
+}
+.selfpickup a{
+  color: #ff4d73;
+  font-weight: bold;
+}
+.homedelivery{
+  font-size: 25px;
+  position: absolute;
+  top:20%;
+  left:60%;
+}
+
+.homedelivery a{
+  color: #ff4d73;
+  font-weight: bold;
+}

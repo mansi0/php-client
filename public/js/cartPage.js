@@ -325,7 +325,7 @@ async function selfpickupadd(url, orderId) {
             alert('exception ocuur');
         }
 
-        const selfPickUpList = await fetch(url + "/selfpickup/getdetailsbyorderid" + orderId);
+        const selfPickUpList = await fetch(url + "/selfpickup/getdetailsbyorderid/" + orderId);
         var response = await selfPickUpList.json();
         var sid = response[0].selfPickupId.toString();
 

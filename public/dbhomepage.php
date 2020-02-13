@@ -47,6 +47,10 @@
                     <li><a href="#">About</a></li>-->
                     <li><a href="hotelDisplay.php">Order Now</a></li>
                     <li><a href="#">View Cart</a></li>
+                    <li><label class="switch">
+                    <input type="checkbox" id="onoff" value="1" onclick=getValue(<?php echo json_encode($url);?>)>
+                    <span class="slider round"></span>
+                    </label></li>
                     <li><a href="#"><?php echo $email1?></a></li>
 
 

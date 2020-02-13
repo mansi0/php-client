@@ -61,7 +61,8 @@
  </div>
 
 
- <div class="row sideBar">
+
+ 
 
 <?php 
 $apiResult = callAPI('GET','http://localhost:5000/order/getorderbyhotelid/'.$hotelId,'');
@@ -70,15 +71,22 @@ $apiResult = callAPI('GET','http://localhost:5000/order/getorderbyhotelid/'.$hot
 
    foreach($result as $obj) {
     
-      echo $obj->orderId;
+      ?>
+       <div class="col-sm-9 col-xs-9 sideBar-name">
+          <span class="id-meta"> <?php echo $obj->orderId; ?>
+        </span>
+        </div>
+        <?php
 
-      if($obj->status==1) {
-        echo "homedelivery";?>
-        <a href onclick=accepthomedelivery(<?php echo json_encode($url);?>,2)>Accept Order</a>
+      if($obj->status==1) {?>
+        <div class="hm">
+        <?php echo "Homedelivery";?></div>
+      <div class="homedelivery"><a href onclick=accepthomedelivery(<?php echo json_encode($url);?>,2)>Accept Order</a></div>
       <?php }
-      else {
-        echo "selfpickup";?>
-        <a href onclick=acceptselfpickup(<?php echo json_encode($url); ?>,2)>Accept Order</a>
+      else {?>
+        <div class="sf">
+        <?php echo "Selfpickup";?></div>
+      <div class="selfpickup"> <a href onclick=acceptselfpickup(<?php echo json_encode($url); ?>,2)>Accept Order</a></div>
         <?php }
 
         $apiResult = callAPI('GET','http://localhost:5000/customer/getcustomerbycustomerid/'.$obj->customerId,'');
@@ -87,12 +95,25 @@ $apiResult = callAPI('GET','http://localhost:5000/order/getorderbyhotelid/'.$hot
 
           foreach($result as $cust) {
 
-            echo $cust->name;
-            echo $cust->emailId;
-            echo $cust->contNo;
-
+            ?>
+            <div class="col-sm-6 col-xs-6 sideBar-name">
+            <span class="cname-meta"> <?php echo $cust->name; ?>
+            </span>
+            </div>
+            <div class="col-sm-6 col-xs-6 sideBar-name">
+            <span class="email-meta"> <?php echo $cust->emailId; ?>
+            </span>
+            </div>
+            <div class="col-sm-6 col-xs-6 sideBar-name">
+            <span class="cn-meta"> <?php echo $cust->contNo; ?>
+            </span>
+            </div>
+            <hr align="center" width="55%"> 
+            
+        <?php
           }
-      
+          ?>
+    <?php
 
     $apiResult1 = callAPI('GET','http://localhost:5000/foodorder/getdetailsbyorderid/'.$obj->orderId,'');
   
@@ -122,7 +143,7 @@ $apiResult = callAPI('GET','http://localhost:5000/order/getorderbyhotelid/'.$hot
 
 
     ?>
-
+  <div class="sideBar">
   <div class="main">
   <div class="row sideBar-body" >
   <!--<a href="foodDisplay1.php">-->
@@ -136,6 +157,12 @@ $apiResult = callAPI('GET','http://localhost:5000/order/getorderbyhotelid/'.$hot
     </div>
     <div class="col-sm-9 col-xs-9 sideBar-main">
       <div class="row" id="<?php echo $obj3->foodName; ?>">
+
+      <div class="col-sm-9 col-xs-9 sideBar-name">
+          <span class="nm-meta"> <?php echo $obj3->foodName; ?>
+        </span>
+        </div>
+
         <div class="col-sm-8 col-xs-8 sideBar-name">
 
         <span class="name-meta"> <?php echo $obj2->price; ?>
@@ -148,7 +175,7 @@ $apiResult = callAPI('GET','http://localhost:5000/order/getorderbyhotelid/'.$hot
         </div>
         
         <div class="col-sm-6 col-xs-6 sideBar-name">
-          <span class="state-meta"> <?php echo $obj->time; ?>
+          <span class="state-meta"> <?php echo $obj->orderTime; ?>
         </span>
         </div>
         
@@ -162,9 +189,9 @@ $apiResult = callAPI('GET','http://localhost:5000/order/getorderbyhotelid/'.$hot
    </a>
   </div>
   </div>
-  <div class="btn">  
+  <!--<div class="btn">  
    <button type="submit" onClick="./public/hoteldetails.php">View Details</button>
-   </div>
+   </div>-->
   <?php }}}} ?>
 
 </div>

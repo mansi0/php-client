@@ -2,6 +2,8 @@ async function setValue(url){
     try{
         const emailId = document.getElementById("emailid").value;
         const password = document.getElementById("password").value;
+       // var slider = document.getElementsByClassName("switch");
+       // console.log(slider);
        
         const deliveryboy= {
             deliveryboyEmailId: emailId,
@@ -87,4 +89,10 @@ async function setValue(url){
      
         }
     }
+
+async function getValue(url) {
+
+    var val=document.getElementById("onoff").value;
+    alert(val);
+}
    
