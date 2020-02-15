@@ -67,7 +67,6 @@ $email=$obj->emailId;
 
         <div class="navigation">
                     <a href="hotelDisplay.php">Show all restaurants</a><br>
-                     <a href="">Login</a><br>
                     <!--<li> <a href="reg1.html">Register</a></li>-->
                     <a href="hotelDisplayNearBy.php">Near by</a><br>
                   <!-- <li><a href="#">Gallery</a></li>-->
