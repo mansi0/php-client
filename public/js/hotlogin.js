@@ -83,13 +83,15 @@ async function setValue(url) {
     }
 }
 
-async function accepthomedelivery(url,value) {
+async function accepthomedelivery(url, value) {
 
     const homedelivery = {
-        status:value
+        status: value
     };
 
-   // console.log(hotel)
+    //callDeliveryBoy(url);
+
+    // console.log(hotel)
 
     const promiseResponse = await fetch(url + "/homedelivery/updatehomedeliverybystatus", {
         method: 'POST',
@@ -98,20 +100,103 @@ async function accepthomedelivery(url,value) {
         },
         body: JSON.stringify(homedelivery),
     });
-    alert('order accepted');
-} 
+
+}
+
+async function callDeliveryBoy(url) {
+
+    function getCookie(c_name) {
+        if (document.cookie.length > 0) {
+            c_start = document.cookie.indexOf(c_name + "=");
+            if (c_start != -1) {
+                c_start = c_start + c_name.length + 1;
+                c_end = document.cookie.indexOf(";", c_start);
+                if (c_end == -1) {
+                    c_end = document.cookie.length;
+                }
+                return unescape(document.cookie.substring(c_start, c_end));
+            }
+        }
+        return "";
+    }
+
+    var orderId = getCookie("orderId");
+
+
+    const deliveryBoyList = await fetch(url + "/deliveryboy/getdetailsbyactivity");
+    var response = await deliveryBoyList.json();
+    if (response == null) {
+        alert('Delivery Boy Not Available ...Try after sometime');
+    }
+    var dbid = response[0].deliveryboyId.toString();
 
 
 
-
-
-async function acceptselfpickup(url,value) {
-
-    const selfpickup = {
-        status:value
+    homedelivery = {
+        orderId: orderId,
+        deliveryboyId: dbid
     };
 
-   // console.log(hotel)
+    const promiseResponse = await fetch(url + "/homedelivery/updatehomedeliverybydeliveryboyid", {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json;charset=utf-8'
+        },
+        body: JSON.stringify(homedelivery),
+    });
+
+    deliveryboy = {
+        deliveryboyactivity:1
+    };
+
+    const dbResponse = await fetch(url+"/deliveryboy/updatedeliveryboybyactivity",{
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json;charset=utf-8'
+        },
+        body: JSON.stringify(deliveryboy),
+   
+
+    });
+
+    if (promiseResponse === 200) {
+        alert('Order Is Sent to deliveryboy ');
+    }
+
+
+    const homedelivery = {
+        status: 3
+    };
+
+    //callDeliveryBoy(url);
+
+    // console.log(hotel)
+
+    const promiseResponses = await fetch(url + "/homedelivery/updatehomedeliverybystatus", {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json;charset=utf-8'
+        },
+        body: JSON.stringify(homedelivery),
+    });
+
+
+
+
+
+}
+
+
+
+
+
+async function acceptselfpickup(url, value) {
+
+    const selfpickup = {
+        status: value
+    };
+
+    // console.log(hotel)
 
     const promiseResponse = await fetch(url + "/selfpickup/updateselfpickupbystatus", {
         method: 'POST',

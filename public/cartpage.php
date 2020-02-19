@@ -134,11 +134,11 @@ $apiResult = callAPI('GET','http://localhost:5000/foodorder/getdetailsbyorderid/
 </div>
 
   <div class="link-2">
-<a href onclick=deliverNow(<?php echo json_encode($url); ?>,<?php echo json_encode($total); ?>) >Deliver Now</a>
+<a onclick=deliverNow(<?php echo json_encode($url); ?>,<?php echo json_encode($total); ?>) href="./customerhomepage.php" >Deliver Now</a>
 </div>
 
 <div class="link-3">
-<a href onclick=selfPickUp(<?php echo json_encode($url); ?>,<?php echo json_encode($total); ?>) >SelfPickup</a>
+<a onclick=selfPickUp(<?php echo json_encode($url); ?>,<?php echo json_encode($total); ?>) href="./customerhomepage.php" >SelfPickup</a>
 </div>
 
 

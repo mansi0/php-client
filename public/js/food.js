@@ -82,7 +82,7 @@ async function foodreg(url) {
         console.log(promiseResponseh);
         if (promiseResponseh.status === 200) {
 
-            alert('ok');
+          //  alert('ok');
             window.location.replace("../public/food.php");
            
         }
