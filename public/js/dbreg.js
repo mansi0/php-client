@@ -32,7 +32,7 @@ async function reg(url) {
         console.log(promiseResponse);
         if(promiseResponse.status === 200)
         {
-            alert('in 200');
+           // alert('in 200');
             window.location.replace("../public/dblogin.php");
         }
 

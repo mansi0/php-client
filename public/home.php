@@ -75,7 +75,9 @@
                                  </div>
                                 <h3><span>Work With Us</span></h3>
                                 
-                                    <p><a href="dbreg.php">Click Here</a></p>
+                                    <p>If you want to work with us click here to join.</p>
+                                    
+                                    <a href="dbreg.php">Click Here</a>
                                 
                         </div>
 
@@ -84,25 +86,27 @@
                                 <i class="fas fa-user-tie"></i>
                              </div>
                             <h3><span>Join Our Business</span></h3>
-                            <p>As increasing numbers of consumers want to dine out or take prepared food home, the number of food-service operations has skyrocketed from 155,000 about 40 years ago to nearly 960,000 today. But there's still room in the market for your food-service business.</p>
+                            <p>As increasing numbers of consumers want to dine out or take prepared food home, the number of food-service operations has skyrocketed from 155,000 about 40 years ago to nearly 960,000 today.</p>
                             <a href="hotelreg1.php">Click Here</a>
                         </div>
 
                          <div class="col-md-3 text-center">
                             <div class="icon">
-                                <i class="fas fa-mobile-alt"></i>
+                            <i class="fas fa-align-justify"></i>
 
                             </div>
-                            <h3><span>Contact With Us</span></h3>
-                            <p>For contacting with us please go at the below of the page.</p>
+                            <h3><span>Report</span></h3>
+                            <p>Here you can see how much people have joined us,how much people started working with us and how much restaurants are joined us.</p>
+                            <a href="report.php">Click Here</a>
                         </div>
 
                         <div class="col-md-3 text-center">
                             <div class="icon">
-                                <i class="fab fa-renren"></i>   
+                            <i class="fas fa-utensils"></i> 
                              </div>
                             <h3><span>Order food</span></h3>
-                            <p>You can work with us.hsdgkjhska sahgkjasfhkjsfh asjhfkjafhkjfh fjhkjfhkfhfkhf fbfkjfhkfjhkfhdfkdhfkfj</p>
+                            <p>Enjoy your food by ordering and by fulfiiling your cravings.</p>
+                            <a href="reg1.php">Click Here</a>
                        </div>
 
                         </div>
@@ -191,8 +195,7 @@
                    </div>
 
                    <div class="form-group">
-                    <textarea class="form-control" rows="4" placeholder="Your Message">
-                    </textarea>
+                    <textarea class="form-control" rows="4" placeholder="Message"></textarea>
                    </div>
                     <button type="submit" class="btn btn-primary">Send Message</button>
                 </form>

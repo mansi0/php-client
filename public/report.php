@@ -40,6 +40,8 @@
         Total earning of the day:
     </div><br>
     <hr style="width:200%">
+
+<a href="home.php">Back</a>
     
 </body>
 <script src="./js/login.js"></script> 
