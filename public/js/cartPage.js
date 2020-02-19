@@ -204,7 +204,7 @@ async function deliverNowadd(url, orderId) {
             alert('exception ocuur');
         }
 
-        const delivernowlist = await fetch(url + "/homedelivery/getdetailsbyorderid" + orderId);
+        const delivernowlist = await fetch(url + "/homedelivery/getdetailsbyorderid/" + orderId);
         var response = await delivernowlist.json();
         var hid = response[0].homeDeliveryId.toString();
 
