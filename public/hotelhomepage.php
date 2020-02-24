@@ -165,17 +165,17 @@ $apiResult = callAPI('GET','http://localhost:5000/order/getorderbyhotelid/'.$hot
 
         <div class="col-sm-8 col-xs-8 sideBar-name">
 
-        <span class="name-meta"> <?php echo $obj2->price; ?>
+        <span class="name-meta"> <?php echo $obj2->price; ?>Rs.
         </span>
         </div> 
 
         <div class="col-sm-7 col-xs-7 sideBar-name">
-          <span class="locality-meta"> <?php echo $obj1->quantity; ?>
+          <span class="locality-meta"> Qty:<?php echo $obj1->quantity; ?>
         </span>
         </div>
         
         <div class="col-sm-6 col-xs-6 sideBar-name">
-          <span class="state-meta"> <?php echo $obj->orderTime; ?>
+          <span class="state-meta">Time: <?php echo $obj->orderTime; ?>
         </span>
         </div>
         

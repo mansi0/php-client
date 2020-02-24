@@ -90,12 +90,12 @@ $ini_array = parse_ini_file("../config/config.ini", true);
 
            <div class="col-sm-6 col-xs-6 sideBar-name">
             <?php $p=(string)$obj->price; ?>
-             <span class="price-meta"> <?php echo(json_encode($obj->price)); ?>
+             <span class="price-meta"><?php echo(json_encode($obj->price)); ?>Rs.
            </span>
            </div>
            
            <div class="col-sm-5 col-xs-5 sideBar-name">
-             <span class="state-meta"> <?php echo $obj->size; ?>
+             <span class="state-meta"><?php echo $obj->size; ?>
            </span>
            </div>
            

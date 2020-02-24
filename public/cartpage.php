@@ -79,13 +79,13 @@ $apiResult = callAPI('GET','http://localhost:5000/foodorder/getdetailsbyorderid/
         </div> 
          
         <div class="col-sm-7 col-xs-7 sideBar-name">
-        <span class="spec-meta"> <?php echo $obj->quantity; ?>
+        <span class="spec-meta"> Qty:<?php echo $obj->quantity; ?>
         </span>
         </div> 
 
         <div class="col-sm-6 col-xs-6 sideBar-name">
          <?php $p=(string)$obj1->price; ?>
-          <span class="price-meta"> <?php echo $p; ?>
+          <span class="price-meta"> <?php echo $p; ?>Rs.
         </span>
         </div>
         

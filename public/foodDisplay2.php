@@ -89,7 +89,7 @@ $ini_array = parse_ini_file("../config/config.ini", true);
            </div> 
 
            <div class="col-sm-6 col-xs-6 sideBar-name">
-             <span class="price-meta"> <?php echo (json_encode($obj->price)); ?>
+             <span class="price-meta"> <?php echo (json_encode($obj->price)); ?>Rs:
            </span>
            </div>
            

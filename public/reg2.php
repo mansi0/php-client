@@ -15,8 +15,8 @@
 
         <div class="main">
                 <ul>
-                    <li class="active"> <a href="">Home</a></li>
-                    <li> <a href="login.html">Login</a></li>
+                    <li class="active"> <a href="home.php">Home</a></li>
+                    <li> <a href="login.php">Login</a></li>
                     <!--<li> <a href="reg1.html">Register</a></li>-->
                     <li><a href="#">Services</a></li>
                     <!--<li><a href="#">Gallery</a></li>-->
